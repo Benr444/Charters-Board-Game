@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="3.0310984in"
+   height="3.5000002in"
+   viewBox="0 0 76.989898 88.9"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="charters-hex2.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:export-filename="D:\Projects\Charters Board Game\resource\visual\test-hex.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200">
+  <title
+     id="title8454">Charters Hex</title>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="gears"
+       id="path-effect986"
+       is_visible="true"
+       teeth="10"
+       phi="5"
+       min_radius="5" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5017">
+      <path
+         inkscape:transform-center-x="4.3248225e-006"
+         transform="matrix(0.94016315,0,0,0.94178975,0.80352571,-193.47743)"
+         inkscape:transform-center-y="-4.6621635e-006"
+         d="M 40.22406,208.13289 78.695697,230.49881 78.562061,274.99919 39.956787,297.13365 1.4851499,274.76773 1.6187862,230.26735 Z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="true"
+         sodipodi:arg2="-1.0441946"
+         sodipodi:arg1="-1.5677933"
+         sodipodi:r2="38.538628"
+         sodipodi:r1="44.500576"
+         sodipodi:cy="252.63327"
+         sodipodi:cx="40.090424"
+         sodipodi:sides="6"
+         id="path5019"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:6.99996471;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         sodipodi:type="star" />
+    </clipPath>
+    <filter
+       inkscape:label="Opacity"
+       style="color-interpolation-filters:sRGB;"
+       id="filter5027">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -1 "
+         result="colormatrix"
+         id="feColorMatrix5023" />
+      <feComposite
+         in2="colormatrix"
+         operator="arithmetic"
+         k2="0.5"
+         result="composite"
+         id="feComposite5025" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.5622152"
+     inkscape:cx="74.852631"
+     inkscape:cy="182.30417"
+     inkscape:document-units="in"
+     inkscape:current-layer="layer4"
+     showgrid="true"
+     units="in"
+     inkscape:pagecheckerboard="true"
+     borderlayer="false"
+     showborder="true"
+     showguides="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:measure-start="8.31445,89.2129"
+     inkscape:measure-end="282.197,88.3887"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:object-paths="true"
+     inkscape:snap-global="true"
+     inkscape:snap-others="true"
+     inkscape:snap-nodes="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-bbox="false" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Charters Hex</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>B. Ranson</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="White Background"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-208.1)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
+       sodipodi:type="star"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:6.99996471;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5015"
+       sodipodi:sides="6"
+       sodipodi:cx="40.090424"
+       sodipodi:cy="252.63327"
+       sodipodi:r1="44.500576"
+       sodipodi:r2="38.538628"
+       sodipodi:arg1="-1.5677933"
+       sodipodi:arg2="-1.0441946"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 40.22406,208.13289 78.695697,230.49881 78.562061,274.99919 39.956787,297.13365 1.4851499,274.76773 1.6187862,230.26735 Z"
+       inkscape:transform-center-y="-4.6621635e-006"
+       transform="matrix(0.94016315,0,0,0.94178976,0.80352571,14.622567)"
+       inkscape:transform-center-x="4.3248225e-006"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Background Image" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Info">
+    <rect
+       style="fill:#fe0000;fill-opacity:0.53488375;stroke:none;stroke-width:6.05406094;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect931"
+       width="72.389999"
+       height="8.8899994"
+       x="2.1998661"
+       y="56.40575" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Black Frame"
+     sodipodi:insensitive="true">
+    <path
+       style="display:inline;fill:#202020;fill-opacity:1;stroke:none;stroke-width:6.98599911;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 38.62813,-3.7803613e-6 0.13332558,22.10924 3.8155304e-7,66.559238 38.361481,88.899992 76.856803,66.790748 76.990129,22.34075 Z M 38.620381,2.5398927 74.790265,23.604239 74.664691,65.513824 38.369233,86.360095 2.199866,65.295749 2.3254397,23.386164 Z"
+       id="path8458"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+{
+    "name": "Gear",
+    "types":
+    [
+        "Mech"
+    ],
+    "flavorText": "Deus ex Machina",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}

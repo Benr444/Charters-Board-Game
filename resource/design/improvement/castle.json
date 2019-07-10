@@ -1,0 +1,17 @@
+{
+    "name": "Castle",
+    "types":
+    [
+    ],
+    "flavorText": "Not the moving variety",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "RED",
+    "HP": 3,
+    "cost": "[R]",
+    "abilities":
+    [
+        "Impede: Characters may only move onto this tile with your permission",
+        "Foothold: Players may only build on tiles within {1} with your permission"
+    ]
+}
