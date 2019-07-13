@@ -11,6 +11,7 @@ import charters.card.visual.data.ItemSVGEdits;
  */
 public class ItemDesign extends CardDesign
 {
+
 	@JsonIgnore
 	@Override
 	public String getDesignTypeName()

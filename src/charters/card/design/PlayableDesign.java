@@ -12,7 +12,7 @@ import charters.card.visual.data.SVGEdits;
  */
 public abstract class PlayableDesign extends CardDesign
 {
-    @JsonProperty(required = true)
+	@JsonProperty(required = true)
 	@JsonPropertyDescription("The printed HP of the card. Defaults to -1. | In template, mark with id=" + PlayableSVGEdits.HP_ID)
 	public int HP = -1;
     

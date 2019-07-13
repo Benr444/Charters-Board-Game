@@ -9,10 +9,11 @@ import java.util.Scanner;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import charters.card.design.CardDesign;
+import charters.card.design.ItemDesign;
 
 public class DesignReader<T extends CardDesign>
 {
-	public static final boolean DO_PRINTOUT = false;
+	public static final boolean DO_PRINTOUT = true;
 	
 	public final Class<T> designType;
 	
