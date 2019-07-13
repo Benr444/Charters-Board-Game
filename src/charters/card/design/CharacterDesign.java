@@ -15,10 +15,7 @@ public class CharacterDesign extends PlayableDesign
 {
 	@JsonIgnore
 	@Override
-	public String getDesignTypeName()
-	{
-		return "character";
-	}
+	public String getDesignTypeName() {return "character";}
 
 	@Override
 	public CharacterSVGEdits getEdits() {return new CharacterSVGEdits(this);}

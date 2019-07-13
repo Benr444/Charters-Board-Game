@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import charters.card.visual.data.SVGEdits;
 
 /**
- * Dummy struct containing all data that describes a single card's designs
+ * Class containing all data that describes a single card's designs
  */
 abstract public class CardDesign 
 {
@@ -62,6 +62,8 @@ abstract public class CardDesign
     {
     	COMMON, UNCOMMON, RARE, UNSET
     }
+    
+    //===CARD-PROPERTIES===//
     
     @JsonProperty(required = true)
     @JsonPropertyDescription("Printed card name. Defaults to empty. | In template, mark with id=" + SVGEdits.NAME_ID)

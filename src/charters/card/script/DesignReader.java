@@ -12,6 +12,8 @@ import charters.card.design.CardDesign;
 
 public class DesignReader<T extends CardDesign>
 {
+	public static final boolean DO_PRINTOUT = false;
+	
 	public final Class<T> designType;
 	
 	public DesignReader(Class<T> designType)
@@ -48,6 +50,6 @@ public class DesignReader<T extends CardDesign>
 
 	private static void print(String s)
 	{
-		System.out.println("[Design Reader]: " + s);
+		if (DO_PRINTOUT) System.out.println("[Design Reader]: " + s);
 	}
 }

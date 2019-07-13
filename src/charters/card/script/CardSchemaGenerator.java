@@ -25,6 +25,7 @@ public class CardSchemaGenerator
 	public static void generateCharterSchemas()
 	{
 		print("Generating Charter Schemas...");
+		//TODO: Red flag: instantiating a design for access
 		generateSchema(ImprovementDesign.class, new ImprovementDesign().getSchemaFilePath());
 		generateSchema(CharacterDesign.class, new CharacterDesign().getSchemaFilePath());
 		generateSchema(ItemDesign.class, new ItemDesign().getSchemaFilePath());
