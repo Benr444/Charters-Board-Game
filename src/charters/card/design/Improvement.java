@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 import charters.card.visual.SVGEdits;
 
-public class Improvement extends Card
+public class Improvement extends Playable
 {
 	
 	/**

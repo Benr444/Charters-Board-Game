@@ -65,8 +65,10 @@ public abstract class Playable extends Card
 	{
     	SVGEdits edits = super.getEdits(design);
     	
-    	if (design.getClass().equals(getDesignType()))
-    	{
+    	//print("getEdits: design class is " + design.getClass());
+    	if (getDesignType().isAssignableFrom(design.getClass()))
+        {
+    		print("Adding playable-specific edits.");
 			Playable.Design playableDesign = (Playable.Design)design;
     		//Create cost edit
     		edits.addTextEdit

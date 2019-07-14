@@ -41,7 +41,9 @@ public class Item extends Card
 	@Override
 	public Class<? extends Card.Design> getDesignType() {return Item.Design.class;}
 	
-	@Override public LinkedList<Item.Design> readDesigns()
+	@SuppressWarnings("unchecked")
+	@Override 
+	public LinkedList<Item.Design> readDesigns()
 	{
 		return (LinkedList<Item.Design>)super.readDesigns();
 	}
@@ -52,7 +54,7 @@ public class Item extends Card
 		SVGEdits edits = super.getEdits(design);
 		
 		//Add influence bonus edit
-		if (design.getClass().equals(getDesignType())) //TODO: Not my favorite thing, but if I had to pick ONE type of downcasting...
+    	if (getDesignType().isAssignableFrom(design.getClass())) //TODO: Not my favorite thing, but if I had to pick ONE type of downcasting...
 		{
 			Item.Design itemDesign = (Item.Design)design;
 			if (itemDesign.isInfluenceBonus) //Conditional on the item actually being flagged for bonus influence

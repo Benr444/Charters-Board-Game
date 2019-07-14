@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import charters.card.visual.SVGEdits;
 import javafx.util.Pair;
 
-public class Character extends Card
+public class Character extends Playable
 {
 	//id-values. These are the ID's searched for for various design variables
 	public static final String AK_ID = "ak";
@@ -63,8 +63,8 @@ public class Character extends Card
     public SVGEdits getEdits(Card.Design design)
 	{
     	SVGEdits edits = super.getEdits(design);
-    	
-    	if (design.getClass().equals(getDesignType()))
+
+    	if (getDesignType().isAssignableFrom(design.getClass()))
     	{
 			Character.Design characterDesign = (Character.Design)design;
 			

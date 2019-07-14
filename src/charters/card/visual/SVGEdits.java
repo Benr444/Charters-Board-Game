@@ -1,5 +1,6 @@
 package charters.card.visual;
 
+import java.awt.Color;
 import java.util.LinkedList;
 
 import org.w3c.dom.Element;
@@ -82,6 +83,11 @@ public final class SVGEdits
 				}
 			}
 		}
+	}
+	
+	public String formatColor(Color color)
+	{
+		return "";
 	}
 	
 	private static void print(String s)

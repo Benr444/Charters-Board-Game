@@ -29,9 +29,12 @@ public abstract class Card
 	public static final String SCHEMA_FOLDER_PATH = DESIGN_FOLDER_PATH + "schema/";
 	public static final String SCHEMA_EXTENSION = ".schema.json";
 	public static final String DESIGN_EXTENSION = ".json";
+	public static final String ART_EXTENSION = ".png";
 	
 	/** Folder where static background art images can be found. Relative path from SVG file */
-	public static final String ART_FOLDER = "../../art/";
+	public static final String SVG_RELATIVE_ART_FOLDER = "../../art/";
+	public static final String ART_FOLDER = "resource/visual/art/";
+	public static final String TEMPLATE_ART = SVG_RELATIVE_ART_FOLDER + "template/template-art.png";
 	
 	//id-values. These are the ID's searched for for various design variables
 	public static final String NAME_ID = "name";
@@ -50,7 +53,7 @@ public abstract class Card
     {
     	//===DEFAULT-VALUES===//
     	
-    	public static final String DEFAULT_NAME = "ERR_NAME_NOT_FOUND";
+    	public static final String DEFAULT_NAME = null;
     	public static final String[] DEFAULT_TYPES = {};
     	public static final String DEFAULT_FLAVOR_TEXT = null;
     	public static final String DEFAULT_SET = "BASE";
@@ -82,11 +85,12 @@ public abstract class Card
     		this.set = DEFAULT_SET;
     		this.rarity = DEFAULT_RARITY;
     		this.color = DEFAULT_COLOR;
-    		this.art = this.getReducedName();
+    		this.art = null;
     		this.artX = DEFAULT_ART_X;
     		this.artY = DEFAULT_ART_Y;
     	}
     	
+    	/*
     	protected Design
     	(
     		String name,
@@ -106,10 +110,18 @@ public abstract class Card
     		this.set = set;
     		this.rarity = rarity;
     		this.color = color;
-    		this.art = art;
+    		print("Constructing design: art:" + art);
+    		if (art == null)
+    		{
+    			this.art = getReducedName() + DEFAULT_ART_EXTENSION;
+    		}
+    		else
+    		{
+        		this.art = art;
+    		}
     		this.artX = artX;
     		this.artY = artY;
-    	}
+    	}*/
     	
     	@JsonIgnore 
     	public abstract Card getFactory();
@@ -120,7 +132,17 @@ public abstract class Card
     	 * @return - The name of this card, edited like so: "The Moving Castle" -> "the-moving-castle"
     	 */
     	@JsonIgnore
-    	public String getReducedName() {return this.name.toLowerCase().replace(' ', '-');}
+    	public String getReducedName() 
+    	{
+    		if (name != null)
+    		{
+    			return this.name.toLowerCase().replace(' ', '-');
+    		}
+    		else
+    		{
+    			return null;
+    		}
+    	}
     	
         @JsonIgnore
         public String getCombinedTypes() 
@@ -277,6 +299,27 @@ public abstract class Card
 		edits.addTextEdit(new Pair<String, String>(TYPES_ID, design.getCombinedTypes()));
 		
 		//Create art edit
+		String artString;
+		if (design.art == null)
+		{
+			String nameDefaultArt = SVG_RELATIVE_ART_FOLDER + design.getDesignTypeName() + "/" + design.getReducedName() + ART_EXTENSION;
+			String nameDefaultArtAbsolute = ART_FOLDER + design.getDesignTypeName() + "/" + design.getReducedName() + ART_EXTENSION;
+			print("Looking for name-default art at " + nameDefaultArtAbsolute + "...");
+			if (new File(nameDefaultArtAbsolute).exists())
+			{
+				print("\tName-default art exists.");
+				artString = nameDefaultArt;
+			}
+			else
+			{
+				print("\tName-default art does not exist. Defaulting to template art.");
+				artString = TEMPLATE_ART;
+			}
+		}
+		else
+		{
+			artString = design.art;
+		}
 		edits.addAttributeEdit
 		(
 			new Pair<String, Pair<String, String>>
@@ -285,7 +328,7 @@ public abstract class Card
 				new Pair<String, String>
 				(
 					ART_ATTRIBUTE_NAME, 
-					ART_FOLDER + design.getDesignTypeName() + "/" + design.art + ".png"
+					artString
 				)
 			)
 		);

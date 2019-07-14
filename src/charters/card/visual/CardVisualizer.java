@@ -64,6 +64,7 @@ public abstract class CardVisualizer
 				LinkedList<Element> elements = getElements(newDoc);
 				
 				//Turn the design doc into a list of edits to be done on the SVG document
+				print("CardDesign factory is " + cardDesign.getFactory());
 				SVGEdits edits = cardDesign.getFactory().getEdits(cardDesign);
 				
 				//Pass the elements through to be edited
