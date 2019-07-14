@@ -1,77 +1,21 @@
-package charters.card.visual.data;
+package charters.card.visual.script;
 
 import java.util.LinkedList;
 
 import org.w3c.dom.Element;
 
-import charters.card.design.CardDesign;
 import javafx.util.Pair;
 
 /**
  * Class that translates design files into actual changes to be made on the svg file
  * DO NOT combine this functionality with the CardDesign class.
  */
-public abstract class SVGEdits
+public final class SVGEdits
 {
-	//Folder where static background art images can be found. Relative path from SVG file
-	public static final String ART_FOLDER = "../../art/";
-	
-	//id-values. These are the ID's searched for for various design variables
-	public static final String NAME_ID = "name";
-	public static final String TYPES_ID = "types";
-	public static final String ART_ID = "art";
-	
-	//Attribute names. These are the names of attributes edited by certain attributeEdits
-	public static final String ART_ATTRIBUTE_NAME = "xlink:href";
-	public static final String ART_X_ATTRIBUTE_NAME = "x";
-	public static final String ART_Y_ATTRIBUTE_NAME = "y";
-	
-	/**
-	 * By being private, this disables the default constructor
-	 */
-	private SVGEdits()
+	public SVGEdits()
 	{
 		this.attributeEdits = new LinkedList<Pair<String, Pair<String, String>>>();
 		this.textEdits = new LinkedList<Pair<String, String>>();
-	}
-	
-	public SVGEdits(CardDesign design)
-	{
-		this(); //Initialize edit lists
-
-		print("Creating edit lists");
-		
-		//Create name edit
-		this.textEdits.push(new Pair<String, String>(NAME_ID, design.name));
-		
-		//Create type edit
-		this.textEdits.push(new Pair<String, String>(TYPES_ID, design.getCombinedTypes()));
-		
-		//Create art edit
-		this.attributeEdits.push
-		(
-			new Pair<String, Pair<String, String>>
-			(
-				ART_ID, 
-				new Pair<String, String>
-				(
-					ART_ATTRIBUTE_NAME, 
-					ART_FOLDER + design.getDesignTypeName() + "/" + design.art + ".png"
-				)
-			)
-		);
-		
-		//Create art position edit
-		this.attributeEdits.push
-		(
-			new Pair<String, Pair<String, String>>
-			(ART_ID, new Pair<String, String>(ART_X_ATTRIBUTE_NAME, "" + design.artX))
-		);
-		this.attributeEdits.push
-		(
-			new Pair<String, Pair<String, String>>
-			(ART_ID, new Pair<String, String>(ART_Y_ATTRIBUTE_NAME, "" + design.artY))
-		);
 	}
 	
 	/**
@@ -88,6 +32,16 @@ public abstract class SVGEdits
 	 * 2. value to set the text element. E.g. <t> mytext </t>
 	 */
 	protected final LinkedList<Pair<String, String>> textEdits;
+	
+	public void addAttributeEdit(Pair<String, Pair<String, String>> edit)
+	{
+		attributeEdits.push(edit);
+	}
+	
+	public void addTextEdit(Pair<String, String> edit)
+	{
+		textEdits.push(edit);
+	}
 	
 	/**
 	 * Apply all the edits in this object to the passed element list

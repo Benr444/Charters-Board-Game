@@ -2,11 +2,11 @@ package charters.card.script;
 
 import java.util.LinkedList;
 
-import charters.card.design.CardDesign;
-import charters.card.design.CharacterDesign;
+import charters.card.design.Card;
+import charters.card.design.Character;
 import charters.card.design.DesignGroup;
-import charters.card.design.ImprovementDesign;
-import charters.card.design.ItemDesign;
+import charters.card.design.Improvement;
+import charters.card.design.Item;
 import javafx.util.Pair;
 
 /**
@@ -28,12 +28,7 @@ public class DesignDiagnostic
 	{
 		this.allDesigns = new DesignGroup
 		(
-			new DesignReader<ItemDesign>(ItemDesign.class)
-			.readDesigns(new ItemDesign().getDesignFolderPath()),
-			new DesignReader<ImprovementDesign>(ImprovementDesign.class)
-			.readDesigns(new ImprovementDesign().getDesignFolderPath()),
-			new DesignReader<CharacterDesign>(CharacterDesign.class)
-			.readDesigns(new CharacterDesign().getDesignFolderPath())
+			new Item().readDesigns(), new Improvement().readDesigns(), new Character().readDesigns()
 		);
 		this.sets = new LinkedList<Pair<String, DesignGroup>>();
 	}
@@ -63,7 +58,7 @@ public class DesignDiagnostic
 			int improvementCount = set.getValue().improvements.size();
 			print(set.getKey(), "Improvement Count: " + improvementCount);
 			print(set.getKey(), "Improvement Fraction: " + improvementCount / setSize);
-			for (CardDesign.Color color : CardDesign.Color.values())
+			for (Card.Design.Color color : Card.Design.Color.values())
 			{
 				int colorCount = countColor(set.getValue(), color);
 				print(set.getKey(), color.toString() + " Count: " + colorCount);
@@ -76,10 +71,10 @@ public class DesignDiagnostic
 	 * Sorts designs into sets
 	 * @param subset - what part of the set to sort into the sets
 	 */
-	private void setSort(LinkedList<? extends CardDesign> subset)
+	private void setSort(LinkedList<? extends Card.Design> subset)
 	{
 		//Create the list of sets
-		for (CardDesign design : subset)
+		for (Card.Design design : subset)
 		{
 			//Assume set does not exist
 			boolean setExists = false;
@@ -105,10 +100,10 @@ public class DesignDiagnostic
 		return group.total().size();
 	}
 	
-	public static int countColor(DesignGroup group, CardDesign.Color color)
+	public static int countColor(DesignGroup group, Card.Design.Color color)
 	{
 		int returnValue = 0;
-		for (CardDesign design : group.total())
+		for (Card.Design design : group.total())
 		{
 			if (design.color.equals(color)) {returnValue++;}
 		}

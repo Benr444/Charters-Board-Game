@@ -1,6 +1,6 @@
 {
   "type" : "object",
-  "id" : "urn:jsonschema:charters:card:design:ItemDesign",
+  "id" : "urn:jsonschema:charters:card:design:CardDesignFactory:Design",
   "properties" : {
     "name" : {
       "type" : "string",
@@ -45,10 +45,6 @@
     "artY" : {
       "type" : "integer",
       "description" : "The delta-Y value of the art positioning on this card. Defaults to default to 0 (no displacement.)"
-    },
-    "isInfluenceBonus" : {
-      "type" : "boolean",
-      "description" : "Set to true if this item can be revealed for +1 influence. Defaults to false. | In template, mark with id=influence-bonus"
     }
   }
 }

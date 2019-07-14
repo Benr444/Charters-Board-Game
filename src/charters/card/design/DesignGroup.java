@@ -4,15 +4,15 @@ import java.util.LinkedList;
 
 public class DesignGroup
 {
-	public LinkedList<ItemDesign> items;
-	public LinkedList<ImprovementDesign> improvements;
-	public LinkedList<CharacterDesign> characters;
+	public LinkedList<Item.Design> items;
+	public LinkedList<Improvement.Design> improvements;
+	public LinkedList<Character.Design> characters;
 	
 	public DesignGroup()
 	{
-		this.items = new LinkedList<ItemDesign>();
-		this.improvements = new LinkedList<ImprovementDesign>();
-		this.characters = new LinkedList<CharacterDesign>();
+		this.items = new LinkedList<Item.Design>();
+		this.improvements = new LinkedList<Improvement.Design>();
+		this.characters = new LinkedList<Character.Design>();
 	}
 	
 	/**
@@ -20,7 +20,7 @@ public class DesignGroup
 	 */
 	public DesignGroup
 	(
-		LinkedList<ItemDesign> items, LinkedList<ImprovementDesign> improvements, LinkedList<CharacterDesign> characters
+		LinkedList<Item.Design> items, LinkedList<Improvement.Design> improvements, LinkedList<Character.Design> characters
 	)
 	{
 		this.items = items;
@@ -32,25 +32,25 @@ public class DesignGroup
 	 * This is awful, I hate it
 	 * @param design
 	 */
-	public void add(CardDesign design)
+	public void add(Card.Design design)
 	{
-		if (design.getClass() == ItemDesign.class)
+		if (design.getClass() == Item.Design.class)
 		{
-			items.push((ItemDesign)design);
+			items.push((Item.Design)design);
 		}
-		else if (design.getClass() == ImprovementDesign.class)
+		else if (design.getClass() == Improvement.Design.class)
 		{
-			improvements.push((ImprovementDesign)design);
+			improvements.push((Improvement.Design)design);
 		}
-		else if (design.getClass() == CharacterDesign.class)
+		else if (design.getClass() == Character.Design.class)
 		{
-			characters.push((CharacterDesign)design);
+			characters.push((Character.Design)design);
 		}
 	}
 	
-	public LinkedList<CardDesign> total()
+	public LinkedList<Card.Design> total()
 	{
-		LinkedList<CardDesign> returnValue = new LinkedList<CardDesign>();
+		LinkedList<Card.Design> returnValue = new LinkedList<Card.Design>();
 		returnValue.addAll(items);
 		returnValue.addAll(improvements);
 		returnValue.addAll(characters);

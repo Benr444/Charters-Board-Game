@@ -15,15 +15,15 @@ import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
-import charters.card.design.CardDesign;
-import charters.card.design.CharacterDesign;
-import charters.card.design.ImprovementDesign;
-import charters.card.design.ItemDesign;
-import charters.card.script.DesignReader;
-import charters.card.visual.data.SVGEdits;
+import charters.card.design.Card;
+import charters.card.design.Character;
+import charters.card.design.Improvement;
+import charters.card.design.Item;
 
-public class CardVisualizer<T extends CardDesign>
+public abstract class CardVisualizer
 {
+	//TODO move these constants to the proper factory, etc.
+	
 	public static final String VISUALS_FOLDER = "resource/visual/";
 	
 	public static final String ART_VISUALS_FOLDER = VISUALS_FOLDER + "art/";
@@ -31,40 +31,29 @@ public class CardVisualizer<T extends CardDesign>
 	public static final String CARD_VISUALS_TEMPLATE_FOLDER = CARD_VISUALS_FOLDER + "template/";
 	public static final String TEMPLATE_EXTENSION = "-template.svg";
 	
-	public final Class<T> cardDesignType;
-	
 	public static void main(String... args)
-	{
-		CardVisualizer<ImprovementDesign> improvementVisualizer = new CardVisualizer<ImprovementDesign>(ImprovementDesign.class);
-		CardVisualizer<ItemDesign> itemVisualizer = new CardVisualizer<ItemDesign>(ItemDesign.class);
-		CardVisualizer<CharacterDesign> characterVisualizer = new CardVisualizer<CharacterDesign>(CharacterDesign.class);
+	{	
 		try
 		{
-			improvementVisualizer.doVisualize();
-			itemVisualizer.doVisualize();
-			characterVisualizer.doVisualize();
+			doVisualize(new Improvement().readDesigns());
+			doVisualize(new Character().readDesigns());
+			doVisualize(new Item().readDesigns());
 		} 
 		catch (InstantiationException | IllegalAccessException e) {e.printStackTrace();}
 	}
-	
-	public CardVisualizer(Class<T> cardDesignType) {this.cardDesignType = cardDesignType;}
 	
 	/**
 	 * Draw in as many design files as possible generate a svg for each of them
 	 * @throws IllegalAccessException 
 	 * @throws InstantiationException 
 	 */
-	public void doVisualize() throws InstantiationException, IllegalAccessException
+	public static void doVisualize(LinkedList<? extends Card.Design> cardDesigns) throws InstantiationException, IllegalAccessException
 	{
 		print("=== BEGINNING CARD VISUALIZATION PROCESS... ===");
-		print("Reading the " + cardDesignType.getSimpleName() + " files");
 		//Read the card design files into a java object
-		LinkedList<T> cardDesigns = 
-				new DesignReader<T>(cardDesignType)
-				.readDesigns(cardDesignType.newInstance().getDesignFolderPath());
 		
 		//Iterate over each card design
-		for (T cardDesign : cardDesigns)
+		for (Card.Design cardDesign : cardDesigns)
 		{
 			try
 			{
@@ -75,7 +64,7 @@ public class CardVisualizer<T extends CardDesign>
 				LinkedList<Element> elements = getElements(newDoc);
 				
 				//Turn the design doc into a list of edits to be done on the SVG document
-				SVGEdits edits = cardDesign.getEdits();
+				SVGEdits edits = cardDesign.getFactory().getEdits(cardDesign);
 				
 				//Pass the elements through to be edited
 				edits.doEdits(elements);
@@ -91,12 +80,12 @@ public class CardVisualizer<T extends CardDesign>
 		}
 	}
 	
-	public static String getOutputPath(CardDesign card)
+	public static String getOutputPath(Card.Design card)
 	{
 		return CARD_VISUALS_FOLDER + card.getDesignTypeName() + "/" + card.getReducedName() + ".svg";
 	}
 	
-	public static String getTemplatePath(CardDesign card)
+	public static String getTemplatePath(Card.Design card)
 	{
 		return CARD_VISUALS_TEMPLATE_FOLDER + card.getDesignTypeName() + TEMPLATE_EXTENSION;
 	}
