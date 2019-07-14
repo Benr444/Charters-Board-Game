@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
-import charters.card.visual.script.SVGEdits;
+import charters.card.visual.SVGEdits;
 import javafx.util.Pair;
 
 

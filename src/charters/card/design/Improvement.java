@@ -2,7 +2,7 @@ package charters.card.design;
 
 import java.util.LinkedList;
 
-import charters.card.visual.script.SVGEdits;
+import charters.card.visual.SVGEdits;
 
 public class Improvement extends Card
 {

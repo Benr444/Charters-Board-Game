@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
-import charters.card.visual.script.SVGEdits;
+import charters.card.visual.SVGEdits;
 import javafx.util.Pair;
 
 public class Character extends Card

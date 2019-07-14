@@ -1,4 +1,4 @@
-package charters.card.visual.script;
+package charters.card.visual;
 
 import java.util.LinkedList;
 

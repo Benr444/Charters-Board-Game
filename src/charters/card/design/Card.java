@@ -16,7 +16,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.module.jsonSchema.JsonSchema;
 import com.fasterxml.jackson.module.jsonSchema.customProperties.HyperSchemaFactoryWrapper;
 
-import charters.card.visual.script.SVGEdits;
+import charters.card.visual.SVGEdits;
 import javafx.util.Pair;
 
 /**
