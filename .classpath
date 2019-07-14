@@ -9,5 +9,6 @@
 	<classpathentry kind="lib" path="lib/jackson-core-2.9.0.jar"/>
 	<classpathentry kind="lib" path="lib/jackson-annotations-2.9.0-javadoc.jar"/>
 	<classpathentry kind="lib" path="lib/jackson-annotations-2.9.0.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-module-parameter-names-2.9.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
