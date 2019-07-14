@@ -15,7 +15,6 @@ import charters.card.visual.data.SVGEdits;
 public abstract class PlayableDesign extends CardDesign
 {
 	//===DEFAULT-VALUES===//
-	
 	public static final int DEFAULT_HP = -1;
 	public static final String DEFAULT_COST = "[0]";
 	public static final String[] DEFAULT_ABILITIES = {};
