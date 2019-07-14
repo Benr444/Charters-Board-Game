@@ -13,6 +13,18 @@ import charters.card.visual.data.SVGEdits;
  */
 public class CharacterDesign extends PlayableDesign
 {
+	//===DEFAULT-VALUES===//
+	public static final int DEFAULT_AK = -1;
+	public static final int DEFAULT_MS = -1;
+	public static final int DEFAULT_RG = -1;
+	
+	public CharacterDesign()
+	{
+		this.AK = DEFAULT_AK;
+		this.MS = DEFAULT_MS;
+		this.RG = DEFAULT_RG;
+	}
+	
 	@JsonIgnore
 	@Override
 	public String getDesignTypeName() {return "character";}
@@ -22,13 +34,13 @@ public class CharacterDesign extends PlayableDesign
 
     @JsonProperty(required = true)
 	@JsonPropertyDescription("The printed AK of the card. Defaults to -1. | On template, mark with id=" + CharacterSVGEdits.AK_ID)
-	public int AK = -1;
+	public int AK;
 
     @JsonProperty(required = true)
 	@JsonPropertyDescription("The printed MS of the card. Defaults to -1. | On template, mark with id=" + CharacterSVGEdits.AK_ID)
-	public int MS = -1;
+	public int MS;
 
     @JsonProperty(required = true)
 	@JsonPropertyDescription("The printed RG of the card. Defaults to -1. | On template, mark with id=" + CharacterSVGEdits.AK_ID)
-	public int RG = -1;
+	public int RG;
 }

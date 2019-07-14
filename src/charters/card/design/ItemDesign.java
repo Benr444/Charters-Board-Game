@@ -11,7 +11,14 @@ import charters.card.visual.data.ItemSVGEdits;
  */
 public class ItemDesign extends CardDesign
 {
-
+	//===DEFAULT_VALUES===//
+	public static final boolean DEFAULT_IS_INFLUENCE_BONUS = false;
+	
+	public ItemDesign()
+	{
+		isInfluenceBonus = DEFAULT_IS_INFLUENCE_BONUS;
+	}
+	
 	@JsonIgnore
 	@Override
 	public String getDesignTypeName()
@@ -24,5 +31,5 @@ public class ItemDesign extends CardDesign
     
     @JsonProperty(required = false)
     @JsonPropertyDescription("Set to true if this item can be revealed for +1 influence. Defaults to false. | In template, mark with id=" + ItemSVGEdits.INFLUENCE_BONUS_ID)
-    public boolean isInfluenceBonus = false;
+    public boolean isInfluenceBonus;
 }

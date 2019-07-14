@@ -48,10 +48,6 @@ public abstract class SVGEdits
 		this.textEdits.push(new Pair<String, String>(TYPES_ID, design.getCombinedTypes()));
 		
 		//Create art edit
-		if (design.art == null)
-		{
-			design.art = design.getReducedName();
-		}
 		this.attributeEdits.push
 		(
 			new Pair<String, Pair<String, String>>

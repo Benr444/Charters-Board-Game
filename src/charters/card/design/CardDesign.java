@@ -11,6 +11,69 @@ import charters.card.visual.data.SVGEdits;
  */
 abstract public class CardDesign 
 {
+	//===DEFAULT-VALUES===//
+	
+	public static final String DEFAULT_NAME = "ERR_NAME_NOT_FOUND";
+	public static final String[] DEFAULT_TYPES = {};
+	public static final String DEFAULT_FLAVOR_TEXT = null;
+	public static final String DEFAULT_SET = "BASE";
+	public static final Rarity DEFAULT_RARITY = Rarity.UNSET;
+	public static final Color DEFAULT_COLOR = Color.UNSET;
+	public static final int DEFAULT_ART_X = 0;
+	public static final int DEFAULT_ART_Y = 0;
+	
+	public enum Color
+    {
+    	RED, ORANGE, YELLOW, GREEN, BLUE, VIOLET, BLACK, WHITE, COLORLESS, UNSET
+    }
+    
+    public enum Rarity
+    {
+    	COMMON, UNCOMMON, RARE, UNSET
+    }
+    
+    //===UTILITY-MEMBERS===//
+
+    /**
+     * Place default values in this constructor
+     */
+	public CardDesign()
+	{
+		this.name = DEFAULT_NAME;
+		this.types = DEFAULT_TYPES;
+		this.flavorText = DEFAULT_FLAVOR_TEXT;
+		this.set = DEFAULT_SET;
+		this.rarity = DEFAULT_RARITY;
+		this.color = DEFAULT_COLOR;
+		this.art = this.getReducedName();
+		this.artX = DEFAULT_ART_X;
+		this.artY = DEFAULT_ART_Y;
+	}
+	
+	public CardDesign
+	(
+		String name,
+		String[] types,
+		String flavorText,
+		String set,
+		Rarity rarity,
+		Color color,
+		String art,
+		int artX,
+		int artY
+	)
+	{
+		this.name = name;
+		this.types = types;
+		this.flavorText = flavorText;
+		this.set = set;
+		this.rarity = rarity;
+		this.color = color;
+		this.art = art;
+		this.artX = artX;
+		this.artY = artY;
+	}
+	
 	@JsonIgnore
 	public static final String DESIGN_FOLDER_PATH = "resource/design/";
 	
@@ -53,26 +116,6 @@ abstract public class CardDesign
 	@JsonIgnore
 	public abstract String getDesignTypeName();
 	
-    public enum Color
-    {
-    	RED, ORANGE, YELLOW, GREEN, BLUE, VIOLET, BLACK, WHITE, COLORLESS, UNSET
-    }
-    
-    public enum Rarity
-    {
-    	COMMON, UNCOMMON, RARE, UNSET
-    }
-    
-    //===CARD-PROPERTIES===//
-    
-    @JsonProperty(required = true)
-    @JsonPropertyDescription("Printed card name. Defaults to empty. | In template, mark with id=" + SVGEdits.NAME_ID)
-    public String name = "";
-    
-    @JsonProperty(required = false)
-    @JsonPropertyDescription("The printed types of the card. Defaults to empty. | In template, mark with id=" + SVGEdits.TYPES_ID)
-    public String[] types = {};
-    
     @JsonIgnore
     public String getCombinedTypes() 
     {
@@ -88,31 +131,41 @@ abstract public class CardDesign
     	}
     }
     
+    //===CARD-PROPERTIES===//
+    
+    @JsonProperty(required = true)
+    @JsonPropertyDescription("Printed card name. Defaults to empty. | In template, mark with id=" + SVGEdits.NAME_ID)
+    public final String name;
+    
+    @JsonProperty(required = false)
+    @JsonPropertyDescription("The printed types of the card. Defaults to empty. | In template, mark with id=" + SVGEdits.TYPES_ID)
+    public final String[] types;
+    
     @JsonProperty(required = false)
     @JsonPropertyDescription("Italicized, bonus story text on a card. Defaults to blank.")
-    public String flavorText = "";
+    public final String flavorText;
     
     @JsonProperty(required = false)
     @JsonPropertyDescription("Used to identify the set of a card, which is the batch of designs it belongs to. Defaults to BASE")
-    public String set = "BASE";
+    public final String set;
 
     @JsonProperty(required = true)
     @JsonPropertyDescription("Used to identify the set of a card, which is the batch of designs it belongs to.")
-    public Rarity rarity = Rarity.UNSET;
+    public final Rarity rarity;
 
     @JsonProperty(required = true)
     @JsonPropertyDescription("The color of the card, mechanically. This will be reflected in the frame, etc. Should match any card costs.")
-    public Color color = Color.UNSET;
+    public final Color color;
 
     @JsonProperty(required = false)
     @JsonPropertyDescription("The name of the art for this card. Do not include the file extension: it must be .png. It will be searched for in the relevant project folder(s). Defaults to searching for \"card-name-art.png\" in the proper art folder, but if this fails, it will keep the template art. | In template, mark with id=" + SVGEdits.ART_ID)
-    public String art = null;
+    public final String art;
 
     @JsonProperty(required = false)
     @JsonPropertyDescription("The delta-X value of the art positioning on this card. Defaults to default to 0 (no displacement.)")
-    public int artX = 0;
+    public final int artX;
 
     @JsonProperty(required = false)
     @JsonPropertyDescription("The delta-Y value of the art positioning on this card. Defaults to default to 0 (no displacement.)")
-    public int artY = 0;
+    public final int artY;
 }
