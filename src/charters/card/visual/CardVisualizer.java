@@ -38,6 +38,7 @@ public abstract class CardVisualizer
 			doVisualize(new Improvement().readDesigns());
 			doVisualize(new Character().readDesigns());
 			doVisualize(new Item().readDesigns());
+			print("Finished visualization process.");
 		} 
 		catch (InstantiationException | IllegalAccessException e) {e.printStackTrace();}
 	}

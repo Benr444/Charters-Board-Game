@@ -61,11 +61,6 @@ public abstract class Card
     	public static final Color DEFAULT_COLOR = Color.UNSET;
     	public static final int DEFAULT_ART_X = 0;
     	public static final int DEFAULT_ART_Y = 0;
-    	
-    	public enum Color
-        {
-        	RED, ORANGE, YELLOW, GREEN, BLUE, VIOLET, BLACK, WHITE, COLORLESS, UNSET
-        }
         
         public enum Rarity
         {
@@ -297,6 +292,8 @@ public abstract class Card
 		
 		//Create type edit
 		edits.addTextEdit(new Pair<String, String>(TYPES_ID, design.getCombinedTypes()));
+		
+		edits.addAttributeEdit(new Pair<String, Pair<String, String>>("rect1606", new Pair<String, String>("fill", design.color.getFillValue())));
 		
 		//Create art edit
 		String artString;

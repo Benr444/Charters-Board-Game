@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.util.LinkedList;
 
 import org.w3c.dom.Element;
+import org.w3c.dom.NamedNodeMap;
 
 import javafx.util.Pair;
 
@@ -17,13 +18,14 @@ public final class SVGEdits
 	{
 		this.attributeEdits = new LinkedList<Pair<String, Pair<String, String>>>();
 		this.textEdits = new LinkedList<Pair<String, String>>();
+		this.colorEdits = new LinkedList<Pair<String, Color>>();
 	}
 	
 	/**
 	 * Maps the following together
 	 * 1. id value to search for. E.g. id="meme"
-	 * 2. value to edit. E.g. "color"
-	 * 3. value to set. E.g. color="rgb(1,1,1)"
+	 * 2. value to edit
+	 * 3. value to set
 	 */
 	protected final LinkedList<Pair<String, Pair<String, String>>> attributeEdits;
 	
@@ -33,6 +35,13 @@ public final class SVGEdits
 	 * 2. value to set the text element. E.g. <t> mytext </t>
 	 */
 	protected final LinkedList<Pair<String, String>> textEdits;
+	
+	/**
+	 * Maps the following together
+	 * 1. id value to search for. E.g. id="meme"
+	 * 2. value of color to set
+	 */
+	protected final LinkedList<Pair<String, Color>> colorEdits;
 	
 	public void addAttributeEdit(Pair<String, Pair<String, String>> edit)
 	{

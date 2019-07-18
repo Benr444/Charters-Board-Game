@@ -53,7 +53,7 @@ public class DesignDiagnostic
 			int improvementCount = set.getValue().improvements.size();
 			print(set.getKey(), "Improvement Count: " + improvementCount);
 			print(set.getKey(), "Improvement Fraction: " + improvementCount / setSize);
-			for (Card.Design.Color color : Card.Design.Color.values())
+			for (Color color : Color.values())
 			{
 				int colorCount = countColor(set.getValue(), color);
 				print(set.getKey(), color.toString() + " Count: " + colorCount);
@@ -95,7 +95,7 @@ public class DesignDiagnostic
 		return group.total().size();
 	}
 	
-	public static int countColor(DesignGroup group, Card.Design.Color color)
+	public static int countColor(DesignGroup group, Color color)
 	{
 		int returnValue = 0;
 		for (Card.Design design : group.total())
