@@ -67,20 +67,20 @@
             </cc:Work>
         </rdf:RDF>
     </metadata>
-    <g fill="#ffffff">
-        <path d="m38.495 86.36-36.295-20.955-1.1e-6 -41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" fill="#ffffff"/>
+    <g>
+        <path d="m38.495 86.36-36.295-20.955-1.1e-6 -41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" fill="#fff"/>
     </g>
     <g opacity=".5">
-        <g clip-path="url(#clipPath939)">
+        <g clip-path="url(#clipPath939)" style="">
             <image id="art" width="94.056" height="62.704" image-rendering="optimizeSpeed" preserveAspectRatio="none" xlink:href="D:\Projects\Charters-Board-Game\resource\visual\card\template\../../art/template/template-art.png"/>
         </g>
     </g>
     <g>
-        <path d="m38.495 86.36-36.295-20.955-1.1e-6 -41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" clip-path="url(#clipPath6226)" fill="#ffffff"/>
-        <rect class="charters-color" x="2.1962" y="70.485" width="72.593" height="5.08" clip-path="url(#clipPath914)" fill="url(#linearGradient4598)" opacity=".75"/>
-        <rect class="charters-color" x="2.1997" y="56.515" width="72.59" height="8.89" fill="url(#linearGradient4674)" opacity=".75"/>
-        <rect class="charters-color" x="2.1997" y="65.405" width="72.59" height="5.08" clip-path="url(#clipPath828)" fill="url(#linearGradient4680)" opacity=".5"/>
-        <rect class="charters-color" x="17.667" y="75.565" width="40.449" height="16.844" clip-path="url(#clipPath948)" fill="url(#linearGradient4686)" opacity=".5"/>
+        <path d="m38.495 86.36-36.295-20.955-1.1e-6 -41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" clip-path="url(#clipPath6226)" fill="#fff"/>
+        <rect x="2.1962" y="70.485" width="72.593" height="5.08" clip-path="url(#clipPath914)" fill="url(#linearGradient4598)" opacity=".75"/>
+        <rect x="2.1997" y="56.515" width="72.59" height="8.89" fill="url(#linearGradient4674)" opacity=".75"/>
+        <rect x="2.1997" y="65.405" width="72.59" height="5.08" clip-path="url(#clipPath828)" fill="url(#linearGradient4680)" opacity=".5"/>
+        <rect x="17.667" y="75.565" width="40.449" height="16.844" clip-path="url(#clipPath948)" fill="url(#linearGradient4686)" opacity=".5"/>
         <text id="name" x="38.623726" y="63.362957" fill="#000000" font-family="Consolas" font-size="7.0556px" letter-spacing="0px" stroke-width=".26458" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="38.623726" y="63.362957" fill="#000000" stroke-width=".26458">Template Improve</tspan></text>
         <text id="types" x="38.496944" y="69.196602" fill="url(#linearGradient4577)" font-family="Consolas" font-size="4.9389px" letter-spacing="0px" stroke-width=".26458" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="38.496944" y="69.196602" fill="url(#linearGradient4577)" stroke-width=".26458">Type</tspan></text>
         <text id="cost" x="38.496944" y="74.276604" fill="url(#linearGradient4583)" font-family="Consolas" font-size="4.9389px" letter-spacing="0px" stroke-width=".26458" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="38.496944" y="74.276604" fill="url(#linearGradient4583)" stroke-width=".26458">[Cost]<tspan x="38.496944" y="74.276604" fill="url(#linearGradient4583)" stroke-width=".26458"/></tspan></text>
@@ -88,8 +88,5 @@
     </g>
     <g transform="translate(0,-208.1)">
         <path d="m38.495 208.1-38.495 22.225v44.45l38.495 22.225 38.495-22.225v-44.45zm0 2.5399 36.295 20.955v41.91l-36.295 20.955-36.295-20.955v-41.91z"/>
-        <path d="m38.495 86.36-36.295-20.955-1.1e-6 -41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" clip-path="url(#clipPath6226)" fill="#17fd00" fill-opacity=".99269" opacity=".405"/>
     </g>
-    <path id="abilities-frame" d="m3.332 24.627v30.756h70.324v-30.756z" fill="none" opacity=".405"/>
-    <flowRoot fill="#000000" font-family="Consolas" font-size="2.8222px" letter-spacing="0px" stroke-width=".26458" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><flowRegion><use width="100%" height="100%" xlink:href="#abilities-frame"/></flowRegion><flowPara id="abilities" font-family="Consolas" font-weight="bold" text-align="start" text-anchor="start">My Template Ability: Does something not that cool at at all!</flowPara></flowRoot>
 </svg>

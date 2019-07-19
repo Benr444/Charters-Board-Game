@@ -54,7 +54,7 @@ public abstract class Playable extends Card
         		//All this to avoid extra spaces
         		String returnVal = "";
         		for (int i = 0; i < abilities.length - 1; i++)
-        		{returnVal = returnVal + abilities[0] + " ";}
+        		{returnVal = returnVal + abilities[i] + " | ";}
         		return returnVal + abilities[abilities.length - 1];
         	}
         }
@@ -68,7 +68,6 @@ public abstract class Playable extends Card
     	//print("getEdits: design class is " + design.getClass());
     	if (getDesignType().isAssignableFrom(design.getClass()))
         {
-    		print("Adding playable-specific edits.");
 			Playable.Design playableDesign = (Playable.Design)design;
     		//Create cost edit
     		edits.addTextEdit

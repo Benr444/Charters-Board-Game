@@ -50,7 +50,7 @@ public abstract class CardVisualizer
 	 */
 	public static void doVisualize(LinkedList<? extends Card.Design> cardDesigns) throws InstantiationException, IllegalAccessException
 	{
-		print("=== BEGINNING CARD VISUALIZATION PROCESS... ===");
+		print("=== BEGINNING A CARD VISUALIZATION PROCESS ===");
 		//Read the card design files into a java object
 		
 		//Iterate over each card design
@@ -65,13 +65,12 @@ public abstract class CardVisualizer
 				LinkedList<Element> elements = getElements(newDoc);
 				
 				//Turn the design doc into a list of edits to be done on the SVG document
-				print("CardDesign factory is " + cardDesign.getFactory());
 				SVGEdits edits = cardDesign.getFactory().getEdits(cardDesign);
 				
 				//Pass the elements through to be edited
 				edits.doEdits(elements);
 
-				print("Moving to save " + cardDesign.name + " to " + getOutputPath(cardDesign));
+				print("Saving " + cardDesign.name + " to " + getOutputPath(cardDesign));
 				
 				//Save the document by overwriting the newly created copy
 				DOMSource docSource = new DOMSource(newDoc);

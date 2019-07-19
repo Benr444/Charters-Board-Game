@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="3.0311in"
+   height="3.5in"
+   version="1.1"
+   viewBox="0 0 76.99 88.9"
+   id="svg99"
+   sodipodi:docname="improvement-template-working.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview101"
+     showgrid="false"
+     inkscape:zoom="2.3129185"
+     inkscape:cx="122.02581"
+     inkscape:cy="180.00385"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg99" />
+  <title
+     id="title2">Charters Hex</title>
+  <defs
+     id="defs56">
+    <linearGradient
+       id="charters-violet"
+       osb:paint="solid">
+      <stop
+         stop-color="#8900c8"
+         offset="0"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="charters-green"
+       osb:paint="solid">
+      <stop
+         stop-color="#00ae06"
+         offset="0"
+         id="stop7" />
+    </linearGradient>
+    <linearGradient
+       id="charters-yellow"
+       osb:paint="solid">
+      <stop
+         stop-color="#ece700"
+         offset="0"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="charters-orange"
+       osb:paint="solid">
+      <stop
+         stop-color="#fe7900"
+         offset="0"
+         id="stop13" />
+    </linearGradient>
+    <linearGradient
+       id="charters-red"
+       osb:paint="solid">
+      <stop
+         stop-color="#fc0000"
+         offset="0"
+         id="stop16" />
+    </linearGradient>
+    <linearGradient
+       id="black"
+       osb:paint="solid">
+      <stop
+         offset="0"
+         id="stop19" />
+    </linearGradient>
+    <linearGradient
+       id="charters-blue"
+       osb:paint="solid">
+      <stop
+         stop-color="#0019fe"
+         offset="0"
+         id="stop22" />
+    </linearGradient>
+    <clipPath
+       id="clipPath828">
+      <path
+         d="m38.495 86.36-36.295-20.955-1.1e-6 -41.91 36.295-20.955 36.295 20.955 1e-6 41.91z"
+         fill="#fff"
+         id="path25" />
+    </clipPath>
+    <clipPath
+       id="clipPath914">
+      <path
+         d="m38.495 86.36-36.295-20.955-1.1e-6 -41.91 36.295-20.955 36.295 20.955 1e-6 41.91z"
+         fill="#fff"
+         id="path28" />
+    </clipPath>
+    <clipPath
+       id="clipPath948">
+      <path
+         d="m38.495 86.36-36.295-20.955-1.1e-6 -41.91 36.295-20.955 36.295 20.955 1e-6 41.91z"
+         fill="#fff"
+         id="path31" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient4668"
+       x1="2.1997"
+       x2="74.789"
+       y1="73.025"
+       y2="73.025"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#charters-blue" />
+    <linearGradient
+       id="linearGradient4674"
+       x1="2.1997"
+       x2="74.789"
+       y1="60.96"
+       y2="60.96"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#charters-blue" />
+    <linearGradient
+       id="linearGradient4680"
+       x1="2.1997"
+       x2="74.789"
+       y1="67.945"
+       y2="67.945"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#charters-blue" />
+    <linearGradient
+       id="linearGradient4686"
+       x1="17.667"
+       x2="58.115"
+       y1="80.963"
+       y2="80.963"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#charters-blue" />
+    <clipPath
+       id="clipPath6226">
+      <g
+         id="g46">
+        <rect
+           x="2.1962"
+           y="70.485"
+           width="72.593"
+           height="5.08"
+           clip-path="url(#clipPath914)"
+           fill="url(#linearGradient4668)"
+           opacity=".75"
+           id="rect38" />
+        <rect
+           x="2.1997"
+           y="56.515"
+           width="72.59"
+           height="8.89"
+           fill="url(#linearGradient4674)"
+           opacity=".75"
+           id="rect40" />
+        <rect
+           x="2.1997"
+           y="65.405"
+           width="72.59"
+           height="5.08"
+           clip-path="url(#clipPath828)"
+           fill="url(#linearGradient4680)"
+           opacity=".5"
+           id="rect42" />
+        <rect
+           x="17.667"
+           y="75.565"
+           width="40.449"
+           height="16.844"
+           clip-path="url(#clipPath948)"
+           fill="url(#linearGradient4686)"
+           opacity=".5"
+           id="rect44" />
+      </g>
+    </clipPath>
+    <clipPath
+       id="clipPath939">
+      <path
+         d="m38.495 2.5399-36.295 20.955v33.02h72.59v-33.02z"
+         fill="#fff"
+         id="path49" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient4577"
+       x1="33.264"
+       x2="43.648"
+       y1="68.122"
+       y2="68.122"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#black" />
+    <linearGradient
+       id="linearGradient4583"
+       x1="31.168"
+       x2="45.821"
+       y1="73.025"
+       y2="73.025"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#black" />
+    <linearGradient
+       id="linearGradient4589"
+       x1="30.863"
+       x2="44.315"
+       y1="79.103"
+       y2="79.103"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#black" />
+    <linearGradient
+       id="linearGradient4598"
+       x1="2.2"
+       x2="74.789"
+       y1="73.025"
+       y2="73.025"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#charters-blue" />
+  </defs>
+  <metadata
+     id="metadata58">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Charters Hex</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>B. Ranson</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g62"
+     style="fill:#ffffff;fill-opacity:1">
+    <path
+       d="M 38.495,86.36 2.2,65.405 2.1999989,23.495 38.494999,2.54 l 36.295,20.955 1e-6,41.91 z"
+       id="path60"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;fill-opacity:1" />
+  </g>
+  <g
+     id="g67"
+     style="opacity:0.5">
+    <g
+       id="g5230"
+       clip-path="url(#clipPath939)">
+      <image
+         sodipodi:absref="D:\Projects\Charters-Board-Game\resource\visual\card\template\../../art/template/template-art.png"
+         xlink:href="../../art/template/template-art.png"
+         id="image5228"
+         width="94.056"
+         height="62.703999"
+         preserveAspectRatio="none"
+         style="image-rendering:optimizeSpeed" />
+    </g>
+  </g>
+  <g
+     id="g93">
+    <path
+       d="M 38.495,86.36 2.2,65.405 2.1999989,23.495 38.494999,2.54 l 36.295,20.955 1e-6,41.91 z"
+       clip-path="url(#clipPath6226)"
+       id="path69"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff" />
+    <rect
+       class="charters-color"
+       x="2.1961999"
+       y="70.485001"
+       width="72.593002"
+       height="5.0799999"
+       clip-path="url(#clipPath914)"
+       id="rect71"
+       style="opacity:0.75;fill:url(#linearGradient4598)" />
+    <rect
+       class="charters-color"
+       x="2.1997001"
+       y="56.514999"
+       width="72.589996"
+       height="8.8900003"
+       id="rect73"
+       style="opacity:0.75;fill:url(#linearGradient4674)" />
+    <rect
+       class="charters-color"
+       x="2.1997001"
+       y="65.404999"
+       width="72.589996"
+       height="5.0799999"
+       clip-path="url(#clipPath828)"
+       id="rect75"
+       style="opacity:0.5;fill:url(#linearGradient4680)" />
+    <rect
+       class="charters-color"
+       x="17.667"
+       y="75.565002"
+       width="40.449001"
+       height="16.844"
+       clip-path="url(#clipPath948)"
+       id="rect77"
+       style="opacity:0.5;fill:url(#linearGradient4686)" />
+    <text
+       id="name"
+       x="38.623726"
+       y="63.362957"
+       font-size="7.0556px"
+       letter-spacing="0px"
+       text-align="center"
+       word-spacing="0px"
+       style="font-size:7.05560017px;line-height:1.25;font-family:Consolas;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke-width:0.26458001"
+       xml:space="preserve"><tspan
+         x="38.623726"
+         y="63.362957"
+         id="tspan79"
+         style="fill:#000000;stroke-width:0.26458001">Template Improve</tspan></text>
+    <text
+       id="types"
+       x="38.496944"
+       y="69.196602"
+       font-size="4.9389px"
+       letter-spacing="0px"
+       text-align="center"
+       word-spacing="0px"
+       style="font-size:4.93889999px;line-height:1.25;font-family:Consolas;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:url(#linearGradient4577);stroke-width:0.26458001"
+       xml:space="preserve"><tspan
+         x="38.496944"
+         y="69.196602"
+         id="tspan82"
+         style="fill:url(#linearGradient4577);stroke-width:0.26458001">Type</tspan></text>
+    <text
+       id="cost"
+       x="38.496944"
+       y="74.276604"
+       font-size="4.9389px"
+       letter-spacing="0px"
+       text-align="center"
+       word-spacing="0px"
+       style="font-size:4.93889999px;line-height:1.25;font-family:Consolas;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:url(#linearGradient4583);stroke-width:0.26458001"
+       xml:space="preserve"><tspan
+         x="38.496944"
+         y="74.276604"
+         id="tspan87"
+         style="fill:url(#linearGradient4583);stroke-width:0.26458001">[Cost]<tspan
+   x="38.496944"
+   y="74.276604"
+   id="tspan85"
+   style="fill:url(#linearGradient4583);stroke-width:0.26458001" /></tspan></text>
+    <text
+       id="hp"
+       x="37.783543"
+       y="81.804695"
+       font-size="8.4667px"
+       letter-spacing="0px"
+       text-align="center"
+       word-spacing="0px"
+       style="font-size:8.4666996px;line-height:1.25;font-family:Consolas;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:url(#linearGradient4589);stroke-width:0.26458001"
+       xml:space="preserve"><tspan
+         x="37.783543"
+         y="81.804695"
+         id="tspan90"
+         style="fill:url(#linearGradient4589);stroke-width:0.26458001">XHP</tspan></text>
+  </g>
+  <g
+     transform="translate(0,-208.1)"
+     id="g97">
+    <path
+       d="M 38.495,208.1 0,230.325 v 44.45 L 38.495,297 76.99,274.775 v -44.45 z m 0,2.5399 36.295,20.955 v 41.91 L 38.495,294.4599 2.2,273.5049 v -41.91 z"
+       id="path95"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.40500004;fill:#17fd00;fill-opacity:0.99268739"
+       inkscape:connector-curvature="0"
+       id="path5239"
+       clip-path="url(#clipPath6226)"
+       d="M 38.495,86.36 2.2,65.405 2.1999989,23.495 38.494999,2.54 l 36.295,20.955 1e-6,41.91 z" />
+  </g>
+  <path
+     sodipodi:type="inkscape:offset"
+     inkscape:radius="-1.1324408"
+     inkscape:original="M 2.1992188 23.494141 L 2.1992188 56.515625 L 74.789062 56.515625 L 74.789062 23.494141 L 2.1992188 23.494141 z "
+     style="opacity:0.405;fill:none;fill-opacity:0.99268739;stroke:none;stroke-width:6.98600292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="text-frame"
+     d="M 3.3320312,24.626953 V 55.382812 H 73.65625 V 24.626953 Z" />
+  <flowRoot
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222334px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458344"
+     id="flowRoot5439"><flowRegion
+       id="flowRegion5441"><use
+         x="0"
+         y="0"
+         xlink:href="#text-frame"
+         id="use5443"
+         width="100%"
+         height="100%" /></flowRegion><flowPara
+       id="flowPara5445"
+       style="text-align:start;text-anchor:start;-inkscape-font-specification:'Consolas Bold';font-family:Consolas;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal">My Basic Ability Text:</flowPara><flowPara
+       style="text-align:start;text-anchor:start;-inkscape-font-specification:'Consolas Bold';font-family:Consolas;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+       id="flowPara5449">    This is some text that is present within the box.</flowPara></flowRoot></svg>

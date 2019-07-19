@@ -293,7 +293,7 @@ public abstract class Card
 		//Create type edit
 		edits.addTextEdit(new Pair<String, String>(TYPES_ID, design.getCombinedTypes()));
 		
-		edits.addAttributeEdit(new Pair<String, Pair<String, String>>("rect1606", new Pair<String, String>("fill", design.color.getFillValue())));
+		edits.addAttributeEdit(new Pair<String, Pair<String, String>>("charters-color", new Pair<String, String>("fill", design.color.getFillValue())));
 		
 		//Create art edit
 		String artString;
@@ -301,7 +301,6 @@ public abstract class Card
 		{
 			String nameDefaultArt = SVG_RELATIVE_ART_FOLDER + design.getDesignTypeName() + "/" + design.getReducedName() + ART_EXTENSION;
 			String nameDefaultArtAbsolute = ART_FOLDER + design.getDesignTypeName() + "/" + design.getReducedName() + ART_EXTENSION;
-			print("Looking for name-default art at " + nameDefaultArtAbsolute + "...");
 			if (new File(nameDefaultArtAbsolute).exists())
 			{
 				print("\tName-default art exists.");
