@@ -17,15 +17,15 @@ public class DesignDiagnostic
 	}
 	
 	private DesignGroup allDesigns;
-	private LinkedList<Pair<String, DesignGroup>> sets;
+	private LinkedList<DesignGroup> sets;
 	
 	public DesignDiagnostic()
 	{
 		this.allDesigns = new DesignGroup
 		(
-			new Item().readDesigns(), new Improvement().readDesigns(), new Character().readDesigns()
+			"All Found Cards", new Item().readDesigns(), new Improvement().readDesigns(), new Character().readDesigns()
 		);
-		this.sets = new LinkedList<Pair<String, DesignGroup>>();
+		this.sets = new LinkedList<DesignGroup>();
 	}
 	
 	/**
@@ -39,26 +39,13 @@ public class DesignDiagnostic
 		setSort(allDesigns.improvements);
 		setSort(allDesigns.characters);
 		
-		//Iterate for each set:
-		for (Pair<String, DesignGroup> set : sets)
+		//Iterate for each set: various diagnostics
+		for (DesignGroup set : sets)
 		{
-			double setSize = new Double(count(set.getValue())); //Double to simplify casting
-			print(set.getKey(), "Set Count (Total Size): " + setSize);
-			int itemCount = set.getValue().items.size();
-			print(set.getKey(), "Item Count: " + itemCount);
-			print(set.getKey(), "Item Fraction: " + itemCount / setSize);
-			int characterCount = set.getValue().characters.size();
-			print(set.getKey(), "Character Count: " + characterCount);
-			print(set.getKey(), "Character Fraction: " + characterCount / setSize);
-			int improvementCount = set.getValue().improvements.size();
-			print(set.getKey(), "Improvement Count: " + improvementCount);
-			print(set.getKey(), "Improvement Fraction: " + improvementCount / setSize);
-			for (Color color : Color.values())
-			{
-				int colorCount = countColor(set.getValue(), color);
-				print(set.getKey(), color.toString() + " Count: " + colorCount);
-				print(set.getKey(), color.toString() + " Fraction: " + colorCount / setSize);
-			}
+			set.printBigCount();
+			set.getCharacterSubset().printBigCount();
+			set.getItemSubset().printBigCount();
+			set.getImprovementSubset().printBigCount();
 		}
 	}
 	
@@ -73,36 +60,21 @@ public class DesignDiagnostic
 		{
 			//Assume set does not exist
 			boolean setExists = false;
-			for (Pair<String, DesignGroup> set : sets)
+			for (DesignGroup set : sets)
 			{
-				if (set.getKey().equals(design.set)) //If a set with that name exists 
+				if (set.name.equals(design.set)) //If a set with that name exists 
 				{
 					setExists = true;
-					set.getValue().add(design); //Add it to it
+					set.add(design); //Add it to it
 				}
 			}
 			if (setExists == false) //Otherwise
 			{
-				DesignGroup newSet = new DesignGroup(); //Create a new set
+				DesignGroup newSet = new DesignGroup(design.set); //Create a new set
 				newSet.add(design); //And add it to that
-				sets.add(new Pair<String, DesignGroup>(design.set, newSet));
+				sets.add(newSet);
 			}
 		}
-	}
-	
-	public static int count(DesignGroup group)
-	{
-		return group.total().size();
-	}
-	
-	public static int countColor(DesignGroup group, Color color)
-	{
-		int returnValue = 0;
-		for (Card.Design design : group.total())
-		{
-			if (design.color.equals(color)) {returnValue++;}
-		}
-		return returnValue;
 	}
 	
 	public static void print(String s)

@@ -4,12 +4,14 @@ import java.util.LinkedList;
 
 public class DesignGroup
 {
+	public final String name;
 	public LinkedList<Item.Design> items;
 	public LinkedList<Improvement.Design> improvements;
 	public LinkedList<Character.Design> characters;
 	
-	public DesignGroup()
+	public DesignGroup(String name)
 	{
+		this.name = name;
 		this.items = new LinkedList<Item.Design>();
 		this.improvements = new LinkedList<Improvement.Design>();
 		this.characters = new LinkedList<Character.Design>();
@@ -20,9 +22,11 @@ public class DesignGroup
 	 */
 	public DesignGroup
 	(
+		String name,
 		LinkedList<Item.Design> items, LinkedList<Improvement.Design> improvements, LinkedList<Character.Design> characters
 	)
 	{
+		this(name);
 		this.items = items;
 		this.improvements = improvements;
 		this.characters = characters;
@@ -55,5 +59,61 @@ public class DesignGroup
 		returnValue.addAll(improvements);
 		returnValue.addAll(characters);
 		return returnValue;
+	}
+	
+	public DesignGroup getItemSubset()
+	{
+		return new DesignGroup(this.name + ".Items", this.items, new LinkedList<Improvement.Design>(), new LinkedList<Character.Design>());
+	}
+	
+	public DesignGroup getImprovementSubset()
+	{
+		return new DesignGroup(this.name + ".Improvements", new LinkedList<Item.Design>(), this.improvements, new LinkedList<Character.Design>());
+	}
+	
+	public DesignGroup getCharacterSubset()
+	{
+		return new DesignGroup(this.name + ".Characters", new LinkedList<Item.Design>(), new LinkedList<Improvement.Design>(), this.characters);
+	}
+	
+	public int totalCount()
+	{
+		return this.total().size();
+	}
+	
+	public int countColor(Color color)
+	{
+		int returnValue = 0;
+		for (Card.Design design : this.total())
+		{
+			if (design.color.equals(color)) {returnValue++;}
+		}
+		return returnValue;
+	}
+
+	public void printBigCount()
+	{
+		double setSize = new Double(totalCount()); //Double to simplify casting
+		print("Set Count (Total Size): " + setSize);
+		int itemCount = this.items.size();
+		print("Item #: " + itemCount);
+		print("Item %: " + itemCount / setSize);
+		int characterCount = this.characters.size();
+		print("Character #: " + characterCount);
+		print("Character %: " + characterCount / setSize);
+		int improvementCount = this.improvements.size();
+		print("Improvement #: " + improvementCount);
+		print("Improvement %: " + improvementCount / setSize);
+		for (Color color : Color.values())
+		{
+			int colorCount = this.countColor(color);
+			print(color.toString() + " #: " + colorCount);
+			print(color.toString() + " %: " + colorCount / setSize);
+		}
+	}
+	
+	public void print(String s)
+	{
+		System.out.println("[DesignGroup:\"" + this.name + "\"]:" + s);
 	}
 }
