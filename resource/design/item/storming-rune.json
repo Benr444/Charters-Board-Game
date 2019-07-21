@@ -1,0 +1,14 @@
+{
+    "name": "Storming Rune",
+    "types":
+    [
+        "Air",
+        "Spell",
+        "Fuel"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

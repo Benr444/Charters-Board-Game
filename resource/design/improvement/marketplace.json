@@ -1,0 +1,15 @@
+{
+    "name": "Marketplace",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "ORANGE",
+    "HP": 3,
+    "cost": "[O]",
+    "abilities":
+    [
+        "Good Deal: Whenever you trade with a character within {2}=>Choose a color: each of you may +[2] of the chosen color",
+        "Take Out: [OO] or [Lux]=><1> within {1}; You may activate this any number of times"
+    ]
+}

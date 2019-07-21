@@ -1,0 +1,14 @@
+{
+    "name": "Lunar Sanctum",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "GREEN",
+    "HP": 2,
+    "cost": "[GGG][Earth][Earth]",
+    "abilities":
+    [
+        "Natural Alignment: @=>+1i"
+    ]
+}

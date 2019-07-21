@@ -1,0 +1,14 @@
+{
+    "name": "Coat of Many Colors",
+    "types":
+    [
+        "Light",
+        "Lux",
+        "Garb"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "ORANGE",
+    "isInfluenceBonus": false
+}

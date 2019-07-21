@@ -1,0 +1,12 @@
+{
+    "name": "Folklore",
+    "types":
+    [
+        "Writ"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

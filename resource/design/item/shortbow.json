@@ -1,0 +1,13 @@
+{
+    "name": "Shortbow",
+    "types":
+    [
+        "Ranged",
+        "Weap"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "RED",
+    "isInfluenceBonus": false
+}

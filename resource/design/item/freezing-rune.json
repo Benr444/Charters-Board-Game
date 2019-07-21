@@ -1,0 +1,14 @@
+{
+    "name": "Freezing Rune",
+    "types":
+    [
+        "Water",
+        "Spell",
+        "Fuel"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

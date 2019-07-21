@@ -1,0 +1,13 @@
+{
+    "name": "Excalibur",
+    "types":
+    [
+        "Blade",
+        "Weap"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "RED",
+    "isInfluenceBonus": false
+}

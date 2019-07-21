@@ -1,0 +1,14 @@
+{
+    "name": "Bread and Wine",
+    "types":
+    [
+        "Plant",
+        "Goods",
+        "Lux"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

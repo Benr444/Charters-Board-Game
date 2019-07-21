@@ -1,0 +1,14 @@
+{
+    "name": "Soma",
+    "types":
+    [
+        "Alch",
+        "Lux",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "ORANGE",
+    "isInfluenceBonus": false
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Torch",
+    "types":
+    [
+        "Weap",
+        "Tool",
+        "Fuel"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "RED",
+    "isInfluenceBonus": false
+}

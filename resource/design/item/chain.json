@@ -1,0 +1,14 @@
+{
+    "name": "Chain",
+    "types":
+    [
+        "Goods",
+        "Weap",
+        "Mech"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "RED",
+    "isInfluenceBonus": false
+}

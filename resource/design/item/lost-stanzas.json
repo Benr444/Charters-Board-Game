@@ -1,0 +1,14 @@
+{
+    "name": "Lost Stanzas",
+    "types":
+    [
+        "Light",
+        "Writ",
+        "Art"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "YELLOW",
+    "isInfluenceBonus": true
+}

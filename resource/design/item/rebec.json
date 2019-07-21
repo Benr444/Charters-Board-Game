@@ -1,0 +1,13 @@
+{
+    "name": "Rebec",
+    "types":
+    [
+        "Art",
+        "Tool"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "ORANGE",
+    "isInfluenceBonus": false
+}

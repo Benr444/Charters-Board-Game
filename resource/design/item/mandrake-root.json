@@ -1,0 +1,14 @@
+{
+    "name": "Mandrake Root",
+    "types":
+    [
+        "Beast",
+        "Plant",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

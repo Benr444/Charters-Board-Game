@@ -1,0 +1,13 @@
+{
+    "name": "Bells",
+    "types":
+    [
+        "Mech",
+        "Tool"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

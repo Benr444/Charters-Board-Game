@@ -1,0 +1,13 @@
+{
+    "name": "Transfiguring Rune",
+    "types":
+    [
+        "Earth",
+        "Spell"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

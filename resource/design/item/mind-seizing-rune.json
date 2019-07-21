@@ -1,0 +1,14 @@
+{
+    "name": "Mind-Seizing Rune",
+    "types":
+    [
+        "Shadow",
+        "Arcane",
+        "Spell"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "ORANGE",
+    "isInfluenceBonus": false
+}

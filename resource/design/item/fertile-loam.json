@@ -1,0 +1,13 @@
+{
+    "name": "Fertile Loam",
+    "types":
+    [
+        "Earth",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

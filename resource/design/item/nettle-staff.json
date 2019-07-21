@@ -1,0 +1,14 @@
+{
+    "name": "Nettle Staff",
+    "types":
+    [
+        "Plant",
+        "Weap",
+        "Ranged"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Family Portrait",
+    "types":
+    [
+        "Art"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

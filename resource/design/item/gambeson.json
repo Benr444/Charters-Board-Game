@@ -1,0 +1,12 @@
+{
+    "name": "Gambeson",
+    "types":
+    [
+        "Garb"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "RED",
+    "isInfluenceBonus": false
+}

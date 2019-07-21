@@ -1,0 +1,14 @@
+{
+    "name": "Traditional Tincture",
+    "types":
+    [
+        "Alch",
+        "Plant",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

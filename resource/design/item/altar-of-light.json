@@ -1,0 +1,13 @@
+{
+    "name": "Altar of Light",
+    "types":
+    [
+        "Light",
+        "Tool"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

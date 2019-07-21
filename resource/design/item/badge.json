@@ -1,0 +1,13 @@
+{
+    "name": "Badge",
+    "types":
+    [
+        "Law",
+        "Garb"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

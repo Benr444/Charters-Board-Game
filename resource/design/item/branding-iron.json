@@ -1,0 +1,14 @@
+{
+    "name": "Branding Iron",
+    "types":
+    [
+        "Fire",
+        "Weap",
+        "Tool"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

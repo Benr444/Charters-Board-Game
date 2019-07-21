@@ -1,0 +1,13 @@
+{
+    "name": "Treant Sapling",
+    "types":
+    [
+        "Plant",
+        "Beast"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Book of Commmon Prayer",
+    "types":
+    [
+        "Law",
+        "Writ",
+        "Light"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

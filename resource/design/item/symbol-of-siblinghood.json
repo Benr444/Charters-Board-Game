@@ -1,0 +1,14 @@
+{
+    "name": "Symbol of Siblinghood",
+    "types":
+    [
+        "Spell",
+        "Writ",
+        "Garb"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "RED",
+    "isInfluenceBonus": false
+}

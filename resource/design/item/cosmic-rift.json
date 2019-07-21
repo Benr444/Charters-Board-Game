@@ -1,0 +1,14 @@
+{
+    "name": "Cosmic Rift",
+    "types":
+    [
+        "Arcane",
+        "Shadow",
+        "Tool"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

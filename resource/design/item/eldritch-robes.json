@@ -1,0 +1,13 @@
+{
+    "name": "Eldritch Robes",
+    "types":
+    [
+        "Garb",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

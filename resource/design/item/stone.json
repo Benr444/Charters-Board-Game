@@ -1,0 +1,13 @@
+{
+    "name": "Stone",
+    "types":
+    [
+        "Earth",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Scintillating Rune",
+    "types":
+    [
+        "Arcane",
+        "Fire",
+        "Spell"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

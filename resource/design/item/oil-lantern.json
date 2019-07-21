@@ -1,0 +1,14 @@
+{
+    "name": "Oil Lantern",
+    "types":
+    [
+        "Light",
+        "Mech",
+        "Tool"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

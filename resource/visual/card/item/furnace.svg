@@ -33,17 +33,17 @@
     <g fill="url(#linearGradient2428)" id="g2455" opacity=".5" stroke="#000000" transform="matrix(1.0517 0 0 1.7091 -265.36 67.343)">
         <path charters-color="0" d="m678.89 214.32c0-6.539-8.627-11.848-19.254-11.848h-118.38c-10.627 0-19.255 5.309-19.255 11.848v23.696c0 6.539 8.628 11.848 19.255 11.848h118.38c10.627 0 19.254-5.309 19.254-11.848z" fill="#0019fe" id="path2453" stroke="#000000" stroke-width="2.23px"/>
     </g><g id="g42" transform="matrix(6.281 0 0 2.925 -584.23 -854.99)">
-        <ellipse cx="151.31" cy="447.48" fill="white" id="ellipse40" rx="12.418" ry="13.846" stroke="black" stroke-width=".68px"/>
+        <ellipse charters-rarity-color="0" cx="151.31" cy="447.48" fill="#cccccc" id="ellipse40" rx="12.418" ry="13.846" stroke="#000000" stroke-width=".68px"/>
     </g>
     <g fill="url(#linearGradient2428)" id="g2463" opacity=".5" stroke="#000000" transform="matrix(1.0517 0 0 1.7091 -430.36 67.343)">
         <path charters-color="0" d="m678.89 214.32c0-6.539-8.627-11.848-19.254-11.848h-118.38c-10.627 0-19.255 5.309-19.255 11.848v23.696c0 6.539 8.628 11.848 19.255 11.848h118.38c10.627 0 19.254-5.309 19.254-11.848z" fill="#0019fe" id="path2461" stroke="#000000" stroke-width="2.23px"/>
     </g><g id="g46" transform="matrix(6.281 0 0 2.925 -749.23 -854.99)">
-        <ellipse cx="151.31" cy="447.48" fill="white" id="ellipse44" rx="12.418" ry="13.846" stroke="black" stroke-width=".68px"/>
+        <ellipse charters-rarity-color="0" cx="151.31" cy="447.48" fill="#cccccc" id="ellipse44" rx="12.418" ry="13.846" stroke="#000000" stroke-width=".68px"/>
     </g>
     <g fill="url(#linearGradient2428)" id="g2422" opacity=".5" stroke="#000000" transform="matrix(1.0517 0 0 1.7091 -100.36 67.343)">
         <path charters-color="0" d="m678.89 214.32c0-6.539-8.627-11.848-19.254-11.848h-118.38c-10.627 0-19.255 5.309-19.255 11.848v23.696c0 6.539 8.628 11.848 19.255 11.848h118.38c10.627 0 19.254-5.309 19.254-11.848z" fill="#0019fe" id="path2420" stroke="#000000" stroke-width="2.23px"/>
     </g><g id="g50" transform="matrix(6.281 0 0 2.925 -419.23 -854.99)">
-        <ellipse cx="151.31" cy="447.48" fill="#ffffff" id="ellipse48" rx="12.418" ry="13.846" stroke="black" stroke-miterlimit="1.5" stroke-width=".68009"/>
+        <ellipse charters-rarity-color="0" cx="151.31" cy="447.48" fill="#cccccc" id="ellipse48" rx="12.418" ry="13.846" stroke="#000000" stroke-miterlimit="1.5" stroke-width=".68009"/>
     </g>
 <text fill="#000000" font-family="Consolas" font-size="46.667px" id="type-0" letter-spacing="0px" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" x="201.1851" xml:space="preserve" y="468.77731">Alch</text>
 <text clip-rule="evenodd" fill="#000000" fill-rule="evenodd" font-family="Consolas" font-size="46.667px" id="type-1" letter-spacing="0px" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" x="366.18509" xml:space="preserve" y="468.77731">Mech</text>

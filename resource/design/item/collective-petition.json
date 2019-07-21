@@ -1,0 +1,13 @@
+{
+    "name": "Collective Petition",
+    "types":
+    [
+        "Law",
+        "Writ"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

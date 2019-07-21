@@ -1,0 +1,13 @@
+{
+    "name": "Sailcloth",
+    "types":
+    [
+        "Mech",
+        "Water"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "ORANGE",
+    "isInfluenceBonus": false
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Stabilizing Rune",
+    "types":
+    [
+        "Earth",
+        "Spell",
+        "Fuel"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

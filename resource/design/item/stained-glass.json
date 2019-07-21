@@ -1,0 +1,14 @@
+{
+    "name": "Stained Glass",
+    "types":
+    [
+        "Light",
+        "Art",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

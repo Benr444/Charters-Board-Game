@@ -1,0 +1,14 @@
+{
+    "name": "Focusing Charm",
+    "types":
+    [
+        "Tool",
+        "Weap",
+        "Ranged"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

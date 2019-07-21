@@ -1,0 +1,13 @@
+{
+    "name": "Spice Jar",
+    "types":
+    [
+        "Lux",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "ORANGE",
+    "isInfluenceBonus": false
+}

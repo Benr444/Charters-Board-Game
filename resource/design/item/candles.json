@@ -1,0 +1,14 @@
+{
+    "name": "Candles",
+    "types":
+    [
+        "Light",
+        "Goods",
+        "Fuel"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

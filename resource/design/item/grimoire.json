@@ -1,0 +1,13 @@
+{
+    "name": "Grimoire",
+    "types":
+    [
+        "Spell",
+        "Writ"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

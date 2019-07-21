@@ -1,0 +1,13 @@
+{
+    "name": "The Art of War",
+    "types":
+    [
+        "Writ",
+        "Lux"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "RED",
+    "isInfluenceBonus": false
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Pitchfork and Plow",
+    "types":
+    [
+        "Weap",
+        "Tool"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

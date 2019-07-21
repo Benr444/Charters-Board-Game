@@ -1,0 +1,12 @@
+{
+    "name": "Mjolnir",
+    "types":
+    [
+        "Weap"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "RED",
+    "isInfluenceBonus": false
+}

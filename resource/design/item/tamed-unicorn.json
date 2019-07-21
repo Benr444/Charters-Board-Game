@@ -1,0 +1,14 @@
+{
+    "name": "Tamed Unicorn",
+    "types":
+    [
+        "Arcane",
+        "Beast",
+        "Weap"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

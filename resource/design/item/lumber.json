@@ -1,0 +1,14 @@
+{
+    "name": "Lumber",
+    "types":
+    [
+        "Plant",
+        "Goods",
+        "Fuel"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

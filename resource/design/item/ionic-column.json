@@ -1,0 +1,13 @@
+{
+    "name": "Ionic Column",
+    "types":
+    [
+        "Earth",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Escape Plan",
+    "types":
+    [
+        "Shadow",
+        "Writ",
+        "Spell"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "ORANGE",
+    "isInfluenceBonus": false
+}

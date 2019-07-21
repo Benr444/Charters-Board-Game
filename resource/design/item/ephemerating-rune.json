@@ -1,0 +1,13 @@
+{
+    "name": "Ephemerating Rune",
+    "types":
+    [
+        "Air",
+        "Spell"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

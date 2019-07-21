@@ -1,0 +1,14 @@
+{
+    "name": "Greatleather Hide",
+    "types":
+    [
+        "Beast",
+        "Garb",
+        "Mech"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

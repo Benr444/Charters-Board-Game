@@ -1,0 +1,13 @@
+{
+    "name": "Sigil of Terror",
+    "types":
+    [
+        "Shadow",
+        "Spell"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

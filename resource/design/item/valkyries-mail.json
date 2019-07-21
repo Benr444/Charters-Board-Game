@@ -1,0 +1,14 @@
+{
+    "name": "Valkyrie's Mail",
+    "types":
+    [
+        "Light",
+        "Lux",
+        "Garb"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "RED",
+    "isInfluenceBonus": true
+}

@@ -8,7 +8,7 @@ public enum Color
 	YELLOW("#ece700"),
 	GREEN("#00ae06"),
 	BLUE("#0019fe"),
-	VIOLET("8900c8"),
+	VIOLET("#8900c8"),
 	BLACK("#000000"),
 	WHITE("#ffffff"),
 	COLORLESS("#cccccc"),

@@ -1,0 +1,13 @@
+{
+    "name": "Hand Wraps",
+    "types":
+    [
+        "Garb",
+        "Weap"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "RED",
+    "isInfluenceBonus": false
+}

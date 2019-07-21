@@ -46,6 +46,7 @@ public abstract class Card
 	public static final String TYPE_ID = "type-";
 	public static final String ART_ID = "art";
 	public static final String COLOR_ATTRIBUTE = "charters-color";
+	public static final String RARITY_COLOR_ATTRIBUTE = "charters-rarity-color";
 	
 	//Attribute names. These are the names of attributes edited by certain attributeEdits
 	public static final String ART_ATTRIBUTE_NAME = "xlink:href";
@@ -67,11 +68,6 @@ public abstract class Card
     	public static final Color DEFAULT_COLOR = Color.UNSET;
     	public static final int DEFAULT_ART_X = 0;
     	public static final int DEFAULT_ART_Y = 0;
-        
-        public enum Rarity
-        {
-        	COMMON, UNCOMMON, RARE, UNSET
-        }
         
         //===UTILITY-MEMBERS===//
     
@@ -137,7 +133,7 @@ public abstract class Card
     	{
     		if (name != null)
     		{
-    			return this.name.toLowerCase().replace(' ', '-');
+    			return this.name.toLowerCase().replace(' ', '-').replace("\'", "");
     		}
     		else
     		{
@@ -179,11 +175,11 @@ public abstract class Card
         public final String set;
     
         @JsonProperty(required = true)
-        @JsonPropertyDescription("Used to identify the set of a card, which is the batch of designs it belongs to.")
+        @JsonPropertyDescription("Used to identify the set of a card, which is the batch of designs it belongs to. | In template, set " + RARITY_COLOR_ATTRIBUTE + "=0, =1, etc. The main color for the cards rarity will go in 0, the secondary in 1, etc.")
         public final Rarity rarity;
     
         @JsonProperty(required = true)
-        @JsonPropertyDescription("The color of the card, mechanically. This will be reflected in the frame, etc. Should match any card costs.")
+        @JsonPropertyDescription("The color of the card, mechanically. This will be reflected in the frame, etc. Should match any card costs. | In template, mark with " + COLOR_ATTRIBUTE + "=0 or =1, etc. The primary color code will fill in 0, the secondary color code will fill 1, etc.")
         public final Color color;
     
         @JsonProperty(required = false)
@@ -318,7 +314,15 @@ public abstract class Card
 		//For each of this card's defined color codes
 		for (int d = 0; d < design.color.colorCodes.length; d++)
 		{
+			//Add a color edit
 			edits.addAttributeEdit(new SVGEdits.AttributeEdit(COLOR_ATTRIBUTE, "" + d, "fill", design.color.getFillValue(d)));
+		}
+		
+		//For each of this card's defined rarity color codes
+		for (int z = 0; z < design.rarity.colorCodes.length; z++)
+		{
+			//Add a rarity color edit
+			edits.addAttributeEdit(new SVGEdits.AttributeEdit(RARITY_COLOR_ATTRIBUTE, "" + z, "fill", design.rarity.getFillValue(z)));
 		}
 		
 		//Create art edit

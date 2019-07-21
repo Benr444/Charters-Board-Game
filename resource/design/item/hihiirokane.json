@@ -1,0 +1,13 @@
+{
+    "name": "Hihi'irokane",
+    "types":
+    [
+        "Alch",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "RED",
+    "isInfluenceBonus": true
+}

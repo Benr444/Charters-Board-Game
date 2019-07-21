@@ -1,0 +1,14 @@
+{
+    "name": "Belladonna",
+    "types":
+    [
+        "Plant",
+        "Alch",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "ORANGE",
+    "isInfluenceBonus": false
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Sea Charts",
+    "types":
+    [
+        "Writ",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "ORANGE",
+    "isInfluenceBonus": false
+}

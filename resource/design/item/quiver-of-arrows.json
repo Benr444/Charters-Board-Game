@@ -1,0 +1,14 @@
+{
+    "name": "Quiver of Arrows",
+    "types":
+    [
+        "Ranged",
+        "Weap",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "RED",
+    "isInfluenceBonus": false
+}

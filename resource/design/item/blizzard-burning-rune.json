@@ -1,0 +1,14 @@
+{
+    "name": "Blizzard-Burning Rune",
+    "types":
+    [
+        "Fire",
+        "Water",
+        "Spell"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

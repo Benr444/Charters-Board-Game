@@ -1,0 +1,13 @@
+{
+    "name": "Wax Seal",
+    "types":
+    [
+        "Law",
+        "Writ"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

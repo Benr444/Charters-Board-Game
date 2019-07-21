@@ -1,0 +1,13 @@
+{
+    "name": "Traveling Barrels",
+    "types":
+    [
+        "Beast",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "ORANGE",
+    "isInfluenceBonus": false
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Nightmare Fuel",
+    "types":
+    [
+        "Shadow",
+        "Fuel",
+        "Spell"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

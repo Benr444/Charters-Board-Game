@@ -1,0 +1,14 @@
+{
+    "name": "World-Warping Rune",
+    "types":
+    [
+        "Earth",
+        "Air",
+        "Spell"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

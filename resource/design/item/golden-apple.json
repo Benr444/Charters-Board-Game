@@ -1,0 +1,14 @@
+{
+    "name": "Golden Apple",
+    "types":
+    [
+        "Lux",
+        "Plant",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "GREEN",
+    "isInfluenceBonus": true
+}

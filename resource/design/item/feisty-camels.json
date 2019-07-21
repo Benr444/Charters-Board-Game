@@ -1,0 +1,12 @@
+{
+    "name": "Feisty Camels",
+    "types":
+    [
+        "Beast"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "ORANGE",
+    "isInfluenceBonus": false
+}

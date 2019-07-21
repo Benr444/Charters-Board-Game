@@ -1,0 +1,14 @@
+{
+    "name": "Mana Magnifier",
+    "types":
+    [
+        "Sci",
+        "Goods",
+        "Tool"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

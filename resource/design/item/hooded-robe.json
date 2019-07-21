@@ -1,0 +1,14 @@
+{
+    "name": "Hooded Robe",
+    "types":
+    [
+        "Light",
+        "Shadow",
+        "Garb"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Concealed Dagger",
+    "types":
+    [
+        "Shadow",
+        "Weap",
+        "Tool"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "ORANGE",
+    "isInfluenceBonus": false
+}

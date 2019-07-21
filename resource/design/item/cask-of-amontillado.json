@@ -1,0 +1,14 @@
+{
+    "name": "Cask of Amontillado",
+    "types":
+    [
+        "Lux",
+        "Goods",
+        "Fuel"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "ORANGE",
+    "isInfluenceBonus": true
+}

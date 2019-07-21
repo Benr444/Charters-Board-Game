@@ -1,0 +1,13 @@
+{
+    "name": "Adamantine Anvil",
+    "types":
+    [
+        "Mech",
+        "Tool"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "RED",
+    "isInfluenceBonus": false
+}

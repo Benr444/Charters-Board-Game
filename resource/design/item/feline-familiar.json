@@ -1,0 +1,13 @@
+{
+    "name": "Feline Familiar",
+    "types":
+    [
+        "Beast",
+        "Weap"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

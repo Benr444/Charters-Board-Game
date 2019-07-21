@@ -1,0 +1,14 @@
+{
+    "name": "Chalk-Bound Imp",
+    "types":
+    [
+        "Alch",
+        "Beast",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

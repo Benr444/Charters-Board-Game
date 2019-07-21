@@ -1,0 +1,14 @@
+{
+    "name": "Dragon Rouge",
+    "types":
+    [
+        "Fire",
+        "Arcane",
+        "Writ"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

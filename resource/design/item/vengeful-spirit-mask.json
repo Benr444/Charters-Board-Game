@@ -1,0 +1,14 @@
+{
+    "name": "Vengeful Spirit Mask",
+    "types":
+    [
+        "Shadow",
+        "Light",
+        "Garb"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "RED",
+    "isInfluenceBonus": false
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Mead",
+    "types":
+    [
+        "Lux",
+        "Fuel",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "ORANGE",
+    "isInfluenceBonus": false
+}

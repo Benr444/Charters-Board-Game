@@ -1,0 +1,14 @@
+{
+    "name": "Mystic Mycelium",
+    "types":
+    [
+        "Plant",
+        "Alch",
+        "Arcane"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

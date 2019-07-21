@@ -1,0 +1,13 @@
+{
+    "name": "Herd of Sheep",
+    "types":
+    [
+        "Beast",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

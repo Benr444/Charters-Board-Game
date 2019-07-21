@@ -1,0 +1,13 @@
+{
+    "name": "Necronomicon",
+    "types":
+    [
+        "Writ",
+        "Shadow"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "VIOLET",
+    "isInfluenceBonus": true
+}

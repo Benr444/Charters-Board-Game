@@ -1,0 +1,14 @@
+{
+    "name": "Paralyzing Potion",
+    "types":
+    [
+        "Plant",
+        "Shadow",
+        "Alch"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

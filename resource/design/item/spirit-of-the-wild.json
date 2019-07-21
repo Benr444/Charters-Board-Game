@@ -1,0 +1,14 @@
+{
+    "name": "Spirit of the Wild",
+    "types":
+    [
+        "Earth",
+        "Air",
+        "Spell"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

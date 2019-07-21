@@ -1,0 +1,14 @@
+{
+    "name": "Incense",
+    "types":
+    [
+        "Alch",
+        "Goods",
+        "Spell"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

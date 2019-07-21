@@ -1,0 +1,15 @@
+{
+    "name": "Deep Cistern",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "VIOLET",
+    "HP": 3,
+    "cost": "[V]",
+    "abilities":
+    [
+        "Cooldown: [Water/Spell]=>A character or improvement within {2} cannot move, act or use abilities on its next turn",
+        "Quake: [Earth/Spell]=>Deal 1 damage to EVERYTHING within {1}"
+    ]
+}

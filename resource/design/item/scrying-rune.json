@@ -1,0 +1,13 @@
+{
+    "name": "Scrying Rune",
+    "types":
+    [
+        "Water",
+        "Spell"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

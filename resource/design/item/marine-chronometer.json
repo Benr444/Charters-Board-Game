@@ -1,0 +1,13 @@
+{
+    "name": "Marine Chronometer",
+    "types":
+    [
+        "Mech",
+        "Lux"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "ORANGE",
+    "isInfluenceBonus": false
+}

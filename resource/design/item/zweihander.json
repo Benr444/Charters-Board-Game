@@ -1,0 +1,13 @@
+{
+    "name": "Zweihander",
+    "types":
+    [
+        "Blade",
+        "Weap"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "RED",
+    "isInfluenceBonus": false
+}

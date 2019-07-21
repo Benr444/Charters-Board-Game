@@ -1,0 +1,14 @@
+{
+    "name": "Phantasticore",
+    "types":
+    [
+        "Arcane",
+        "Spell",
+        "Fuel"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "VIOLET",
+    "isInfluenceBonus": false
+}

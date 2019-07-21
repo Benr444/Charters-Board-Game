@@ -1,0 +1,13 @@
+{
+    "name": "Harmonious Epic",
+    "types":
+    [
+        "Art",
+        "Spell"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "ORANGE",
+    "isInfluenceBonus": true
+}

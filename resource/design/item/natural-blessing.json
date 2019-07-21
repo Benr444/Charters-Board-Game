@@ -1,0 +1,13 @@
+{
+    "name": "Natural Blessing",
+    "types":
+    [
+        "Earth",
+        "Spell"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

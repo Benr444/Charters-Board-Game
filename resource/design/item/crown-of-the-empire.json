@@ -1,0 +1,14 @@
+{
+    "name": "Crown of the Empire",
+    "types":
+    [
+        "Lux",
+        "Law",
+        "Garb"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "YELLOW",
+    "isInfluenceBonus": true
+}

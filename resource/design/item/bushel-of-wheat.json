@@ -1,0 +1,13 @@
+{
+    "name": "Bushel of Wheat",
+    "types":
+    [
+        "Plant",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "GREEN",
+    "isInfluenceBonus": false
+}

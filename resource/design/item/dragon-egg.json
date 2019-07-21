@@ -1,0 +1,13 @@
+{
+    "name": "Dragon Egg",
+    "types":
+    [
+        "Lux",
+        "Beast"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "GREEN",
+    "isInfluenceBonus": true
+}
