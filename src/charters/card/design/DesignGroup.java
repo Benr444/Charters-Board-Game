@@ -4,15 +4,17 @@ import java.util.LinkedList;
 
 public class DesignGroup
 {
-	public LinkedList<ItemDesign> items;
-	public LinkedList<ImprovementDesign> improvements;
-	public LinkedList<CharacterDesign> characters;
+	public final String name;
+	public LinkedList<Item.Design> items;
+	public LinkedList<Improvement.Design> improvements;
+	public LinkedList<Character.Design> characters;
 	
-	public DesignGroup()
+	public DesignGroup(String name)
 	{
-		this.items = new LinkedList<ItemDesign>();
-		this.improvements = new LinkedList<ImprovementDesign>();
-		this.characters = new LinkedList<CharacterDesign>();
+		this.name = name;
+		this.items = new LinkedList<Item.Design>();
+		this.improvements = new LinkedList<Improvement.Design>();
+		this.characters = new LinkedList<Character.Design>();
 	}
 	
 	/**
@@ -20,9 +22,11 @@ public class DesignGroup
 	 */
 	public DesignGroup
 	(
-		LinkedList<ItemDesign> items, LinkedList<ImprovementDesign> improvements, LinkedList<CharacterDesign> characters
+		String name,
+		LinkedList<Item.Design> items, LinkedList<Improvement.Design> improvements, LinkedList<Character.Design> characters
 	)
 	{
+		this(name);
 		this.items = items;
 		this.improvements = improvements;
 		this.characters = characters;
@@ -32,28 +36,84 @@ public class DesignGroup
 	 * This is awful, I hate it
 	 * @param design
 	 */
-	public void add(CardDesign design)
+	public void add(Card.Design design)
 	{
-		if (design.getClass() == ItemDesign.class)
+		if (design.getClass() == Item.Design.class)
 		{
-			items.push((ItemDesign)design);
+			items.push((Item.Design)design);
 		}
-		else if (design.getClass() == ImprovementDesign.class)
+		else if (design.getClass() == Improvement.Design.class)
 		{
-			improvements.push((ImprovementDesign)design);
+			improvements.push((Improvement.Design)design);
 		}
-		else if (design.getClass() == CharacterDesign.class)
+		else if (design.getClass() == Character.Design.class)
 		{
-			characters.push((CharacterDesign)design);
+			characters.push((Character.Design)design);
 		}
 	}
 	
-	public LinkedList<CardDesign> total()
+	public LinkedList<Card.Design> total()
 	{
-		LinkedList<CardDesign> returnValue = new LinkedList<CardDesign>();
+		LinkedList<Card.Design> returnValue = new LinkedList<Card.Design>();
 		returnValue.addAll(items);
 		returnValue.addAll(improvements);
 		returnValue.addAll(characters);
 		return returnValue;
+	}
+	
+	public DesignGroup getItemSubset()
+	{
+		return new DesignGroup(this.name + ".Items", this.items, new LinkedList<Improvement.Design>(), new LinkedList<Character.Design>());
+	}
+	
+	public DesignGroup getImprovementSubset()
+	{
+		return new DesignGroup(this.name + ".Improvements", new LinkedList<Item.Design>(), this.improvements, new LinkedList<Character.Design>());
+	}
+	
+	public DesignGroup getCharacterSubset()
+	{
+		return new DesignGroup(this.name + ".Characters", new LinkedList<Item.Design>(), new LinkedList<Improvement.Design>(), this.characters);
+	}
+	
+	public int totalCount()
+	{
+		return this.total().size();
+	}
+	
+	public int countColor(Color color)
+	{
+		int returnValue = 0;
+		for (Card.Design design : this.total())
+		{
+			if (design.color.equals(color)) {returnValue++;}
+		}
+		return returnValue;
+	}
+
+	public void printBigCount()
+	{
+		double setSize = new Double(totalCount()); //Double to simplify casting
+		print("Set Count (Total Size): " + setSize);
+		int itemCount = this.items.size();
+		print("Item #: " + itemCount);
+		print("Item %: " + itemCount / setSize);
+		int characterCount = this.characters.size();
+		print("Character #: " + characterCount);
+		print("Character %: " + characterCount / setSize);
+		int improvementCount = this.improvements.size();
+		print("Improvement #: " + improvementCount);
+		print("Improvement %: " + improvementCount / setSize);
+		for (Color color : Color.values())
+		{
+			int colorCount = this.countColor(color);
+			print(color.toString() + " #: " + colorCount);
+			print(color.toString() + " %: " + colorCount / setSize);
+		}
+	}
+	
+	public void print(String s)
+	{
+		System.out.println("[DesignGroup:\"" + this.name + "\"]:" + s);
 	}
 }

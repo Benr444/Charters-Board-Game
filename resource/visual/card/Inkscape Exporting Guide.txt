@@ -1,0 +1,7 @@
+Run the following command:
+==
+inkscape file.svg -e file.png -d (#dpi)
+==
+Example:
+==
+inkscape castle.svg -e castle.png -d 300

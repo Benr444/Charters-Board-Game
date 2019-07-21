@@ -1,0 +1,13 @@
+{
+    "name": "Theory of Everything",
+    "types":
+    [
+        "Sci",
+        "Writ"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}

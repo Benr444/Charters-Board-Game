@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="3.0311in" height="3.5in" version="1.1" viewBox="0 0 76.99 88.9" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Charters Hex</title>
+    <defs>
+        <linearGradient id="charters-violet" osb:paint="solid">
+            <stop stop-color="#8900c8" offset="0"/>
+        </linearGradient>
+        <linearGradient id="charters-green" osb:paint="solid">
+            <stop stop-color="#00ae06" offset="0"/>
+        </linearGradient>
+        <linearGradient id="charters-yellow" osb:paint="solid">
+            <stop stop-color="#ece700" offset="0"/>
+        </linearGradient>
+        <linearGradient id="charters-orange" osb:paint="solid">
+            <stop stop-color="#fe7900" offset="0"/>
+        </linearGradient>
+        <linearGradient id="charters-red" osb:paint="solid">
+            <stop stop-color="#fc0000" offset="0"/>
+        </linearGradient>
+        <linearGradient id="black" osb:paint="solid">
+            <stop offset="0"/>
+        </linearGradient>
+        <linearGradient id="charters-blue" osb:paint="solid">
+            <stop stop-color="#0019fe" offset="0"/>
+        </linearGradient>
+        <clipPath id="clipPath828">
+            <path d="m38.495 86.36-36.295-20.955-1.1e-6 -41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" fill="#fff"/>
+        </clipPath>
+        <clipPath id="clipPath914">
+            <path d="m38.495 86.36-36.295-20.955-1.1e-6 -41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" fill="#fff"/>
+        </clipPath>
+        <clipPath id="clipPath948">
+            <path d="m38.495 86.36-36.295-20.955-1.1e-6 -41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" fill="#fff"/>
+        </clipPath>
+        <linearGradient id="linearGradient4668" x1="2.1997" x2="74.789" y1="73.025" y2="73.025" gradientUnits="userSpaceOnUse" xlink:href="#charters-blue"/>
+        <linearGradient id="linearGradient4674" x1="2.1997" x2="74.789" y1="60.96" y2="60.96" gradientUnits="userSpaceOnUse" xlink:href="#charters-blue"/>
+        <linearGradient id="linearGradient4680" x1="2.1997" x2="74.789" y1="67.945" y2="67.945" gradientUnits="userSpaceOnUse" xlink:href="#charters-blue"/>
+        <linearGradient id="linearGradient4686" x1="17.667" x2="58.115" y1="80.963" y2="80.963" gradientUnits="userSpaceOnUse" xlink:href="#charters-blue"/>
+        <clipPath id="clipPath6226">
+            <g>
+                <rect x="2.1962" y="70.485" width="72.593" height="5.08" clip-path="url(#clipPath914)" fill="url(#linearGradient4668)" opacity=".75"/>
+                <rect x="2.1997" y="56.515" width="72.59" height="8.89" fill="url(#linearGradient4674)" opacity=".75"/>
+                <rect x="2.1997" y="65.405" width="72.59" height="5.08" clip-path="url(#clipPath828)" fill="url(#linearGradient4680)" opacity=".5"/>
+                <rect x="17.667" y="75.565" width="40.449" height="16.844" clip-path="url(#clipPath948)" fill="url(#linearGradient4686)" opacity=".5"/>
+            </g>
+        </clipPath>
+        <clipPath id="clipPath939">
+            <path d="m38.495 2.5399-36.295 20.955v33.02h72.59v-33.02z" fill="#fff"/>
+        </clipPath>
+        <linearGradient id="linearGradient4577" x1="33.264" x2="43.648" y1="68.122" y2="68.122" gradientUnits="userSpaceOnUse" xlink:href="#black"/>
+        <linearGradient id="linearGradient4583" x1="31.168" x2="45.821" y1="73.025" y2="73.025" gradientUnits="userSpaceOnUse" xlink:href="#black"/>
+        <linearGradient id="linearGradient4589" x1="30.863" x2="44.315" y1="79.103" y2="79.103" gradientUnits="userSpaceOnUse" xlink:href="#black"/>
+        <linearGradient id="linearGradient4598" x1="2.2" x2="74.789" y1="73.025" y2="73.025" gradientUnits="userSpaceOnUse" xlink:href="#charters-blue"/>
+    </defs>
+    <metadata>
+        <rdf:RDF>
+            <cc:Work rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                <dc:title>Charters Hex</dc:title>
+                <dc:creator>
+                    <cc:Agent>
+                        <dc:title>B. Ranson</dc:title>
+                    </cc:Agent>
+                </dc:creator>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <g>
+        <path d="m38.495 86.36-36.295-20.955-1.1e-6 -41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" fill="#fff"/>
+    </g>
+    <g opacity=".5">
+        <g clip-path="url(#clipPath939)" style="">
+            <image id="art" width="94.056" height="62.704" image-rendering="optimizeSpeed" preserveAspectRatio="none" xlink:href="D:\Projects\Charters-Board-Game\resource\visual\card\template\../../art/template/template-art.png"/>
+        </g>
+    </g>
+    <g>
+        <path d="m38.495 86.36-36.295-20.955-1.1e-6 -41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" clip-path="url(#clipPath6226)" fill="#fff"/>
+        <rect x="2.1962" y="70.485" width="72.593" height="5.08" clip-path="url(#clipPath914)" fill="url(#linearGradient4598)" opacity=".75"/>
+        <rect x="2.1997" y="56.515" width="72.59" height="8.89" fill="url(#linearGradient4674)" opacity=".75"/>
+        <rect x="2.1997" y="65.405" width="72.59" height="5.08" clip-path="url(#clipPath828)" fill="url(#linearGradient4680)" opacity=".5"/>
+        <rect x="17.667" y="75.565" width="40.449" height="16.844" clip-path="url(#clipPath948)" fill="url(#linearGradient4686)" opacity=".5"/>
+        <text id="name" x="38.623726" y="63.362957" fill="#000000" font-family="Consolas" font-size="7.0556px" letter-spacing="0px" stroke-width=".26458" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="38.623726" y="63.362957" fill="#000000" stroke-width=".26458">Template Improve</tspan></text>
+        <text id="types" x="38.496944" y="69.196602" fill="url(#linearGradient4577)" font-family="Consolas" font-size="4.9389px" letter-spacing="0px" stroke-width=".26458" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="38.496944" y="69.196602" fill="url(#linearGradient4577)" stroke-width=".26458">Type</tspan></text>
+        <text id="cost" x="38.496944" y="74.276604" fill="url(#linearGradient4583)" font-family="Consolas" font-size="4.9389px" letter-spacing="0px" stroke-width=".26458" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="38.496944" y="74.276604" fill="url(#linearGradient4583)" stroke-width=".26458">[Cost]<tspan x="38.496944" y="74.276604" fill="url(#linearGradient4583)" stroke-width=".26458"/></tspan></text>
+        <text id="hp" x="37.783543" y="81.804695" fill="url(#linearGradient4589)" font-family="Consolas" font-size="8.4667px" letter-spacing="0px" stroke-width=".26458" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="37.783543" y="81.804695" fill="url(#linearGradient4589)" stroke-width=".26458">XHP</tspan></text>
+    </g>
+    <g transform="translate(0,-208.1)">
+        <path d="m38.495 208.1-38.495 22.225v44.45l38.495 22.225 38.495-22.225v-44.45zm0 2.5399 36.295 20.955v41.91l-36.295 20.955-36.295-20.955v-41.91z"/>
+    </g>
+</svg>

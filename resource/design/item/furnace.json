@@ -1,0 +1,13 @@
+{
+    "name": "Furnace",
+    "types":
+    [
+        "Alch",
+        "Mech"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Elixir of Life",
+    "types":
+    [
+        "Sci",
+        "Alch"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "BLUE",
+    "isInfluenceBonus": true
+}

@@ -1,6 +1,6 @@
 {
   "type" : "object",
-  "id" : "urn:jsonschema:charters:card:design:ItemDesign",
+  "id" : "urn:jsonschema:charters:card:design:Item:Design",
   "properties" : {
     "name" : {
       "type" : "string",
@@ -9,7 +9,7 @@
     },
     "types" : {
       "type" : "array",
-      "description" : "The printed types of the card. Defaults to empty. | In template, mark with id=types",
+      "description" : "The printed types of the card. Defaults to empty. | In template, mark with id=types, or mark each type with type-0, type-1, etc.",
       "items" : {
         "type" : "string"
       }
@@ -49,6 +49,9 @@
     "isInfluenceBonus" : {
       "type" : "boolean",
       "description" : "Set to true if this item can be revealed for +1 influence. Defaults to false. | In template, mark with id=influence-bonus"
+    },
+    "designTypeName" : {
+      "type" : "string"
     }
   }
 }

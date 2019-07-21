@@ -1,6 +1,6 @@
 {
   "type" : "object",
-  "id" : "urn:jsonschema:charters:card:design:ImprovementDesign",
+  "id" : "urn:jsonschema:charters:card:design:Improvement:Design",
   "properties" : {
     "name" : {
       "type" : "string",
@@ -9,7 +9,7 @@
     },
     "types" : {
       "type" : "array",
-      "description" : "The printed types of the card. Defaults to empty. | In template, mark with id=types",
+      "description" : "The printed types of the card. Defaults to empty. | In template, mark with id=types, or mark each type with type-0, type-1, etc.",
       "items" : {
         "type" : "string"
       }
@@ -57,10 +57,13 @@
     },
     "abilities" : {
       "type" : "array",
-      "description" : "The directly printed abilities of the cards. Please format them as follows: AbilityName: Cost/Trigger=>Effect. Defaults to empty. | In template, mark with id=abilities",
+      "description" : "The directly printed abilities of the cards. Please format them as follows: AbilityName: Cost/Trigger=>Effect. Defaults to empty. | In template, mark with id=ability-0, 1, 2, etc",
       "items" : {
         "type" : "string"
       }
+    },
+    "designTypeName" : {
+      "type" : "string"
     }
   }
 }
