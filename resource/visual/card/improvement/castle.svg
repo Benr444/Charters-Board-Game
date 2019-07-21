@@ -75,10 +75,10 @@
     </g>
     <g id="g93">
         <path clip-path="url(#clipPath6226)" d="m38.495 86.36-36.295-20.955-1.1e-6-41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" fill="#ffffff" id="path69"/>
-        <rect class="charters-color" clip-path="url(#clipPath914)" fill="url(#charters-red)" height="5.08" id="rect71" opacity=".75" width="72.593" x="2.1962" y="70.485"/>
-        <rect class="charters-color" fill="url(#charters-red)" height="8.89" id="rect73" opacity=".75" width="72.59" x="2.1997" y="56.515"/>
-        <rect class="charters-color" clip-path="url(#clipPath828)" fill="url(#charters-red)" height="5.08" id="rect75" opacity=".5" width="72.59" x="2.1997" y="65.405"/>
-        <rect class="charters-color" clip-path="url(#clipPath948)" fill="url(#charters-red)" height="16.844" id="rect77" opacity=".5" width="40.449" x="17.667" y="75.565"/>
+        <rect charters-color="0" clip-path="url(#clipPath914)" fill="#fc0000" height="5.08" id="rect71" opacity=".75" width="72.593" x="2.1962" y="70.485"/>
+        <rect charters-color="0" fill="#fc0000" height="8.89" id="rect73" opacity=".75" width="72.59" x="2.1997" y="56.515"/>
+        <rect charters-color="0" clip-path="url(#clipPath828)" fill="#fc0000" height="5.08" id="rect75" opacity=".5" width="72.59" x="2.1997" y="65.405"/>
+        <rect charters-color="0" clip-path="url(#clipPath948)" fill="#fc0000" height="16.844" id="rect77" opacity=".5" width="40.449" x="17.667" y="75.565"/>
         <text fill="#000000" font-family="Consolas" font-size="7.0556px" id="name" letter-spacing="0px" stroke-width=".26458" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" x="38.623726" xml:space="preserve" y="63.362957">Castle</text>
         <text fill="url(#linearGradient4577)" font-family="Consolas" font-size="4.9389px" id="types" letter-spacing="0px" stroke-width=".26458" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" x="38.496944" xml:space="preserve" y="69.196602"/>
         <text fill="url(#linearGradient4583)" font-family="Consolas" font-size="4.9389px" id="cost" letter-spacing="0px" stroke-width=".26458" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" x="38.496944" xml:space="preserve" y="74.276604">[R]</text>
