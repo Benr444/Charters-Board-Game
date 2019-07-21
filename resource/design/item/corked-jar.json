@@ -1,0 +1,13 @@
+{
+    "name": "Corked Jar",
+    "types":
+    [
+        "Alch",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}

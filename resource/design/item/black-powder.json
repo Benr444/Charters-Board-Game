@@ -1,0 +1,14 @@
+{
+    "name": "Black Powder",
+    "types":
+    [
+        "Alch",
+        "Goods",
+        "Fuel"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}

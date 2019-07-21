@@ -1,0 +1,13 @@
+{
+    "name": "Longsword",
+    "types":
+    [
+        "Blade",
+        "Weap"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "RED",
+    "isInfluenceBonus": false
+}

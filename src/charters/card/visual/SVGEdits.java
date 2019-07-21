@@ -13,11 +13,45 @@ import javafx.util.Pair;
  */
 public final class SVGEdits
 {
+	public static class AttributeEdit
+	{
+		protected final String searchAttribute; 
+		protected final String searchValue;
+		protected final String editAttribute;
+		protected final String editValue;
+		
+		public AttributeEdit(String searchAttribute, String searchValue, String editAttribute, String editValue)
+		{
+			this.searchAttribute = searchAttribute; 
+			this.searchValue = searchValue;
+			this.editAttribute = editAttribute;
+			this.editValue = editValue;
+		}
+	}
+	
+	public static class TextEdit
+	{
+		protected final String searchAttribute;
+		protected final String searchValue;
+		protected final String editText;
+		
+		public TextEdit(String searchAttribute, String searchValue, String editText)
+		{
+			this.searchAttribute = searchAttribute;
+			this.searchValue = searchValue;
+			this.editText = editText;
+		}
+		
+		public TextEdit(String searchValue, String editText)
+		{
+			this("id", searchValue, editText);
+		}
+	}
+	
 	public SVGEdits()
 	{
-		this.attributeEdits = new LinkedList<Pair<String, Pair<String, String>>>();
-		this.textEdits = new LinkedList<Pair<String, String>>();
-		//this.colorEdits = new LinkedList<Pair<String, Color>>();
+		this.attributeEdits = new LinkedList<AttributeEdit>();
+		this.textEdits = new LinkedList<TextEdit>();
 	}
 	
 	/**
@@ -26,28 +60,21 @@ public final class SVGEdits
 	 * 2. value to edit
 	 * 3. value to set
 	 */
-	protected final LinkedList<Pair<String, Pair<String, String>>> attributeEdits;
+	protected final LinkedList<AttributeEdit> attributeEdits;
 	
 	/**
 	 * Maps the following together
 	 * 1. id and/or class value to search for. E.g. id="meme"
 	 * 2. value to set the text element. E.g. <t> mytext </t>
 	 */
-	protected final LinkedList<Pair<String, String>> textEdits;
+	protected final LinkedList<TextEdit> textEdits;
 	
-	/**
-	 * Maps the following together
-	 * 1. id and/or class value to search for. E.g. id="meme"
-	 * 2. value of color to set
-	 */
-	//protected final LinkedList<Pair<String, Color>> colorEdits;
-	
-	public void addAttributeEdit(Pair<String, Pair<String, String>> edit)
+	public void addAttributeEdit(AttributeEdit edit)
 	{
 		attributeEdits.push(edit);
 	}
 	
-	public void addTextEdit(Pair<String, String> edit)
+	public void addTextEdit(TextEdit edit)
 	{
 		textEdits.push(edit);
 	}
@@ -63,40 +90,38 @@ public final class SVGEdits
 		for (Element e : elements)
 		{
 			//BEGIN editing attributes
-			for (Pair<String, Pair<String, String>> edit : attributeEdits)
+			for (AttributeEdit edit : attributeEdits)
 			{
 				//Short-circuit logic
 				//If the current element id matches a edit's watching-for id
 				//print("Does this element have a class? " + e.hasAttribute("class"));
 				if 
 				(
-					(e.hasAttribute("class") && (e.getAttribute("class").equals(edit.getKey()))) ||
-					(e.hasAttribute("id") && (e.getAttribute("id").equals(edit.getKey())))
+					(e.hasAttribute(edit.searchAttribute) && (e.getAttribute(edit.searchAttribute).equals(edit.searchValue)))
 				)
 				{
 					//If that element has the attribute which is desired to be edited
-					if (e.hasAttribute(edit.getValue().getKey()))
+					if (e.hasAttribute(edit.editAttribute))
 					{
 						//Set that element's attribute to that value
-						e.setAttribute(edit.getValue().getKey(), edit.getValue().getValue());
-						print("Did attribute edit: " + edit.getKey() + " => " + edit.getValue().getKey() + "=" + edit.getValue().getValue());
+						e.setAttribute(edit.editAttribute, edit.editValue);
+						print("Did attribute edit: " + edit.searchAttribute + "=" + edit.searchValue + " => " + edit.editAttribute + "=" + edit.editValue);
 					}
 				}
 			}
 			
 			//BEGIN editing text elements
-			for (Pair<String, String> textEdit : textEdits)
+			for (TextEdit textEdit : textEdits)
 			{
 				//If the ID matches the watching-for edit id
 				if 
 				(
-					(e.hasAttribute("id") && e.getAttribute("id").equals(textEdit.getKey())) ||
-					(e.hasAttribute("class") && e.getAttribute("class").equals(textEdit.getKey()))
+					(e.hasAttribute(textEdit.searchAttribute) && e.getAttribute(textEdit.searchAttribute).equals(textEdit.searchValue))
 				)
 				{
 					//Set the inner text content to be the value
-					e.setTextContent(textEdit.getValue());
-					print("Did text edit: " + textEdit.getKey() + " => " + textEdit.getValue());
+					e.setTextContent(textEdit.editText);
+					print("Did text edit: " + textEdit.searchAttribute + "=" + textEdit.searchValue + " => text=" + textEdit.editText);
 				}
 			}
 		}

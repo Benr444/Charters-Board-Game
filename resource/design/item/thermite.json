@@ -1,0 +1,14 @@
+{
+    "name": "Thermite",
+    "types":
+    [
+        "Fuel",
+        "Goods",
+        "Alch"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Golem Mind",
+    "types":
+    [
+        "Mech",
+        "Alch",
+        "Writ"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}

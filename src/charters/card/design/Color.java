@@ -3,26 +3,26 @@ package charters.card.design;
 public enum Color
 {	
 	
-	RED("charters-red"),
-	ORANGE("charters-orange"),
-	YELLOW("charters-yellow"),
-	GREEN("charters-green"),
-	BLUE("charters-blue"),
-	VIOLET("charters-violet"),
-	BLACK("charters-black"),
-	WHITE("charters-white"),
-	COLORLESS("charters-colorless"),
-	UNSET("charters-unset");
+	RED("#fc0000"),
+	ORANGE("#fe7900"),
+	YELLOW("#ece700"),
+	GREEN("#00ae06"),
+	BLUE("#0019fe"),
+	VIOLET("8900c8"),
+	BLACK("#000000"),
+	WHITE("#ffffff"),
+	COLORLESS("#cccccc"),
+	UNSET("#1fcd3d");
 
-	public final String alias;
+	public final String[] colorCodes;
 	
-	Color(String alias)
+	Color(String... colorCodes)
 	{
-		this.alias = alias;
+		this.colorCodes = colorCodes;
 	}
 	
-	public String getFillValue()
+	public String getFillValue(int index)
 	{
-		return "url(#" + this.alias + ")";
+		return this.colorCodes[index];
 	}
 }

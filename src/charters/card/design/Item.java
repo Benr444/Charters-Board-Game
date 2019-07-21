@@ -2,10 +2,12 @@ package charters.card.design;
 
 import java.util.LinkedList;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
 import charters.card.visual.SVGEdits;
+import charters.card.visual.SVGEdits.TextEdit;
 import javafx.util.Pair;
 
 public class Item extends Card
@@ -36,6 +38,7 @@ public class Item extends Card
 	}
 
 	@Override
+	@JsonIgnore
 	public String getDesignTypeName() {return "item";}
 
 	@Override
@@ -61,8 +64,9 @@ public class Item extends Card
 			{
 				edits.addTextEdit
 				(
-					new Pair<String, String>
+					new SVGEdits.TextEdit
 					(
+						"id",
 						INFLUENCE_BONUS_ID,
 						INFLUENCE_BONUS_TEXT
 					)

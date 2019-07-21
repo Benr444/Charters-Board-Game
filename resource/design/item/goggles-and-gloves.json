@@ -1,0 +1,13 @@
+{
+    "name": "Goggles and Gloves",
+    "types":
+    [
+        "Garb",
+        "Tool"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}

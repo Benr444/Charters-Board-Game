@@ -1,0 +1,13 @@
+{
+    "name": "Brass Plating",
+    "types":
+    [
+        "Mech",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}

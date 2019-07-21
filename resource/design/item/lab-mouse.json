@@ -1,0 +1,13 @@
+{
+    "name": "Lab Mouse",
+    "types":
+    [
+        "Sci",
+        "Beast"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}

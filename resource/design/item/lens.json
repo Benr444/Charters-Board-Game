@@ -1,0 +1,14 @@
+{
+    "name": "Lens",
+    "types":
+    [
+        "Sci",
+        "Goods",
+        "Tool"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Pen and Parchment",
+    "types":
+    [
+        "Writ",
+        "Weap",
+        "Tool"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Bellows",
+    "types":
+    [
+        "Mech",
+        "Alch",
+        "Tool"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}

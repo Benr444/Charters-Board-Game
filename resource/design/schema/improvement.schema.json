@@ -1,6 +1,6 @@
 {
   "type" : "object",
-  "id" : "urn:jsonschema:charters:card:design:CardDesignFactory:Design",
+  "id" : "urn:jsonschema:charters:card:design:Improvement:Design",
   "properties" : {
     "name" : {
       "type" : "string",
@@ -9,7 +9,7 @@
     },
     "types" : {
       "type" : "array",
-      "description" : "The printed types of the card. Defaults to empty. | In template, mark with id=types",
+      "description" : "The printed types of the card. Defaults to empty. | In template, mark with id=types, or mark each type with type-0, type-1, etc.",
       "items" : {
         "type" : "string"
       }
@@ -45,6 +45,25 @@
     "artY" : {
       "type" : "integer",
       "description" : "The delta-Y value of the art positioning on this card. Defaults to default to 0 (no displacement.)"
+    },
+    "HP" : {
+      "type" : "integer",
+      "required" : true,
+      "description" : "The printed HP of the card. Defaults to -1. | In template, mark with id=hp"
+    },
+    "cost" : {
+      "type" : "string",
+      "description" : "The directly printed cost of the card. Please follow current cost-formatting guidelines. Defaults to [0]. | In template, mark with id=cost"
+    },
+    "abilities" : {
+      "type" : "array",
+      "description" : "The directly printed abilities of the cards. Please format them as follows: AbilityName: Cost/Trigger=>Effect. Defaults to empty. | In template, mark with id=ability-0, 1, 2, etc",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "designTypeName" : {
+      "type" : "string"
     }
   }
 }

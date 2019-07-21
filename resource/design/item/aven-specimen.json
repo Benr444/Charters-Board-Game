@@ -1,0 +1,14 @@
+{
+    "name": "Aven Specimen",
+    "types":
+    [
+        "Sci",
+        "Writ",
+        "Beast"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}

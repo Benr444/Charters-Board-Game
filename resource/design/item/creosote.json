@@ -1,0 +1,14 @@
+{
+    "name": "Creosote",
+    "types":
+    [
+        "Alch",
+        "Fuel",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}

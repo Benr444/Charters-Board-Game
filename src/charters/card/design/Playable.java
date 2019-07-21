@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
 import charters.card.visual.SVGEdits;
+import charters.card.visual.SVGEdits.TextEdit;
 import javafx.util.Pair;
 
 
@@ -13,7 +14,7 @@ public abstract class Playable extends Card
 	//id-values. These are the ID's searched for for various design variables
 	public static final String COST_ID = "cost";
 	public static final String HP_ID = "hp";
-	public static final String ABILITIES_ID = "abilities";
+	public static final String ABILITY_ID = "ability-";
 	
     /**
      * Common superclass for Improvement and Character cards
@@ -23,7 +24,7 @@ public abstract class Playable extends Card
     	//===DEFAULT-VALUES===//
     	public static final int DEFAULT_HP = -1;
     	public static final String DEFAULT_COST = "[0]";
-    	public static final String[] DEFAULT_ABILITIES = {};
+    	public static final String[] DEFAULT_ABILITIES = {"", "", ""};
     	
     	public Design()
     	{
@@ -41,7 +42,7 @@ public abstract class Playable extends Card
     	public final String cost;
         
         @JsonProperty(required = false)
-    	@JsonPropertyDescription("The directly printed abilities of the cards. Please format them as follows: AbilityName: Cost/Trigger=>Effect. Defaults to empty. | In template, mark with id=" + ABILITIES_ID)
+    	@JsonPropertyDescription("The directly printed abilities of the cards. Please format them as follows: AbilityName: Cost/Trigger=>Effect. Defaults to empty. | In template, mark with id=" + ABILITY_ID + "0, 1, 2, etc")
     	public final String[] abilities;
         
         @JsonIgnore
@@ -72,20 +73,23 @@ public abstract class Playable extends Card
     		//Create cost edit
     		edits.addTextEdit
     		(
-    			new Pair<String, String>(COST_ID, playableDesign.cost)
+    			new SVGEdits.TextEdit("id", COST_ID, playableDesign.cost)
     		);
     		
     		//Create HP edit
     		edits.addTextEdit
     		(
-    			new Pair<String, String>(HP_ID, playableDesign.HP + "HP")
+    			new SVGEdits.TextEdit("id", HP_ID, playableDesign.HP + "HP")
     		);
     		
-    		//Create abilities edit. TODO: allow multiple ability fields
-    		edits.addTextEdit
-    		(
-    			new Pair<String, String>(ABILITIES_ID, playableDesign.getCombinedAbilities())
-    		);
+    		//Create abilities edits
+    		for (int n = 0; n < playableDesign.abilities.length; n++)
+    		{
+        		edits.addTextEdit
+        		(
+        			new SVGEdits.TextEdit("id", ABILITY_ID + n, playableDesign.abilities[n])
+        		);
+    		}
     	}
     	
     	return edits;

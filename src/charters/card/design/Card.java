@@ -17,6 +17,7 @@ import com.fasterxml.jackson.module.jsonSchema.JsonSchema;
 import com.fasterxml.jackson.module.jsonSchema.customProperties.HyperSchemaFactoryWrapper;
 
 import charters.card.visual.SVGEdits;
+import charters.card.visual.SVGEdits.AttributeEdit;
 import javafx.util.Pair;
 
 /**
@@ -25,6 +26,9 @@ import javafx.util.Pair;
  */
 public abstract class Card
 {
+	public static final String VISUAL_FOLDER_PATH = "resource/visual/";
+	public static final String CARD_FOLDER_PATH = VISUAL_FOLDER_PATH + "card/";
+	public static final String RASTER_FOLDER_PATH = VISUAL_FOLDER_PATH + "raster/";
 	public static final String DESIGN_FOLDER_PATH = "resource/design/";
 	public static final String SCHEMA_FOLDER_PATH = DESIGN_FOLDER_PATH + "schema/";
 	public static final String SCHEMA_EXTENSION = ".schema.json";
@@ -33,13 +37,15 @@ public abstract class Card
 	
 	/** Folder where static background art images can be found. Relative path from SVG file */
 	public static final String SVG_RELATIVE_ART_FOLDER = "../../art/";
-	public static final String ART_FOLDER = "resource/visual/art/";
+	public static final String ART_FOLDER = VISUAL_FOLDER_PATH + "art/";
 	public static final String TEMPLATE_ART = SVG_RELATIVE_ART_FOLDER + "template/template-art.png";
 	
-	//id-values. These are the ID's searched for for various design variables
+	//id/class-values. These are the ID/Classes's searched for for various design variables
 	public static final String NAME_ID = "name";
 	public static final String TYPES_ID = "types";
+	public static final String TYPE_ID = "type-";
 	public static final String ART_ID = "art";
+	public static final String COLOR_ATTRIBUTE = "charters-color";
 	
 	//Attribute names. These are the names of attributes edited by certain attributeEdits
 	public static final String ART_ATTRIBUTE_NAME = "xlink:href";
@@ -54,7 +60,7 @@ public abstract class Card
     	//===DEFAULT-VALUES===//
     	
     	public static final String DEFAULT_NAME = null;
-    	public static final String[] DEFAULT_TYPES = {};
+    	public static final String[] DEFAULT_TYPES = {"", "", ""};
     	public static final String DEFAULT_FLAVOR_TEXT = null;
     	public static final String DEFAULT_SET = "BASE";
     	public static final Rarity DEFAULT_RARITY = Rarity.UNSET;
@@ -161,7 +167,7 @@ public abstract class Card
         public final String name;
         
         @JsonProperty(required = false)
-        @JsonPropertyDescription("The printed types of the card. Defaults to empty. | In template, mark with id=" + TYPES_ID)
+        @JsonPropertyDescription("The printed types of the card. Defaults to empty. | In template, mark with id=" + TYPES_ID + ", or mark each type with " + TYPE_ID + "0, " + TYPE_ID + "1, etc.")
         public final String[] types;
         
         @JsonProperty(required = false)
@@ -196,7 +202,6 @@ public abstract class Card
 	/**
 	 * @return - The name of this design type
 	 */
-	@JsonIgnore
 	public abstract String getDesignTypeName();
 	
 	/**
@@ -205,10 +210,20 @@ public abstract class Card
 	public String getSchemaFilePath() {return SCHEMA_FOLDER_PATH + getDesignTypeName().toLowerCase() + SCHEMA_EXTENSION;}
 	
 	/**
-	 * @return - The path to the file where this object's respective json file should be stored
+	 * @return - The path to the folder where this object's respective json file should be stored
 	 */
 	public String getDesignFolderPath() {return DESIGN_FOLDER_PATH + getDesignTypeName().toLowerCase() + "/";}
-	
+
+	/**
+	 * @return - The path to the folder where this object's respective svg file should be stored
+	 */
+	public String getCardFolderPath() {return CARD_FOLDER_PATH + getDesignTypeName().toLowerCase() + "/";}
+
+	/**
+	 * @return - The path to the folder where this object's respective raster file should be stored
+	 */
+	public String getRasterFolderPath() {return RASTER_FOLDER_PATH + getDesignTypeName().toLowerCase() + "/";}
+
 	/**
 	 * @return - The design type this factory encapsulates
 	 */
@@ -288,12 +303,23 @@ public abstract class Card
 		SVGEdits edits = new SVGEdits();
 
 		//Create name edit
-		edits.addTextEdit(new Pair<String, String>(NAME_ID, design.name));
+		edits.addTextEdit(new SVGEdits.TextEdit("id", NAME_ID, design.name));
 		
 		//Create type edit
-		edits.addTextEdit(new Pair<String, String>(TYPES_ID, design.getCombinedTypes()));
+		edits.addTextEdit(new SVGEdits.TextEdit("id", TYPES_ID, design.getCombinedTypes()));
+
 		
-		edits.addAttributeEdit(new Pair<String, Pair<String, String>>("charters-color", new Pair<String, String>("fill", design.color.getFillValue())));
+		//Add multi-element-types edits
+		for (int c = 0; c < design.types.length; c++)
+		{
+			edits.addTextEdit(new SVGEdits.TextEdit("id", TYPE_ID + c, design.types[c]));
+		}
+		
+		//For each of this card's defined color codes
+		for (int d = 0; d < design.color.colorCodes.length; d++)
+		{
+			edits.addAttributeEdit(new SVGEdits.AttributeEdit(COLOR_ATTRIBUTE, "" + d, "fill", design.color.getFillValue(d)));
+		}
 		
 		//Create art edit
 		String artString;
@@ -318,27 +344,23 @@ public abstract class Card
 		}
 		edits.addAttributeEdit
 		(
-			new Pair<String, Pair<String, String>>
+			new SVGEdits.AttributeEdit
 			(
-				ART_ID, 
-				new Pair<String, String>
-				(
-					ART_ATTRIBUTE_NAME, 
-					artString
-				)
+				"id",
+				ART_ID,
+				ART_ATTRIBUTE_NAME, 
+				artString
 			)
 		);
 		
 		//Create art position edit
 		edits.addAttributeEdit
 		(
-			new Pair<String, Pair<String, String>>
-			(ART_ID, new Pair<String, String>(ART_X_ATTRIBUTE_NAME, "" + design.artX))
+			new SVGEdits.AttributeEdit("id", ART_ID, ART_X_ATTRIBUTE_NAME, "" + design.artX)
 		);
 		edits.addAttributeEdit
 		(
-			new Pair<String, Pair<String, String>>
-			(ART_ID, new Pair<String, String>(ART_Y_ATTRIBUTE_NAME, "" + design.artY))
+			new SVGEdits.AttributeEdit("id", ART_ID, ART_Y_ATTRIBUTE_NAME, "" + design.artY)
 		);
 		
 		return edits;

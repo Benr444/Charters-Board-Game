@@ -1,0 +1,13 @@
+{
+    "name": "Perpetual Motion Machine",
+    "types":
+    [
+        "Sci",
+        "Mech"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "BLUE",
+    "isInfluenceBonus": true
+}

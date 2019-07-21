@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100%"
+   height="100%"
+   viewBox="0 0 733 520"
+   version="1.1"
+   xml:space="preserve"
+   style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"
+   id="svg52"
+   sodipodi:docname="item-template-wtext.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
+   id="metadata58"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs56"><linearGradient
+     id="charters-blue"
+     osb:paint="solid"><stop
+       style="stop-color:#0019fe;stop-opacity:1;"
+       offset="0"
+       id="stop882" /></linearGradient><linearGradient
+     id="charters-orange"
+     osb:paint="solid"><stop
+       style="stop-color:#fe7900;stop-opacity:1;"
+       offset="0"
+       id="stop876" /></linearGradient><linearGradient
+     id="charters-violet"
+     osb:paint="solid"><stop
+       style="stop-color:#8900c8;stop-opacity:1;"
+       offset="0"
+       id="stop870" /></linearGradient><linearGradient
+     id="charters-green"
+     osb:paint="solid"><stop
+       style="stop-color:#00ae06;stop-opacity:1;"
+       offset="0"
+       id="stop864" /></linearGradient><linearGradient
+     id="charters-yellow"
+     osb:paint="solid"><stop
+       style="stop-color:#ece700;stop-opacity:1;"
+       offset="0"
+       id="stop858" /></linearGradient><linearGradient
+     id="charters-red"
+     osb:paint="solid"><stop
+       style="stop-color:#fc0000;stop-opacity:1;"
+       offset="0"
+       id="stop852" /></linearGradient><clipPath
+     clipPathUnits="userSpaceOnUse"
+     id="clipPath2344"><g
+       transform="matrix(1,0,0,1.47844,-1407.7393,-1072.3995)"
+       id="g2348"
+       style="fill:none;fill-opacity:1;stroke:#0029f1;stroke-opacity:1">
+        <path
+   d="m 691.005,63.599 c 0,-12.319 -14.786,-22.321 -33,-22.321 H 74.278 c -18.213,0 -33,10.002 -33,22.321 v 44.642 c 0,12.319 14.787,22.32 33,22.32 h 583.727 c 18.214,0 33,-10.001 33,-22.32 z"
+   style="fill:none;fill-opacity:1;stroke:#0029f1;stroke-width:2.50999999px;stroke-opacity:1"
+   id="path2346"
+   inkscape:connector-curvature="0" />
+    </g></clipPath><linearGradient
+     inkscape:collect="always"
+     xlink:href="#charters-red"
+     id="linearGradient2388"
+     gradientUnits="userSpaceOnUse"
+     x1="39.693001"
+     y1="85.919502"
+     x2="692.59003"
+     y2="85.919502" /><linearGradient
+     inkscape:collect="always"
+     xlink:href="#charters-red"
+     id="linearGradient2390"
+     gradientUnits="userSpaceOnUse"
+     x1="39.693001"
+     y1="85.919502"
+     x2="692.59003"
+     y2="85.919502" /><clipPath
+     clipPathUnits="userSpaceOnUse"
+     id="clipPath2414"><g
+       id="g2418"
+       transform="matrix(1.89773,0,0,2.53815,-332.92321,-340.44149)">
+        <path
+   id="path2416"
+   style="fill:#ffffff;stroke:#000000;stroke-width:1.40999997px"
+   d="m 517.048,304.619 c 15.025,-13.002 22.935,-27.752 22.935,-42.766 0,-15.014 -7.91,-29.764 -22.935,-42.767 H 220.546 c -15.024,13.003 -22.934,27.753 -22.934,42.767 0,15.014 7.91,29.764 22.934,42.766 z"
+   inkscape:connector-curvature="0" />
+    </g></clipPath><linearGradient
+     inkscape:collect="always"
+     xlink:href="#charters-red"
+     id="linearGradient2428"
+     x1="520.89099"
+     y1="226.164"
+     x2="680.00702"
+     y2="226.164"
+     gradientUnits="userSpaceOnUse" /><linearGradient
+     inkscape:collect="always"
+     xlink:href="#charters-red"
+     id="linearGradient2457"
+     gradientUnits="userSpaceOnUse"
+     x1="520.89099"
+     y1="226.164"
+     x2="680.00702"
+     y2="226.164" /><linearGradient
+     inkscape:collect="always"
+     xlink:href="#charters-red"
+     id="linearGradient2459"
+     gradientUnits="userSpaceOnUse"
+     x1="520.89099"
+     y1="226.164"
+     x2="680.00702"
+     y2="226.164" /><linearGradient
+     inkscape:collect="always"
+     xlink:href="#charters-red"
+     id="linearGradient2465"
+     gradientUnits="userSpaceOnUse"
+     x1="520.89099"
+     y1="226.164"
+     x2="680.00702"
+     y2="226.164" /><linearGradient
+     inkscape:collect="always"
+     xlink:href="#charters-red"
+     id="linearGradient2467"
+     gradientUnits="userSpaceOnUse"
+     x1="520.89099"
+     y1="226.164"
+     x2="680.00702"
+     y2="226.164" /><linearGradient
+     inkscape:collect="always"
+     xlink:href="#charters-red"
+     id="linearGradient2477"
+     x1="520.67603"
+     y1="226.164"
+     x2="680.22198"
+     y2="226.164"
+     gradientUnits="userSpaceOnUse" /><linearGradient
+     inkscape:collect="always"
+     xlink:href="#charters-red"
+     id="linearGradient908"
+     gradientUnits="userSpaceOnUse"
+     x1="0"
+     y1="259.8425"
+     x2="732.28302"
+     y2="259.8425" /></defs><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1017"
+   id="namedview54"
+   showgrid="false"
+   inkscape:snap-object-midpoints="true"
+   inkscape:snap-bbox="true"
+   inkscape:snap-bbox-midpoints="true"
+   inkscape:snap-text-baseline="true"
+   inkscape:zoom="1.2868142"
+   inkscape:cx="300.57973"
+   inkscape:cy="253.43811"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg52"
+   inkscape:bbox-nodes="true" />
+    <path
+   d="M732.283,24.584C732.283,11.016 721.268,0 707.699,0L24.584,0C11.016,0 0,11.016 0,24.584L0,495.101C0,508.669 11.016,519.685 24.584,519.685L707.699,519.685C721.268,519.685 732.283,508.669 732.283,495.101L732.283,24.584Z"
+   id="path2" />
+    <g
+   transform="matrix(0.949642,0,0,0.929041,18.4382,18.4382)"
+   id="g6"
+   style="fill:url(#linearGradient908);fill-opacity:1.0"
+   class="charters-color">
+        <path
+   d="M 732.283,24.584 C 732.283,11.016 721.507,0 708.233,0 H 24.051 C 10.777,0 0,11.016 0,24.584 v 470.517 c 0,13.568 10.777,24.584 24.051,24.584 h 684.182 c 13.274,0 24.05,-11.016 24.05,-24.584 z"
+   style="fill:url(#linearGradient908);fill-opacity:1.0"
+   id="path4"
+   inkscape:connector-curvature="0" />
+    </g>
+    <g
+   transform="matrix(1.89773,0,0,3.36751,-333.736,-642.954)"
+   id="g10">
+        <path
+   d="M517.048,304.619C532.073,291.617 539.983,276.867 539.983,261.853C539.983,246.839 532.073,232.089 517.048,219.086L220.546,219.086C205.522,232.089 197.612,246.839 197.612,261.853C197.612,276.867 205.522,291.617 220.546,304.619L517.048,304.619Z"
+   id="path8" />
+    </g>
+    
+    <g
+   style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+   id="g2339"
+   transform="matrix(1,0,0,1.47844,-2.26485e-13,286.359)">
+        <path
+   id="path2337"
+   style="fill:#ffffff;stroke:#000000;stroke-width:2.51px;fill-opacity:1;stroke-opacity:1"
+   d="M691.005,63.599C691.005,51.28 676.219,41.278 658.005,41.278L74.278,41.278C56.065,41.278 41.278,51.28 41.278,63.599L41.278,108.241C41.278,120.56 56.065,130.561 74.278,130.561L658.005,130.561C676.219,130.561 691.005,120.56 691.005,108.241L691.005,63.599Z" />
+    </g><g
+   id="g2342"
+   transform="translate(1407.7393,1358.7585)"
+   clip-path="url(#clipPath2344)"
+   style="opacity:0.75;fill:none;fill-opacity:1"><image
+     width="2629.8762"
+     height="1753.2509"
+     preserveAspectRatio="none"
+     xlink:href="file:///D:/Projects/Charters-Board-Game/resource/visual/art/template/navigation-background.png"
+     id="image2334"
+     x="-2626.6382"
+     y="-2554.3938"
+     sodipodi:absref="D:\Projects\Charters-Board-Game\resource\visual\art\template\navigation-background.png"
+     style="fill:none;fill-opacity:1" /></g><g
+   transform="matrix(1.05172,0,0,1.70913,-100.362,67.3434)"
+   id="g18">
+        <path
+   d="M678.892,214.316C678.892,207.777 670.265,202.468 659.638,202.468L541.261,202.468C530.634,202.468 522.006,207.777 522.006,214.316L522.006,238.012C522.006,244.551 530.634,249.86 541.261,249.86L659.638,249.86C670.265,249.86 678.892,244.551 678.892,238.012L678.892,214.316Z"
+   style="fill:white;stroke:black;stroke-width:2.23px;"
+   id="path16" />
+    </g>
+    <g
+   transform="matrix(1.05172,0,0,1.70913,-430.362,67.3434)"
+   id="g22">
+        <path
+   d="M678.892,214.316C678.892,207.777 670.265,202.468 659.638,202.468L541.261,202.468C530.634,202.468 522.006,207.777 522.006,214.316L522.006,238.012C522.006,244.551 530.634,249.86 541.261,249.86L659.638,249.86C670.265,249.86 678.892,244.551 678.892,238.012L678.892,214.316Z"
+   style="fill:white;stroke:black;stroke-width:2.23px;"
+   id="path20" />
+    </g>
+    <g
+   transform="matrix(1,0,0,1,2.27374e-13,-0.27137)"
+   id="g26"
+   style="fill-opacity:1;fill:#ffffff">
+        <path
+   d="M691.005,63.599C691.005,51.28 681.004,41.278 668.685,41.278L63.599,41.278C51.28,41.278 41.278,51.28 41.278,63.599L41.278,108.241C41.278,120.56 51.28,130.561 63.599,130.561L668.685,130.561C681.004,130.561 691.005,120.56 691.005,108.241L691.005,63.599Z"
+   style="fill:#ffffff;stroke:black;stroke-width:3.17px;fill-opacity:1"
+   id="path24" />
+    </g>
+    <g
+   transform="matrix(1.89773,0,0,2.53815,-333.736,-425.784)"
+   id="g30">
+        <path
+   d="M517.048,304.619C532.073,291.617 539.983,276.867 539.983,261.853C539.983,246.839 532.073,232.089 517.048,219.086L220.546,219.086C205.522,232.089 197.612,246.839 197.612,261.853C197.612,276.867 205.522,291.617 220.546,304.619L517.048,304.619Z"
+   style="fill:white;stroke:black;stroke-width:1.41px;"
+   id="path28" />
+    </g>
+    <g
+   id="g2412"
+   transform="translate(-0.81278581,-85.34251)"
+   clip-path="url(#clipPath2414)"><image
+     width="825"
+     height="619"
+     preserveAspectRatio="none"
+     xlink:href="file:///D:/Projects/Charters-Board-Game/resource/visual/art/template/template-art.png"
+     id="art"
+     x="-23.617884"
+     y="171.76521"
+     sodipodi:absref="D:\Projects\Charters-Board-Game\resource\visual\art\template\template-art.png" /></g><g
+   transform="matrix(1.35511,0,0,0.997122,-447.535,131.245)"
+   id="g34">
+        <path
+   d="M678.892,214.316C678.892,207.777 674.986,202.468 670.174,202.468L530.725,202.468C525.913,202.468 522.006,207.777 522.006,214.316L522.006,238.012C522.006,244.551 525.913,249.86 530.725,249.86L670.174,249.86C674.986,249.86 678.892,244.551 678.892,238.012L678.892,214.316Z"
+   style="fill:white;stroke:black;stroke-width:2.66px;"
+   id="path32" />
+    </g>
+    <g
+   transform="matrix(1.05172,0,0,1.70913,-265.362,67.3434)"
+   id="g38">
+        <path
+   d="M678.892,214.316C678.892,207.777 670.265,202.468 659.638,202.468L541.261,202.468C530.634,202.468 522.006,207.777 522.006,214.316L522.006,238.012C522.006,244.551 530.634,249.86 541.261,249.86L659.638,249.86C670.265,249.86 678.892,244.551 678.892,238.012L678.892,214.316Z"
+   style="fill:white;stroke:black;stroke-width:2.23px;"
+   id="path36" />
+    </g>
+    <g
+   style="opacity:0.5;fill:url(#linearGradient2459);fill-opacity:1;stroke:#000000;stroke-opacity:1"
+   transform="matrix(1.05172,0,0,1.70913,-265.362,67.3434)"
+   id="g2455">
+        <path
+   d="m 678.892,214.316 c 0,-6.539 -8.627,-11.848 -19.254,-11.848 H 541.261 c -10.627,0 -19.255,5.309 -19.255,11.848 v 23.696 c 0,6.539 8.628,11.848 19.255,11.848 h 118.377 c 10.627,0 19.254,-5.309 19.254,-11.848 z"
+   style="fill:url(#linearGradient2457);fill-opacity:1;stroke:#000000;stroke-width:2.23000002px;stroke-opacity:1"
+   id="path2453"
+   inkscape:connector-curvature="0" />
+    </g><g
+   transform="matrix(6.28095,0,0,2.92499,-584.231,-854.994)"
+   id="g42">
+        <ellipse
+   cx="151.31"
+   cy="447.482"
+   rx="12.418"
+   ry="13.846"
+   style="fill:white;stroke:black;stroke-width:0.68px;"
+   id="ellipse40" />
+    </g>
+    <g
+   id="g2463"
+   transform="matrix(1.05172,0,0,1.70913,-430.362,67.3434)"
+   style="opacity:0.5;fill:url(#linearGradient2467);fill-opacity:1;stroke:#000000;stroke-opacity:1">
+        <path
+   inkscape:connector-curvature="0"
+   id="path2461"
+   style="fill:url(#linearGradient2465);fill-opacity:1;stroke:#000000;stroke-width:2.23000002px;stroke-opacity:1"
+   d="m 678.892,214.316 c 0,-6.539 -8.627,-11.848 -19.254,-11.848 H 541.261 c -10.627,0 -19.255,5.309 -19.255,11.848 v 23.696 c 0,6.539 8.628,11.848 19.255,11.848 h 118.377 c 10.627,0 19.254,-5.309 19.254,-11.848 z" />
+    </g><g
+   transform="matrix(6.28095,0,0,2.92499,-749.231,-854.994)"
+   id="g46">
+        <ellipse
+   cx="151.31"
+   cy="447.482"
+   rx="12.418"
+   ry="13.846"
+   style="fill:white;stroke:black;stroke-width:0.68px;"
+   id="ellipse44" />
+    </g>
+    <g
+   id="g2422"
+   transform="matrix(1.05172,0,0,1.70913,-100.362,67.3434)"
+   style="stroke:#000000;stroke-opacity:1;fill-opacity:1;fill:url(#linearGradient2428);opacity:0.5">
+        <path
+   id="path2420"
+   style="fill:url(#linearGradient2428);stroke:#000000;stroke-width:2.23px;stroke-opacity:1;fill-opacity:1"
+   d="M678.892,214.316C678.892,207.777 670.265,202.468 659.638,202.468L541.261,202.468C530.634,202.468 522.006,207.777 522.006,214.316L522.006,238.012C522.006,244.551 530.634,249.86 541.261,249.86L659.638,249.86C670.265,249.86 678.892,244.551 678.892,238.012L678.892,214.316Z" />
+    </g><g
+   transform="matrix(6.28095,0,0,2.92499,-419.231,-854.994)"
+   id="g50">
+        <ellipse
+   cx="151.31"
+   cy="447.482"
+   rx="12.418"
+   ry="13.846"
+   style="fill:#ffffff;stroke:black;stroke-width:0.68008579;fill-opacity:1;stroke-miterlimit:1.5;stroke-dasharray:none"
+   id="ellipse48" />
+    </g>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:46.66666794px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+   x="201.1851"
+   y="468.77731"
+   id="type-0"><tspan
+     sodipodi:role="line"
+     id="tspan868"
+     x="201.1851"
+     y="509.26886" /></text>
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:46.66666794px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;clip-rule:evenodd;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
+   x="366.18509"
+   y="468.77731"
+   id="type-1"><tspan
+     sodipodi:role="line"
+     id="tspan868-6"
+     x="366.18509"
+     y="509.26886" /></text>
+
+
+
+
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:46.66666794px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;clip-rule:evenodd;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
+   x="531.18781"
+   y="468.77802"
+   id="type-2"><tspan
+     sodipodi:role="line"
+     id="tspan868-7"
+     x="531.18781"
+     y="509.26956" /></text>
+
+
+
+
+<g
+   id="g2471"
+   transform="matrix(1.35511,0,0,0.997122,-447.535,131.245)"
+   style="fill-opacity:1;fill:url(#linearGradient2477);stroke:#000000;stroke-opacity:1;opacity:0.5">
+        <path
+   id="path2469"
+   style="fill:url(#linearGradient2477);stroke:#000000;stroke-width:2.66px;fill-opacity:1;stroke-opacity:1"
+   d="M678.892,214.316C678.892,207.777 674.986,202.468 670.174,202.468L530.725,202.468C525.913,202.468 522.006,207.777 522.006,214.316L522.006,238.012C522.006,244.551 525.913,249.86 530.725,249.86L670.174,249.86C674.986,249.86 678.892,244.551 678.892,238.012L678.892,214.316Z" />
+    </g><text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+   x="365.35818"
+   y="369.52176"
+   id="text900"><tspan
+     sodipodi:role="line"
+     id="tspan898"
+     x="365.35818"
+     y="369.52176">Item</tspan></text>
+
+
+
+
+<g
+   style="opacity:0.5;fill:url(#linearGradient2390);fill-opacity:1;stroke:#000000;stroke-opacity:1"
+   id="g2376"
+   transform="translate(0,-0.27137)">
+        <path
+   id="path2374"
+   style="fill:url(#linearGradient2388);fill-opacity:1;stroke:#000000;stroke-width:3.17000008px;stroke-opacity:1"
+   d="m 691.005,63.599 c 0,-12.319 -10.001,-22.321 -22.32,-22.321 H 63.599 c -12.319,0 -22.321,10.002 -22.321,22.321 v 44.642 c 0,12.319 10.002,22.32 22.321,22.32 h 605.086 c 12.319,0 22.32,-10.001 22.32,-22.32 z"
+   inkscape:connector-curvature="0" />
+    </g><text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:46.66666794px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+   x="367.6796"
+   y="100.53908"
+   id="name"><tspan
+     sodipodi:role="line"
+     id="tspan902"
+     x="367.6796"
+     y="100.53908">MY VERY LENGTHY ITEM NAME</tspan></text>
+
+
+
+
+</svg>

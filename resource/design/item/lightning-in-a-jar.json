@@ -1,0 +1,14 @@
+{
+    "name": "Lightning in a Jar",
+    "types":
+    [
+        "Sci",
+        "Goods",
+        "Fuel"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}

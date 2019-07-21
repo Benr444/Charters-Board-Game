@@ -71,19 +71,19 @@ public class Character extends Playable
 			//Create AK edit
 			edits.addTextEdit
 			(
-				new Pair<String, String>(AK_ID, characterDesign.AK + "AK")
+				new SVGEdits.TextEdit("id", AK_ID, characterDesign.AK + "AK")
 			);
 
 			//Create MS edit
 			edits.addTextEdit
 			(
-				new Pair<String, String>(MS_ID, characterDesign.MS + "MS")
+				new SVGEdits.TextEdit("id", MS_ID, characterDesign.MS + "MS")
 			);
 
 			//Create RG edit
 			edits.addTextEdit
 			(
-				new Pair<String, String>(RG_ID, characterDesign.RG + "RG")
+				new SVGEdits.TextEdit("id", RG_ID, characterDesign.RG + "RG")
 			);
     	}
     	

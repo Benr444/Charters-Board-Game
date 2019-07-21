@@ -1,0 +1,13 @@
+{
+    "name": "Logbook",
+    "types":
+    [
+        "Sci",
+        "Writ"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "BLUE",
+    "isInfluenceBonus": false
+}
