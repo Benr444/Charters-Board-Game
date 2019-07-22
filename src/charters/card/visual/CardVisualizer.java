@@ -23,7 +23,7 @@ import charters.card.design.Item;
 public abstract class CardVisualizer
 {
 	//TODO move these constants to the proper factory, etc.
-	
+	public static final String BASE_FOLDER = "";
 	public static final String VISUALS_FOLDER = "resource/visual/";
 	
 	public static final String ART_VISUALS_FOLDER = VISUALS_FOLDER + "art/";
@@ -39,8 +39,9 @@ public abstract class CardVisualizer
 			//doVisualize(new Character().readDesigns());
 			//doVisualize(new Item().readDesigns());
 			print("Finished visualization process.");
+			System.in.read();
 		} 
-		catch (InstantiationException | IllegalAccessException e) {e.printStackTrace();}
+		catch (InstantiationException | IllegalAccessException | IOException e) {e.printStackTrace();}
 	}
 	
 	/**
