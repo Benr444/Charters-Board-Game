@@ -2,13 +2,12 @@ package charters.card.visual;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 import charters.card.design.Card;
-import charters.card.design.Card.Design;
 import charters.card.design.Item;
+import charters.card.design.Improvement;
+import charters.card.design.Character;
+
 
 /**
  * Turns card svg's into raster png's, then saves them in the output folder
@@ -23,6 +22,9 @@ public class CardRasterizer
 	{
 		print("=== BEGINNING RASTERIZATION ===");
 		rasterize(new Item());
+		rasterize(new Character());
+		rasterize(new Improvement());
+		print("=== RASTERIZATION FINISHED ===");
 	}
 	
 	/**
@@ -35,7 +37,7 @@ public class CardRasterizer
 	
 	public static void rasterize(Card factory)
 	{
-		print(factory.getCardFolderPath());
+		//print(factory.getCardFolderPath());
 		File svgFolder = new File(factory.getCardFolderPath());
 		File[] svgFiles = svgFolder.listFiles();
 		if (svgFiles != null)
@@ -45,16 +47,16 @@ public class CardRasterizer
 				if (f.isFile())
 				{
 					String simpleName = noExtension(f.getName());
-					print("Found candidate svg file: " + simpleName);
+					//print("Found candidate svg file: " + simpleName);
 					String cmd = "inkscape " +
 								 noExtension(f.getAbsolutePath()) + ".svg" + 
 								 " -e " +
 								 factory.getRasterFolderPath() + simpleName + ".png" +
-								 " - d " + DPI;
-					print("The command!: " + cmd);
+								 " -d " + DPI;
 					try
 					{
 						Runtime.getRuntime().exec(cmd);
+						print("Executing command: " + cmd);
 					} 
 					catch (IOException e) {e.printStackTrace();}
 				}

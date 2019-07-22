@@ -26,33 +26,6 @@ import javafx.util.Pair;
  */
 public abstract class Card
 {
-	public static final String VISUAL_FOLDER_PATH = "resource/visual/";
-	public static final String CARD_FOLDER_PATH = VISUAL_FOLDER_PATH + "card/";
-	public static final String RASTER_FOLDER_PATH = VISUAL_FOLDER_PATH + "raster/";
-	public static final String DESIGN_FOLDER_PATH = "resource/design/";
-	public static final String SCHEMA_FOLDER_PATH = DESIGN_FOLDER_PATH + "schema/";
-	public static final String SCHEMA_EXTENSION = ".schema.json";
-	public static final String DESIGN_EXTENSION = ".json";
-	public static final String ART_EXTENSION = ".png";
-	
-	/** Folder where static background art images can be found. Relative path from SVG file */
-	public static final String SVG_RELATIVE_ART_FOLDER = "../../art/";
-	public static final String ART_FOLDER = VISUAL_FOLDER_PATH + "art/";
-	public static final String TEMPLATE_ART = SVG_RELATIVE_ART_FOLDER + "template/template-art.png";
-	
-	//id/class-values. These are the ID/Classes's searched for for various design variables
-	public static final String NAME_ID = "name";
-	public static final String TYPES_ID = "types";
-	public static final String TYPE_ID = "type-";
-	public static final String ART_ID = "art";
-	public static final String COLOR_ATTRIBUTE = "charters-color";
-	public static final String RARITY_COLOR_ATTRIBUTE = "charters-rarity-color";
-	
-	//Attribute names. These are the names of attributes edited by certain attributeEdits
-	public static final String ART_ATTRIBUTE_NAME = "xlink:href";
-	public static final String ART_X_ATTRIBUTE_NAME = "x";
-	public static final String ART_Y_ATTRIBUTE_NAME = "y";
-	
     /**
      * Class containing all data that describes a single card's designs
      */
@@ -194,6 +167,37 @@ public abstract class Card
         @JsonPropertyDescription("The delta-Y value of the art positioning on this card. Defaults to default to 0 (no displacement.)")
         public final int artY;
     }
+
+	public static final String VISUAL_FOLDER_PATH = "resource/visual/";
+	public static final String CARD_FOLDER_PATH = VISUAL_FOLDER_PATH + "card/";
+	public static final String RASTER_FOLDER_PATH = VISUAL_FOLDER_PATH + "raster/";
+	public static final String DESIGN_FOLDER_PATH = "resource/design/";
+	public static final String SCHEMA_FOLDER_PATH = DESIGN_FOLDER_PATH + "schema/";
+	public static final String SCHEMA_EXTENSION = ".schema.json";
+	public static final String DESIGN_EXTENSION = ".json";
+	public static final String ART_EXTENSION = ".png";
+	
+	/** Folder where static background art images can be found. Relative path from SVG file */
+	public static final String SVG_RELATIVE_ART_FOLDER = "../../art/";
+	public static final String ART_FOLDER = VISUAL_FOLDER_PATH + "art/";
+	public static final String TEMPLATE_ART = SVG_RELATIVE_ART_FOLDER + "template/template-art.png";
+	
+	//id/class-values. These are the ID/Classes's searched for for various design variables
+	public static final String NAME_ID = "name";
+	public static final String TYPES_ID = "types";
+	public static final String TYPE_ID = "type-";
+	public static final String ART_ID = "art";
+	public static final String COLOR_ATTRIBUTE = "charters-color";
+	public static final String RARITY_COLOR_ATTRIBUTE = "charters-rarity-color";
+	
+	//Attribute names. These are the names of attributes edited by certain attributeEdits
+	public static final String ART_ATTRIBUTE_NAME = "xlink:href";
+	public static final String ART_X_ATTRIBUTE_NAME = "x";
+	public static final String ART_Y_ATTRIBUTE_NAME = "y";
+	
+	//Template properties
+	/** Number of fields the template has for types present. Excess will be blanked */
+	public static final int NUM_TEMPLATE_TYPES = 3;
 	
 	/**
 	 * @return - The name of this design type
@@ -304,11 +308,16 @@ public abstract class Card
 		//Create type edit
 		edits.addTextEdit(new SVGEdits.TextEdit("id", TYPES_ID, design.getCombinedTypes()));
 
-		
 		//Add multi-element-types edits
 		for (int c = 0; c < design.types.length; c++)
 		{
 			edits.addTextEdit(new SVGEdits.TextEdit("id", TYPE_ID + c, design.types[c]));
+		}
+
+		//Blank any excess type text fields
+		for (int g = design.types.length - 1; g < NUM_TEMPLATE_TYPES; g++)
+		{
+			edits.addTextEdit(new SVGEdits.TextEdit("id", TYPE_ID + g, ""));
 		}
 		
 		//For each of this card's defined color codes

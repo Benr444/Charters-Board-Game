@@ -9,6 +9,9 @@
     "cost": "[GGG][Earth][Earth]",
     "abilities":
     [
-        "Natural Alignment: @=>+1i"
+        {
+            "name": "Natural Alignment",
+            "text": "@=>+1i"
+        }
     ]
 }

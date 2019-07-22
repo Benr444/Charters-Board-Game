@@ -9,7 +9,13 @@
     "cost": "[V]",
     "abilities":
     [
-        "Cooldown: [Water/Spell]=>A character or improvement within {2} cannot move, act or use abilities on its next turn",
-        "Quake: [Earth/Spell]=>Deal 1 damage to EVERYTHING within {1}"
+        {
+            "name": "Cooldown",
+            "text": "[Water/Spell]=>A character or improvement within {2} cannot move, act or use abilities on its next turn"
+        },
+        {
+            "name": "Quake",
+            "text": "[Earth/Spell]=>Deal 1 damage to EVERYTHING within {1}"
+        }
     ]
 }

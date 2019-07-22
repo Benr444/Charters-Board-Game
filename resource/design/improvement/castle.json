@@ -11,7 +11,13 @@
     "cost": "[R]",
     "abilities":
     [
-        "Impede: Characters may only move onto this tile with your permission",
-        "Foothold: Players may only build on tiles within {1} with your permission"
+        {
+            "name": "Impede",
+            "text": "Characters may only move onto this tile with your permission"
+        },
+        {
+            "name": "Foothold",
+            "text": "Players may only build on tiles within {1} with your permission"
+        }
     ]
 }

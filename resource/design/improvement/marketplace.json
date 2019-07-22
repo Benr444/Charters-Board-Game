@@ -9,7 +9,14 @@
     "cost": "[O]",
     "abilities":
     [
-        "Good Deal: Whenever you trade with a character within {2}=>Choose a color: each of you may +[2] of the chosen color",
-        "Take Out: [OO] or [Lux]=><1> within {1}; You may activate this any number of times"
+        {
+            "name": "Good Deal",
+            "text": "Whenever you trade with a character within {2}=>Choose a color: each of you may +[2] of the chosen color"
+        },
+        {
+
+            "name": "Take Out",
+            "text": "[OO] or [Lux]=><1> within {1}; You may activate this any number of times"
+        }
     ]
 }

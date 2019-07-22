@@ -9,7 +9,13 @@
     "cost": "[B]",
     "abilities":
     [
-        "Repair: [B]=>+[1] from the scrapheap; +[B] if that was [Mech]",
-        "Deconstruct: Destroy an allied character or improvement within {1}=>+[BB]"
+        {
+            "name": "Repair",
+            "text": "[B]=>+[1] from the scrapheap; +[B] if that was [Mech]"
+        },
+        {
+            "name": "Deconstruct",
+            "text": "Destroy an allied character or improvement within {1}=>+[BB]"
+        }
     ]
 }

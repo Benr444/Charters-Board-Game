@@ -9,7 +9,13 @@
     "cost": "[Y][Bell]",
     "abilities":
     [
-        "Reverberate: Opponents within {3} have their cache sizes reduced by 2 and their hand sizes reduced by 1",
-        "Call to Arms: [Light]=>Return an allied character within {3} to this tile"
+        {
+            "name": "Reverberate",
+            "text": "Opponents within {3} have their cache sizes reduced by 2 and their hand sizes reduced by 1"
+        },
+        {
+            "name": "Call to Arms",
+            "text": "[Light]=>Return an allied character within {3} to this tile"
+        }
     ]
 }
