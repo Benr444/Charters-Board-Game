@@ -10,12 +10,12 @@
     "abilities":
     [
         {
-            "name": "Reverberate",
-            "text": "Opponents within {3} have their cache sizes reduced by 2 and their hand sizes reduced by 1"
+            "name": "Repair",
+            "text": "[B]=>+[1]; and if you spent [Writ], +[1] "
         },
         {
-            "name": "Call to Arms",
-            "text": "[Light]=>Return an allied character within {3} to this tile"
+            "name": "Ignite",
+            "text": "[Alch] or [Fuel]=><1> within {2}; <2> instead if you spent a Rare item"
         }
     ]
 }

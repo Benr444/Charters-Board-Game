@@ -1,4 +1,8 @@
-package charters.card.design;
+package charters.card.design.script;
+
+import charters.card.design.Character;
+import charters.card.design.Improvement;
+import charters.card.design.Item;
 
 public class SchemaGenerator
 {
