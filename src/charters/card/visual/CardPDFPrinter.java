@@ -7,13 +7,23 @@ import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
+import charters.card.design.Item;
+
 public class CardPDFPrinter
 {
 	public static final String TEST_IMAGE = "resource/visual/raster/item/gear.png";
 	public static final String TEST_FOLDER = "resource/visual/print/";
 	public static final String TEST_NAME = "test.pdf";
 	public static final String TEST_PATH = TEST_FOLDER + TEST_NAME;
+	
 	public static void main(String...strings)
+	{
+		new Item().readDesigns();
+		makeDocument();
+	}
+	
+	
+	public static void makeDocument()
 	{
 		PDDocument pdf = new PDDocument();
 		PDPage firstPage = new PDPage();

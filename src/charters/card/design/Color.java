@@ -1,8 +1,7 @@
 package charters.card.design;
 
 public enum Color
-{	
-	
+{
 	RED("#fc0000"),
 	ORANGE("#fe7900"),
 	YELLOW("#ece700"),
