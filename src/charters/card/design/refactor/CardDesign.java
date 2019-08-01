@@ -80,4 +80,7 @@ abstract public class CardDesign
     @JsonProperty(required = false)
     @JsonPropertyDescription("The delta-Y value of the art positioning on this card. Defaults to default to 0 (no displacement.)")
     public final int artY;
+    
+    @JsonProperty(required = false)
+    public final ItemDesign itemProperties;
 }
