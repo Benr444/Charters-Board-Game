@@ -1,11 +1,17 @@
 package charters.card.design.refactor;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.LinkedList;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.module.jsonSchema.JsonSchema;
+import com.fasterxml.jackson.module.jsonSchema.customProperties.HyperSchemaFactoryWrapper;
 
 import charters.card.design.Card.Design;
 import charters.card.design.card.Card;
@@ -55,6 +61,9 @@ public abstract class CardSupplier
 		{
 			return new ItemCard(designFile, vectorFolder, vectorTemplateFile, rasterFolder, autoArtFolder, new File(TEMPLATE_ART_FOLDER));
 		}
+
+		@Override
+		protected Class<ItemDesign> getDesignType() {return ItemDesign.class;}
 	}
 	
 	public static class CharacterSupplier extends CardSupplier
@@ -69,6 +78,9 @@ public abstract class CardSupplier
 		{
 			return new CharacterCard(designFile, vectorFolder, vectorTemplateFile, rasterFolder, autoArtFolder, new File(TEMPLATE_ART_FOLDER));
 		}
+
+		@Override
+		protected Class<CharacterDesign> getDesignType() {return CharacterDesign.class;}
 	}
 	
 	public static class ImprovementSupplier extends CardSupplier
@@ -83,9 +95,12 @@ public abstract class CardSupplier
 		{
 			return new ImprovementCard(designFile, vectorFolder, vectorTemplateFile, rasterFolder, autoArtFolder, new File(TEMPLATE_ART_FOLDER));
 		}
+
+		@Override
+		protected Class<ImprovementDesign> getDesignType() {return ImprovementDesign.class;}
 	}
 	
-	//==========PUBLIC INTERFACE==========//
+	//==========CONSTRUCTOR==========//
 	
 	public final File designFolder;
 	public final File vectorFolder;
@@ -125,6 +140,8 @@ public abstract class CardSupplier
 		);
 	}
 	
+	//==========PUBLIC INTERFACE==========//
+	
 	/**
 	 * @param designFile - The file that contains a card design
 	 * @return - The Card object for that file
@@ -152,7 +169,50 @@ public abstract class CardSupplier
 		return returnGroup;
 	}
 	
-	public static void print(String s)
+	/**
+	 * Update the schema for this supplier's type and write it to disk
+	 * @return - A file pointing to the schema
+	 */
+	public void generateSchema()
+	{
+		print("Generating the Charter Schema for " + getDesignType().getSimpleName());
+		HyperSchemaFactoryWrapper visitor = new HyperSchemaFactoryWrapper();
+		ObjectMapper mapper = new ObjectMapper();
+		mapper.enable(SerializationFeature.INDENT_OUTPUT);
+		mapper.writerWithDefaultPrettyPrinter();
+		try 
+		{
+			mapper.acceptJsonFormatVisitor(getDesignType(), visitor);
+		} 
+		catch (JsonMappingException e) 
+		{	
+			e.printStackTrace();
+		}
+		JsonSchema improvementSchema = visitor.finalSchema();
+		try 
+		{
+			String schemaString = mapper.writeValueAsString(improvementSchema);
+			FileWriter outputFile = new FileWriter(designSchemaFile);
+			outputFile.write(schemaString);
+			print("...\n" + schemaString);
+			outputFile.close();
+		} 
+		catch (JsonProcessingException e) 
+		{
+			e.printStackTrace();
+		} 
+		catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	//==========PRIVATE HELPERS==========//
+	
+	/** Fetch the design type that this supplier manages. Used to generate schema */
+	protected abstract Class<? extends CardDesign> getDesignType();
+	
+	protected static void print(String s)
 	{
 		System.out.println("[CardSupplier]: " + s);
 	}
