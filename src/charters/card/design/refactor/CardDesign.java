@@ -46,11 +46,11 @@ abstract public class CardDesign
     //===CARD-PROPERTIES===//
     
     @JsonProperty(required = true)
-    @JsonPropertyDescription("Printed card name. Defaults to empty. | In template, mark with id=" + NAME_ID)
+    @JsonPropertyDescription("Printed card name. Defaults to empty. | In template, mark with id=" + Card.NAME_ID)
     public final String name;
     
     @JsonProperty(required = false)
-    @JsonPropertyDescription("The printed types of the card. Defaults to empty. | In template, mark with id=" + TYPES_ID + ", or mark each type with " + TYPE_ID + "0, " + TYPE_ID + "1, etc.")
+    @JsonPropertyDescription("The printed types of the card. Defaults to empty. | In template, mark with id=" + Card.TYPES_ID + ", or mark each type with " + Card.TYPE_ID + "0, " + Card.TYPE_ID + "1, etc.")
     public final String[] types;
     
     @JsonProperty(required = false)
@@ -62,15 +62,15 @@ abstract public class CardDesign
     public final String set;
 
     @JsonProperty(required = true)
-    @JsonPropertyDescription("Used to identify the set of a card, which is the batch of designs it belongs to. | In template, set " + RARITY_COLOR_ATTRIBUTE + "=0, =1, etc. The main color for the cards rarity will go in 0, the secondary in 1, etc.")
+    @JsonPropertyDescription("Used to identify the set of a card, which is the batch of designs it belongs to. | In template, set " + Card.RARITY_COLOR_ATTRIBUTE + "=0, =1, etc. The main color for the cards rarity will go in 0, the secondary in 1, etc.")
     public final Rarity rarity;
 
     @JsonProperty(required = true)
-    @JsonPropertyDescription("The color of the card, mechanically. This will be reflected in the frame, etc. Should match any card costs. | In template, mark with " + COLOR_ATTRIBUTE + "=0 or =1, etc. The primary color code will fill in 0, the secondary color code will fill 1, etc.")
+    @JsonPropertyDescription("The color of the card, mechanically. This will be reflected in the frame, etc. Should match any card costs. | In template, mark with " + Card.COLOR_ATTRIBUTE + "=0 or =1, etc. The primary color code will fill in 0, the secondary color code will fill 1, etc.")
     public final Color color;
 
     @JsonProperty(required = false)
-    @JsonPropertyDescription("The name of the art for this card. Do not include the file extension: it must be .png. It will be searched for in the relevant project folder(s). Defaults to searching for \"card-name-art.png\" in the proper art folder, but if this fails, it will keep the template art. | In template, mark with id=" + ART_ID)
+    @JsonPropertyDescription("The name of the art for this card. Do not include the file extension: it must be .png. It will be searched for in the relevant project folder(s). Defaults to searching for \"card-name-art.png\" in the proper art folder, but if this fails, it will keep the template art. | In template, mark with id=" + Card.ART_ID)
     public final String art;
 
     @JsonProperty(required = false)
@@ -80,7 +80,4 @@ abstract public class CardDesign
     @JsonProperty(required = false)
     @JsonPropertyDescription("The delta-Y value of the art positioning on this card. Defaults to default to 0 (no displacement.)")
     public final int artY;
-    
-    @JsonProperty(required = false)
-    public final ItemDesign itemProperties;
 }

@@ -1,5 +1,7 @@
 package charters.card.design.refactor;
 
+import charters.card.design.card.Card;
+
 public class CardGroup
 {
 	@Deprecated
