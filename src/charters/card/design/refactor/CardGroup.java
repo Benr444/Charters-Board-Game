@@ -1,14 +1,24 @@
 package charters.card.design.refactor;
 
 import java.util.Iterator;
+import java.util.LinkedList;
 
 import charters.card.design.card.Card;
+import charters.card.design.card.ItemCard;
 
 public class CardGroup implements Iterable<Card>
 {
+	//==========NESTED CLASS==========//
+	
 	protected static class CardGroupIterator implements Iterator<Card>
 	{
-
+		Card current;
+		
+		protected CardGroupIterator(CardGroup group)
+		{
+			current = group.getHead();
+		}
+		
 		@Override
 		public boolean hasNext()
 		{
@@ -25,6 +35,26 @@ public class CardGroup implements Iterable<Card>
 		
 	}
 	
+	//==========PRIVATE MEMBER==========//
+	
+	LinkedList<ItemCard> itemList;
+	
+	//==========CONSTRUCTOR==========//
+	
+	public CardGroup(String name)
+	{
+		this.name = name;
+	}
+	
+	public CardGroup()
+	{
+		this("unnamed");
+	}
+	
+	//==========PUBLIC INTERFACE==========//
+	
+	public final String name;
+	
 	@Deprecated
 	public void add(Iterable<? extends Card> cards)
 	{
@@ -40,6 +70,13 @@ public class CardGroup implements Iterable<Card>
 	@Override
 	public Iterator<Card> iterator()
 	{
-		return new CardGroupIterator();
+		return new CardGroupIterator(this);
+	}
+	
+	//==========PRIVATE HELPER==========//
+	
+	protected Card getHead()
+	{
+		return itemList.getFirst();
 	}
 }
