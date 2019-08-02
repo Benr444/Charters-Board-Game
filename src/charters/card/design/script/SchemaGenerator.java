@@ -1,15 +1,13 @@
 package charters.card.design.script;
 
-import charters.card.design.Character;
-import charters.card.design.Improvement;
-import charters.card.design.Item;
+import charters.card.design.refactor.CardSupplier;
 
 public class SchemaGenerator
 {
 	public static void main(String...strings)
 	{
-		new Item().generateSchema();
-		new Improvement().generateSchema();
-		new Character().generateSchema();
+		CardSupplier.CHARACTER_SUPPLIER.generateSchema();
+		CardSupplier.IMPROVEMENT_SUPPLIER.generateSchema();
+		CardSupplier.ITEM_SUPPLIER.generateSchema();
 	}
 }

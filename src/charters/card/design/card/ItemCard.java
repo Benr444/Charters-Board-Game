@@ -2,7 +2,6 @@ package charters.card.design.card;
 
 import java.io.File;
 
-import charters.card.design.Item;
 import charters.card.design.refactor.ItemDesign;
 import charters.card.visual.SVGEdits;
 

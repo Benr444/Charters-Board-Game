@@ -1,12 +1,9 @@
 package charters.card.design.refactor;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
-import charters.card.design.Card;
-import charters.card.design.Color;
-import charters.card.design.Rarity;
+import charters.card.design.card.Card;
 
 /**
  * POJO output from jackson goes purely into this class

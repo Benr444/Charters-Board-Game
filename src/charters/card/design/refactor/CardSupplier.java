@@ -3,8 +3,6 @@ package charters.card.design.refactor;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.util.LinkedList;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -13,7 +11,6 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.module.jsonSchema.JsonSchema;
 import com.fasterxml.jackson.module.jsonSchema.customProperties.HyperSchemaFactoryWrapper;
 
-import charters.card.design.Card.Design;
 import charters.card.design.card.Card;
 import charters.card.design.card.CharacterCard;
 import charters.card.design.card.ImprovementCard;
@@ -26,12 +23,12 @@ public abstract class CardSupplier
 {
 	//==========PUBLIC CONSTANTS==========
 
-	public static final String DESIGN_BASE_FOLDER = "resouce/design/card";
+	public static final String DESIGN_BASE_FOLDER = "resource/design/card";
 		public static final String SCHEMA_REL_FOLDER = "schema";
 		public static final String SCHEMA_EXT = ".schema.json";
 
 	public static final String TEMPLATE_REL_FOLDER = "template";
-	public static final String VISUAL_BASE_FOLDER = "resouce/visual/card";
+	public static final String VISUAL_BASE_FOLDER = "resource/visual/card";
     	public static final String VECTOR_REL_FOLDER = "vector";
     			public static final String TEMPLATE_VECTOR_EXT = "-template.svg";
     	public static final String RASTER_REL_FOLDER = "raster";
@@ -135,7 +132,7 @@ public abstract class CardSupplier
 			VISUAL_BASE_FOLDER + "/" + VECTOR_REL_FOLDER + "/" + simpleTypeName,
 			VISUAL_BASE_FOLDER + "/" + RASTER_REL_FOLDER + "/" + simpleTypeName,
 			VISUAL_BASE_FOLDER + "/" + ART_REL_FOLDER + "/" + simpleTypeName,
-			VISUAL_BASE_FOLDER + "/" + VECTOR_REL_FOLDER + "/" + TEMPLATE_REL_FOLDER + simpleTypeName + TEMPLATE_VECTOR_EXT,
+			VISUAL_BASE_FOLDER + "/" + VECTOR_REL_FOLDER + "/" + TEMPLATE_REL_FOLDER + "/" + simpleTypeName + TEMPLATE_VECTOR_EXT,
 			DESIGN_BASE_FOLDER + "/" + SCHEMA_REL_FOLDER + "/" + simpleTypeName + SCHEMA_EXT
 		);
 	}
@@ -191,6 +188,8 @@ public abstract class CardSupplier
 		JsonSchema improvementSchema = visitor.finalSchema();
 		try 
 		{
+			print("Working Directory: " + new File(".").getAbsolutePath());
+			print("Schema Directory: " + designSchemaFile.getAbsolutePath());
 			String schemaString = mapper.writeValueAsString(improvementSchema);
 			FileWriter outputFile = new FileWriter(designSchemaFile);
 			outputFile.write(schemaString);

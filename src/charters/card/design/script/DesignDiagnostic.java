@@ -4,7 +4,6 @@ import java.util.LinkedList;
 
 import charters.card.design.Card;
 import charters.card.design.Character;
-import charters.card.design.DesignGroup;
 import charters.card.design.Improvement;
 import charters.card.design.Item;
 import charters.card.design.Card.Design;

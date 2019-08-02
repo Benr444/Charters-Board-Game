@@ -1,4 +1,4 @@
-package charters.card.design;
+package charters.card.design.refactor;
 
 public enum Color
 {

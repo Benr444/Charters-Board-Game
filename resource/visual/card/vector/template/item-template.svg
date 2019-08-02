@@ -1,58 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="svg52" clip-rule="evenodd" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" version="1.1" viewBox="0 0 733 520" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink"><metadata id="metadata58"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/><dc:title/></cc:Work></rdf:RDF></metadata><defs id="defs56"><linearGradient id="linearGradient889" osb:paint="solid"><stop id="stop887" stop-color="#fc3500" offset="0"/></linearGradient><linearGradient id="charters-blue" osb:paint="solid"><stop id="stop882" stop-color="#0019fe" offset="0"/></linearGradient><linearGradient id="charters-orange" osb:paint="solid"><stop id="stop876" stop-color="#fe7900" offset="0"/></linearGradient><linearGradient id="charters-violet" osb:paint="solid"><stop id="stop870" stop-color="#8900c8" offset="0"/></linearGradient><linearGradient id="charters-green" osb:paint="solid"><stop id="stop864" stop-color="#00ae06" offset="0"/></linearGradient><linearGradient id="charters-yellow" osb:paint="solid"><stop id="stop858" stop-color="#ece700" offset="0"/></linearGradient><linearGradient id="charters-red" osb:paint="solid"><stop id="stop852" stop-color="#fc0000" offset="0"/></linearGradient><clipPath id="clipPath2344"><g id="g2348" transform="matrix(1 0 0 1.4784 -1407.7 -1072.4)" fill="none" stroke="#0029f1">
-        <path id="path2346" d="m691 63.599c0-12.319-14.786-22.321-33-22.321h-583.73c-18.213 0-33 10.002-33 22.321v44.642c0 12.319 14.787 22.32 33 22.32h583.73c18.214 0 33-10.001 33-22.32z" fill="none" stroke="#0029f1" stroke-width="2.51px"/>
-    </g></clipPath><linearGradient id="linearGradient2388" x1="39.693" x2="692.59" y1="85.92" y2="85.92" gradientUnits="userSpaceOnUse" xlink:href="#charters-red"/><clipPath id="clipPath2414"><g id="g2418" transform="matrix(1.8977 0 0 2.5382 -332.92 -340.44)">
-        <path id="path2416" d="m517.05 304.62c15.025-13.002 22.935-27.752 22.935-42.766s-7.91-29.764-22.935-42.767h-296.5c-15.024 13.003-22.934 27.753-22.934 42.767s7.91 29.764 22.934 42.766z" fill="#ffffff" stroke="#000000" stroke-width="1.41px"/>
-    </g></clipPath><linearGradient id="linearGradient2428" x1="520.89" x2="680.01" y1="226.16" y2="226.16" gradientUnits="userSpaceOnUse" xlink:href="#charters-red"/><linearGradient id="linearGradient2477" x1="520.68" x2="680.22" y1="226.16" y2="226.16" gradientUnits="userSpaceOnUse" xlink:href="#charters-red"/><linearGradient id="linearGradient908" x2="732.28" y1="259.84" y2="259.84" gradientUnits="userSpaceOnUse" xlink:href="#charters-red"/></defs>
-    <path id="path2" d="m732.28 24.584c0-13.568-11.015-24.584-24.584-24.584h-683.12c-13.568 0-24.584 11.016-24.584 24.584v470.52c0 13.568 11.016 24.584 24.584 24.584h683.12c13.569 0 24.584-11.016 24.584-24.584v-470.52z"/>
-    <g id="g6" transform="matrix(.94964 0 0 .92904 18.438 18.438)" fill="url(#linearGradient908)">
-        <path id="path4" d="m732.28 24.584c0-13.568-10.776-24.584-24.05-24.584h-684.18c-13.274 0-24.051 11.016-24.051 24.584v470.52c0 13.568 10.777 24.584 24.051 24.584h684.18c13.274 0 24.05-11.016 24.05-24.584z" fill="url(#linearGradient908)" charters-color="0"/>
-    </g>
-    <g id="g10" transform="matrix(1.8977 0 0 3.3675 -333.74 -642.95)">
-        <path id="path8" d="m517.05 304.62c15.025-13.002 22.935-27.752 22.935-42.766s-7.91-29.764-22.935-42.767h-296.5c-15.024 13.003-22.934 27.753-22.934 42.767s7.91 29.764 22.934 42.766h296.5z"/>
-    </g>
-    <g id="g2339" transform="matrix(1 0 0 1.4784 -2.2648e-13 286.36)" fill="#ffffff" stroke="#000000">
-        <path id="path2337" d="m691 63.599c0-12.319-14.786-22.321-33-22.321h-583.73c-18.213 0-33 10.002-33 22.321v44.642c0 12.319 14.787 22.32 33 22.32h583.73c18.214 0 33-10.001 33-22.32v-44.642z" fill="#ffffff" stroke="#000000" stroke-width="2.51px"/>
-    </g><g id="g2342" transform="translate(1407.7 1358.8)" clip-path="url(#clipPath2344)" fill="none" opacity=".75"><image id="image2334" x="-2626.6" y="-2554.4" width="2629.9" height="1753.3" fill="none" preserveAspectRatio="none" xlink:href="file:///D:/Projects/Charters-Board-Game/resource/visual/art/template/navigation-background.png"/></g><g id="g18" transform="matrix(1.0517 0 0 1.7091 -100.36 67.343)">
-        <path id="path16" d="m678.89 214.32c0-6.539-8.627-11.848-19.254-11.848h-118.38c-10.627 0-19.255 5.309-19.255 11.848v23.696c0 6.539 8.628 11.848 19.255 11.848h118.38c10.627 0 19.254-5.309 19.254-11.848v-23.696z" fill="white" stroke="black" stroke-width="2.23px"/>
-    </g>
-    <g id="g22" transform="matrix(1.0517 0 0 1.7091 -430.36 67.343)">
-        <path id="path20" d="m678.89 214.32c0-6.539-8.627-11.848-19.254-11.848h-118.38c-10.627 0-19.255 5.309-19.255 11.848v23.696c0 6.539 8.628 11.848 19.255 11.848h118.38c10.627 0 19.254-5.309 19.254-11.848v-23.696z" fill="white" stroke="black" stroke-width="2.23px"/>
-    </g>
-    <g id="g26" transform="translate(2.2737e-13 -.27137)" fill="#ffffff">
-        <path id="path24" d="m691 63.599c0-12.319-10.001-22.321-22.32-22.321h-605.09c-12.319 0-22.321 10.002-22.321 22.321v44.642c0 12.319 10.002 22.32 22.321 22.32h605.09c12.319 0 22.32-10.001 22.32-22.32v-44.642z" fill="#ffffff" stroke="black" stroke-width="3.17px"/>
-    </g>
-    <g id="g30" transform="matrix(1.8977 0 0 2.5382 -333.74 -425.78)">
-        <path id="path28" d="m517.05 304.62c15.025-13.002 22.935-27.752 22.935-42.766s-7.91-29.764-22.935-42.767h-296.5c-15.024 13.003-22.934 27.753-22.934 42.767s7.91 29.764 22.934 42.766h296.5z" fill="white" stroke="black" stroke-width="1.41px"/>
-    </g>
-    <g id="g2412" transform="translate(-.81279 -85.343)" clip-path="url(#clipPath2414)"><image id="art" x="-23.618" y="171.77" width="825" height="619" preserveAspectRatio="none" xlink:href="file:///D:/Projects/Charters-Board-Game/resource/visual/art/template/template-art.png"/></g><g id="g34" transform="matrix(1.3551 0 0 .99712 -447.54 131.24)">
-        <path id="path32" d="m678.89 214.32c0-6.539-3.906-11.848-8.718-11.848h-139.45c-4.812 0-8.719 5.309-8.719 11.848v23.696c0 6.539 3.907 11.848 8.719 11.848h139.45c4.812 0 8.718-5.309 8.718-11.848v-23.696z" fill="white" stroke="black" stroke-width="2.66px"/>
-    </g>
-    <g id="g38" transform="matrix(1.0517 0 0 1.7091 -265.36 67.343)">
-        <path id="path36" d="m678.89 214.32c0-6.539-8.627-11.848-19.254-11.848h-118.38c-10.627 0-19.255 5.309-19.255 11.848v23.696c0 6.539 8.628 11.848 19.255 11.848h118.38c10.627 0 19.254-5.309 19.254-11.848v-23.696z" fill="white" stroke="black" stroke-width="2.23px"/>
-    </g>
-    <g id="g2455" transform="matrix(1.0517 0 0 1.7091 -265.36 67.343)" fill="url(#linearGradient2428)" opacity=".5" stroke="#000000">
-        <path id="path2453" d="m678.89 214.32c0-6.539-8.627-11.848-19.254-11.848h-118.38c-10.627 0-19.255 5.309-19.255 11.848v23.696c0 6.539 8.628 11.848 19.255 11.848h118.38c10.627 0 19.254-5.309 19.254-11.848z" fill="url(#linearGradient2428)" stroke="#000000" stroke-width="2.23px" charters-color="0"/>
-    </g><g id="g42" transform="matrix(6.281 0 0 2.925 -584.23 -854.99)">
-        <ellipse id="ellipse40" cx="151.31" cy="447.48" rx="12.418" ry="13.846" fill="#ffffff" stroke="#000000" stroke-width=".68px" charters-rarity-color="0"/>
-    </g>
-    <g id="g2463" transform="matrix(1.0517 0 0 1.7091 -430.36 67.343)" fill="url(#linearGradient2428)" opacity=".5" stroke="#000000">
-        <path id="path2461" d="m678.89 214.32c0-6.539-8.627-11.848-19.254-11.848h-118.38c-10.627 0-19.255 5.309-19.255 11.848v23.696c0 6.539 8.628 11.848 19.255 11.848h118.38c10.627 0 19.254-5.309 19.254-11.848z" fill="url(#linearGradient2428)" stroke="#000000" stroke-width="2.23px" charters-color="0"/>
-    </g><g id="g46" transform="matrix(6.281 0 0 2.925 -749.23 -854.99)">
-        <ellipse id="ellipse44" cx="151.31" cy="447.48" rx="12.418" ry="13.846" fill="#ffffff" stroke="#000000" stroke-width=".68px" charters-rarity-color="0"/>
-    </g>
-    <g id="g2422" transform="matrix(1.0517 0 0 1.7091 -100.36 67.343)" fill="url(#linearGradient2428)" opacity=".5" stroke="#000000">
-        <path id="path2420" d="m678.89 214.32c0-6.539-8.627-11.848-19.254-11.848h-118.38c-10.627 0-19.255 5.309-19.255 11.848v23.696c0 6.539 8.628 11.848 19.255 11.848h118.38c10.627 0 19.254-5.309 19.254-11.848z" fill="url(#linearGradient2428)" stroke="#000000" stroke-width="2.23px" charters-color="0"/>
-    </g><g id="g50" transform="matrix(6.281 0 0 2.925 -419.23 -854.99)">
-        <ellipse id="ellipse48" cx="151.31" cy="447.48" rx="12.418" ry="13.846" fill="#ffffff" stroke="#000000" stroke-miterlimit="1.5" stroke-width=".68009" charters-rarity-color="0"/>
-    </g>
-<text id="type-0" x="201.1851" y="468.77731" fill="#000000" font-family="Consolas" font-size="46.667px" letter-spacing="0px" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan868" x="201.1851" y="509.26886"/></text>
-<text id="type-1" x="366.18509" y="468.77731" clip-rule="evenodd" fill="#000000" fill-rule="evenodd" font-family="Consolas" font-size="46.667px" letter-spacing="0px" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan868-6" x="366.18509" y="509.26886"/></text>
-<text id="type-2" x="531.18781" y="468.77802" clip-rule="evenodd" fill="#000000" fill-rule="evenodd" font-family="Consolas" font-size="46.667px" letter-spacing="0px" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan868-7" x="531.18781" y="509.26956"/></text>
-<g id="g2471" transform="matrix(1.3551 0 0 .99712 -447.54 131.24)" fill="url(#linearGradient2477)" opacity=".5" stroke="#000000">
-        <path id="path2469" d="m678.89 214.32c0-6.539-3.906-11.848-8.718-11.848h-139.45c-4.812 0-8.719 5.309-8.719 11.848v23.696c0 6.539 3.907 11.848 8.719 11.848h139.45c4.812 0 8.718-5.309 8.718-11.848z" fill="url(#linearGradient2477)" stroke="#000000" stroke-width="2.66px" charters-color="0"/>
-    </g><text id="text900" x="365.35818" y="369.52176" fill="#000000" font-family="Consolas" font-size="40px" letter-spacing="0px" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan898" x="365.35818" y="369.52176">Item</tspan></text>
-<g id="g2376" transform="translate(0 -.27137)" fill="url(#linearGradient2388)" opacity=".5" stroke="#000000">
-        <path id="path2374" d="m691 63.599c0-12.319-10.001-22.321-22.32-22.321h-605.09c-12.319 0-22.321 10.002-22.321 22.321v44.642c0 12.319 10.002 22.32 22.321 22.32h605.09c12.319 0 22.32-10.001 22.32-22.32z" fill="url(#linearGradient2388)" stroke="#000000" stroke-width="3.17px" charters-color="0"/>
-    </g><text id="name" x="367.6796" y="100.53908" fill="#000000" font-family="Consolas" font-size="46.667px" letter-spacing="0px" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan902" x="367.6796" y="100.53908">MY VERY LENGTHY ITEM NAME</tspan></text>
-</svg>
+{
+  "type" : "object",
+  "id" : "urn:jsonschema:charters:card:design:refactor:ItemDesign",
+  "properties" : {
+    "name" : {
+      "type" : "string",
+      "required" : true,
+      "description" : "Printed card name. Defaults to empty. | In template, mark with id=name"
+    },
+    "types" : {
+      "type" : "array",
+      "description" : "The printed types of the card. Defaults to empty. | In template, mark with id=types, or mark each type with type-0, type-1, etc.",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "flavorText" : {
+      "type" : "string",
+      "description" : "Italicized, bonus story text on a card. Defaults to blank."
+    },
+    "set" : {
+      "type" : "string",
+      "description" : "Used to identify the set of a card, which is the batch of designs it belongs to. Defaults to BASE"
+    },
+    "rarity" : {
+      "type" : "string",
+      "required" : true,
+      "description" : "Used to identify the set of a card, which is the batch of designs it belongs to. | In template, set charters-rarity-color=0, =1, etc. The main color for the cards rarity will go in 0, the secondary in 1, etc.",
+      "enum" : [ "COMMON", "UNCOMMON", "RARE", "UNSET" ]
+    },
+    "color" : {
+      "type" : "string",
+      "required" : true,
+      "description" : "The color of the card, mechanically. This will be reflected in the frame, etc. Should match any card costs. | In template, mark with charters-color=0 or =1, etc. The primary color code will fill in 0, the secondary color code will fill 1, etc.",
+      "enum" : [ "RED", "ORANGE", "YELLOW", "GREEN", "BLUE", "VIOLET", "BLACK", "WHITE", "COLORLESS", "UNSET" ]
+    },
+    "art" : {
+      "type" : "string",
+      "description" : "The name of the art for this card. Do not include the file extension: it must be .png. It will be searched for in the relevant project folder(s). Defaults to searching for \"card-name-art.png\" in the proper art folder, but if this fails, it will keep the template art. | In template, mark with id=art"
+    },
+    "artX" : {
+      "type" : "integer",
+      "description" : "The delta-X value of the art positioning on this card. Defaults to default to 0 (no displacement.)"
+    },
+    "artY" : {
+      "type" : "integer",
+      "description" : "The delta-Y value of the art positioning on this card. Defaults to default to 0 (no displacement.)"
+    },
+    "isInfluenceBonus" : {
+      "type" : "boolean",
+      "description" : "Set to true if this item can be revealed for +1 influence. Defaults to false. | In template, mark with id=influence-bonus"
+    }
+  }
+}

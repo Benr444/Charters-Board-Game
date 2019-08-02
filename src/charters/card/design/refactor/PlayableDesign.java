@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
-import charters.card.design.Playable.Design.Ability;
 import charters.card.design.card.PlayableCard;
 
 public class PlayableDesign extends CardDesign
