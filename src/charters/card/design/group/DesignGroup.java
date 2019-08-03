@@ -1,4 +1,4 @@
-package charters.card.design.script;
+package charters.card.design.group;
 
 import java.util.LinkedList;
 
@@ -7,7 +7,7 @@ import charters.card.design.Character;
 import charters.card.design.Improvement;
 import charters.card.design.Item;
 import charters.card.design.Item.Design;
-import charters.card.design.refactor.Color;
+import charters.card.design.design.Color;
 
 public class DesignGroup
 {

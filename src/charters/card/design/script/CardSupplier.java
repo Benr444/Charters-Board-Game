@@ -1,4 +1,4 @@
-package charters.card.design.refactor;
+package charters.card.design.script;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -15,6 +15,11 @@ import charters.card.design.card.Card;
 import charters.card.design.card.CharacterCard;
 import charters.card.design.card.ImprovementCard;
 import charters.card.design.card.ItemCard;
+import charters.card.design.design.CardDesign;
+import charters.card.design.design.CharacterDesign;
+import charters.card.design.design.ImprovementDesign;
+import charters.card.design.design.ItemDesign;
+import charters.card.design.group.CardGroup;
 
 /**
  * A class that manages the project folder system to allow inreading of various card-related data

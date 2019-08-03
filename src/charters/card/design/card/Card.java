@@ -22,7 +22,9 @@ import org.xml.sax.SAXException;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import charters.card.design.refactor.CardDesign;
+import charters.card.design.design.CardDesign;
+import charters.card.design.diag.GroupSplitter;
+import charters.card.design.group.CardGroup;
 import charters.card.visual.SVGEdits;
 
 /**
@@ -99,6 +101,20 @@ public abstract class Card
 	}
 	
 	//==========PUBLIC INTERFACE==========//
+	
+	/** @param group - The group to add this card to. Polymorphism allows for it to figure out how to sort itself */
+	public abstract void addToGroup(CardGroup group);
+	
+	/**
+	 * When splitting groups, this method is used for dynamic downcasting
+	 * @param group - Group to check membership to
+	 * @param splitter - Rule to use for membership check
+	 * @return - True if should be member
+	 */
+	public boolean determineMembership(CardGroup group, GroupSplitter<Card> splitter)
+	{
+		return splitter.check(group, this);
+	}
 	
 	/**
 	 * @return - The name of this card, edited like so: "The Moving Castle" -> "the-moving-castle"
@@ -212,7 +228,7 @@ public abstract class Card
 	/**
 	 * @return - The design object for this card. Subclasses must override this with a cast to their type of design
 	 */
-	protected CardDesign getDesign()
+	public CardDesign getDesign()
 	{
 		return this.design;
 	}

@@ -2,7 +2,8 @@ package charters.card.design.card;
 
 import java.io.File;
 
-import charters.card.design.refactor.CharacterDesign;
+import charters.card.design.design.CharacterDesign;
+import charters.card.design.group.CardGroup;
 import charters.card.visual.SVGEdits;
 
 public class CharacterCard extends PlayableCard
@@ -16,7 +17,7 @@ public class CharacterCard extends PlayableCard
 	public static final String MS_ID = "ms";
 	public static final String RG_ID = "rg";
 
-	//==========PUBLIC INTERFACE==========//
+	//==========CONSTRUCTOR==========//
 	
 	public CharacterCard
 	(
@@ -31,13 +32,15 @@ public class CharacterCard extends PlayableCard
 		super(designFile, vectorFolder, vectorTemplateFile, rasterFolder, autoArtFolder, templateArtFolder);
 	}
 	
-	//==========PRIVATE HELPER METHODS==========//
+	//==========PUBLIC INTERFACE==========//
 
 	@Override 
-	protected CharacterDesign getDesign()
-	{
-		return (CharacterDesign)super.getDesign();
-	}
+	public CharacterDesign getDesign() {return (CharacterDesign)super.getDesign();}
+
+	@Override
+	public void addToGroup(CardGroup group) {group.add(this);};
+	
+	//==========PRIVATE HELPER METHODS==========//
 	
 	@Override
 	protected String getSimpleName()

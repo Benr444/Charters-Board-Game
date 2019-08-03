@@ -4,8 +4,8 @@ import java.io.File;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import charters.card.design.refactor.PlayableDesign;
-import charters.card.design.refactor.PlayableDesign.Ability;
+import charters.card.design.design.PlayableDesign;
+import charters.card.design.design.PlayableDesign.Ability;
 import charters.card.visual.SVGEdits;
 
 public abstract class PlayableCard extends Card
@@ -21,6 +21,8 @@ public abstract class PlayableCard extends Card
 	/** Number of slots for abilities present on template */
 	public static final int NUM_TEMPLATE_ABILITIES = 3;
 	
+	//==========CONSTRUCTOR==========//
+	
 	public PlayableCard
 	(
 		File designFile,
@@ -34,13 +36,15 @@ public abstract class PlayableCard extends Card
 		super(designFile, vectorFolder, vectorTemplateFile, rasterFolder, autoArtFolder, templateArtFolder);
 	}
 	
-	//==========PRIVATE HELPERS==========//
+	//==========PUBLIC INTERFACE==========//
 	
 	@Override
-	protected PlayableDesign getDesign()
+	public PlayableDesign getDesign()
 	{
 		return (PlayableDesign)super.getDesign();
 	}
+	
+	//==========PRIVATE HELPERS==========//
 	
 	@Override
 	protected SVGEdits getEdits()

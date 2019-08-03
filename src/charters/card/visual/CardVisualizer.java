@@ -15,12 +15,9 @@ import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
-import charters.card.design.Card;
-import charters.card.design.Character;
-import charters.card.design.Improvement;
-import charters.card.design.Item;
-import charters.card.design.refactor.CardGroup;
-import charters.card.design.refactor.CardSupplier;
+import charters.card.design.card.Card;
+import charters.card.design.group.CardGroup;
+import charters.card.design.script.CardSupplier;
 
 public abstract class CardVisualizer
 {
@@ -30,7 +27,8 @@ public abstract class CardVisualizer
 		allCards.add(CardSupplier.CHARACTER_SUPPLIER.getAll());
 		for (Card c : allCards)
 		{
-			
+			c.vectorize();
+			print("Vectorized " + c.getDesign().name + " and output to " + c.getVectorFile().getAbsolutePath());
 		}
 	}
 	

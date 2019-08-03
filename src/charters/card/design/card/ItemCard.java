@@ -2,7 +2,9 @@ package charters.card.design.card;
 
 import java.io.File;
 
-import charters.card.design.refactor.ItemDesign;
+import charters.card.design.design.ItemDesign;
+import charters.card.design.diag.GroupSplitter;
+import charters.card.design.group.CardGroup;
 import charters.card.visual.SVGEdits;
 
 public class ItemCard extends Card
@@ -15,7 +17,7 @@ public class ItemCard extends Card
 	public static final String INFLUENCE_BONUS_ID = "influence-bonus";
 	public static final String INFLUENCE_BONUS_TEXT = "+1 Influence";
 	
-	//==========PUBLIC INTERFACE==========//
+	//==========CONSTRUCTOR==========//
 	
 	public ItemCard
 	(
@@ -28,7 +30,24 @@ public class ItemCard extends Card
 	{
 		super(designFile, vectorFolder, vectorTemplateFile, rasterFolder, autoArtFolder, templateArtFolder);
 	}
+	
+	//==========PUBLIC INTERFACE==========//
 
+	@Override
+	public ItemDesign getDesign()
+	{
+		return (ItemDesign)super.getDesign();
+	}
+	
+	@Override
+	public void addToGroup(CardGroup group) {group.add(this);}
+	
+	@Override
+	public boolean determineMembership(CardGroup group, GroupSplitter<Card> splitter)
+	{
+		return splitter.check(group, this);
+	}
+	
 	//==========PRIVATE HELPER METHODS==========//
 	
 	@Override
@@ -51,12 +70,6 @@ public class ItemCard extends Card
 		}
     	
 		return edits;
-	}
-	
-	@Override
-	protected ItemDesign getDesign()
-	{
-		return (ItemDesign)super.getDesign();
 	}
 
 	@Override

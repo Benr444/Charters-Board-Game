@@ -2,8 +2,9 @@ package charters.card.design.card;
 
 import java.io.File;
 
-import charters.card.design.refactor.CardDesign;
-import charters.card.design.refactor.ImprovementDesign;
+import charters.card.design.design.CardDesign;
+import charters.card.design.design.ImprovementDesign;
+import charters.card.design.group.CardGroup;
 import charters.card.visual.SVGEdits;
 
 public class ImprovementCard extends PlayableCard
@@ -12,7 +13,7 @@ public class ImprovementCard extends PlayableCard
 	
 	public static final String SIMPLE_NAME = "improvement";
 
-	//==========PUBLIC INTERFACE==========//
+	//==========CONSTRUCTOR==========//
 	
 	public ImprovementCard
 	(
@@ -27,13 +28,18 @@ public class ImprovementCard extends PlayableCard
 		super(designFile, vectorFolder, vectorTemplateFile, rasterFolder, autoArtFolder, templateArtFolder);
 	}
 	
-	//==========PRIVATE HELPER METHODS==========//
+	//==========PUBLIC INTERFACE==========//
+	
+	@Override
+	public void addToGroup(CardGroup group) {group.add(this);};
 
 	@Override
-	protected String getSimpleName()
+	public String getSimpleName()
 	{
 		return SIMPLE_NAME;
 	}
+
+	//==========PRIVATE HELPER METHODS==========//
 
 	@Override
 	protected Class<ImprovementDesign> getDesignType()

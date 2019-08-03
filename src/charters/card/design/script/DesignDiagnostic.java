@@ -1,84 +1,72 @@
 package charters.card.design.script;
 
+import java.util.Collection;
 import java.util.LinkedList;
+import java.util.function.Consumer;
 
-import charters.card.design.Card;
-import charters.card.design.Character;
-import charters.card.design.Improvement;
-import charters.card.design.Item;
-import charters.card.design.Card.Design;
+import charters.card.design.card.Card;
+import charters.card.design.design.Color;
+import charters.card.design.diag.ColorCounter;
+import charters.card.design.group.CardGroup;
+import charters.card.design.group.DesignGroup;
 import javafx.util.Pair;
 
 /**
  * A class which can be used to see an overview of the current card designs,
  * broken down by various categories
+ * 
+ * This class does NOT define the methods by which information is received about a card set
+ * It merely PRINTS that information to the console
+ * 
+ * This class DOES determine how to break down existing card designs and how to choose which ones to analyze
+ * 
+ * Example: Goal: Count all RED cards present in any set that are improvements
+ * 	In this class: No break down needed
  */
-public class DesignDiagnostic
+public abstract class DesignDiagnostic
 {
 	public static void main(String... args)
 	{
-		DesignDiagnostic diag = new DesignDiagnostic();
-		diag.diagnose();
+		CardGroup allCards = new CardGroup("All Found Cards");
+		allCards.add(CardSupplier.CHARACTER_SUPPLIER.getAll());
+		allCards.add(CardSupplier.ITEM_SUPPLIER.getAll());
+		allCards.add(CardSupplier.IMPROVEMENT_SUPPLIER.getAll());
+		getDiagnosables(allCards);
 	}
 	
-	private DesignGroup allDesigns;
-	private LinkedList<DesignGroup> sets;
-	
-	public DesignDiagnostic()
+	/** Split the passed group into commonly analyzed subsets */
+	public static LinkedList<CardGroup> getDiagnosables(CardGroup group)
 	{
-		this.allDesigns = new DesignGroup
-		(
-			"All Found Cards", new Item().readDesigns(), new Improvement().readDesigns(), new Character().readDesigns()
-		);
-		this.sets = new LinkedList<DesignGroup>();
+		//To be returned
+		LinkedList<CardGroup> diagnosables = new LinkedList<CardGroup>();
+		
+		//Add each set as a separate diagnosable
+		diagnosables.addAll(group.setSplit());
+		
+		return diagnosables;
+		
+	}
+
+	/** @param groups - All the groups to be diagnosed */
+	public void diagnose(Collection<CardGroup> groups)
+	{
+		for (CardGroup group : groups) {diagnose(group);}
 	}
 	
 	/**
 	 * Prints a bunch of diagnostic information about the current designs in file
 	 * Just keep adding stuff to this function honestly
 	 */
-	public void diagnose()
+	public void diagnose(CardGroup group)
 	{
-		//Sort all designs into sets
-		setSort(allDesigns.items);
-		setSort(allDesigns.improvements);
-		setSort(allDesigns.characters);
 		
-		//Iterate for each set: various diagnostics
-		for (DesignGroup set : sets)
+		//Analyze colors
+		for (Color color : Color.values())
 		{
-			set.printBigCount();
-			set.getCharacterSubset().printBigCount();
-			set.getItemSubset().printBigCount();
-			set.getImprovementSubset().printBigCount();
-		}
-	}
-	
-	/**
-	 * Sorts designs into sets
-	 * @param subset - what part of the set to sort into the sets
-	 */
-	private void setSort(LinkedList<? extends Card.Design> subset)
-	{
-		//Create the list of sets
-		for (Card.Design design : subset)
-		{
-			//Assume set does not exist
-			boolean setExists = false;
-			for (DesignGroup set : sets)
-			{
-				if (set.name.equals(design.set)) //If a set with that name exists 
-				{
-					setExists = true;
-					set.add(design); //Add it to it
-				}
-			}
-			if (setExists == false) //Otherwise
-			{
-				DesignGroup newSet = new DesignGroup(design.set); //Create a new set
-				newSet.add(design); //And add it to that
-				sets.add(newSet);
-			}
+			ColorCounter counter = new ColorCounter(color);
+			group.forEveryCard(counter);
+			print(group, color.name() + " Color Count: " + counter.getCount());
+			print(group, color.name() + " Color Fraction: " + counter.getCount() / group.size());
 		}
 	}
 	
@@ -87,8 +75,8 @@ public class DesignDiagnostic
 		System.out.println("[Design Diagnostic]: " + s);
 	}
 	
-	public static void print(String set, String s)
+	public static void print(CardGroup group, String s)
 	{
-		System.out.println("[Design Diagnostic][" + set + "]: " + s);
+		System.out.println("[Design Diagnostic][" + group.name + "]: " + s);
 	}
 }

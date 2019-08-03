@@ -1,4 +1,4 @@
-package charters.card.design.refactor;
+package charters.card.design.design;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
