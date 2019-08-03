@@ -1,7 +1,6 @@
-package charters.card.design.diag;
+package charters.card.design.diag.splitter;
 
 import charters.card.design.card.PlayableCard;
-import charters.card.design.group.CardGroup;
 
 /**
  * Splits by HP
@@ -11,15 +10,8 @@ import charters.card.design.group.CardGroup;
 public class HPSplitter implements GroupSplitter<PlayableCard>
 {
 	@Override
-	public boolean check(CardGroup group, PlayableCard card)
-	{
-		return group.name.contains(qualityString(card));
-	}
-
-	@Override
 	public String qualityString(PlayableCard card)
 	{
 		return "HP=" + card.getDesign().HP;
 	}
-
 }

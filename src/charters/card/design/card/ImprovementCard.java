@@ -11,7 +11,7 @@ public class ImprovementCard extends PlayableCard
 {
 	//==========PUBLIC CONSTANTS==========//
 	
-	public static final String SIMPLE_NAME = "improvement";
+	public static final String DESIGN_TYPE_NAME = "improvement";
 
 	//==========CONSTRUCTOR==========//
 	
@@ -34,9 +34,9 @@ public class ImprovementCard extends PlayableCard
 	public void addToGroup(CardGroup group) {group.add(this);};
 
 	@Override
-	public String getSimpleName()
+	public String getDesignTypeName()
 	{
-		return SIMPLE_NAME;
+		return DESIGN_TYPE_NAME;
 	}
 
 	//==========PRIVATE HELPER METHODS==========//

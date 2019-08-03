@@ -23,7 +23,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import charters.card.design.design.CardDesign;
-import charters.card.design.diag.GroupSplitter;
+import charters.card.design.diag.splitter.GroupSplitter;
 import charters.card.design.group.CardGroup;
 import charters.card.visual.SVGEdits;
 
@@ -101,6 +101,9 @@ public abstract class Card
 	}
 	
 	//==========PUBLIC INTERFACE==========//
+	
+	/** @return - A design type name like "characters" */
+	public abstract String getDesignTypeName();
 	
 	/** @param group - The group to add this card to. Polymorphism allows for it to figure out how to sort itself */
 	public abstract void addToGroup(CardGroup group);
@@ -222,7 +225,6 @@ public abstract class Card
 	
 	//==========PRIVATE HELPERS==========//
 
-	protected abstract String getSimpleName();
 	protected abstract Class<? extends CardDesign> getDesignType();
 	
 	/**
@@ -259,14 +261,14 @@ public abstract class Card
 	{
 		if (getDesign().art == null) //No art specified: look for auto art and template art
 		{
-			File autoArtFile = new File(autoArtFolder.getAbsolutePath() + getSimpleName() + ART_EXT);
+			File autoArtFile = new File(autoArtFolder.getAbsolutePath() + getDesignTypeName() + ART_EXT);
 			if (autoArtFile.exists()) //If the auto art exists
 			{
 				return autoArtFile;
 			}
 			else
 			{
-				return new File(templateArtFolder.getAbsolutePath() + getSimpleName() + ART_EXT); //Return the template art
+				return new File(templateArtFolder.getAbsolutePath() + getDesignTypeName() + ART_EXT); //Return the template art
 			}
 		}
 		else

@@ -3,7 +3,7 @@ package charters.card.design.card;
 import java.io.File;
 
 import charters.card.design.design.ItemDesign;
-import charters.card.design.diag.GroupSplitter;
+import charters.card.design.diag.splitter.GroupSplitter;
 import charters.card.design.group.CardGroup;
 import charters.card.visual.SVGEdits;
 
@@ -11,7 +11,7 @@ public class ItemCard extends Card
 {
 	//==========PUBLIC CONSTANTS==========//
 
-	public static final String SIMPLE_NAME = "item";
+	public static final String DESIGN_TYPE_NAME = "item";
 
 	//id-values. These are the ID's searched for for various design variables
 	public static final String INFLUENCE_BONUS_ID = "influence-bonus";
@@ -73,9 +73,9 @@ public class ItemCard extends Card
 	}
 
 	@Override
-	protected String getSimpleName()
+	public String getDesignTypeName()
 	{
-		return SIMPLE_NAME;
+		return DESIGN_TYPE_NAME;
 	}
 
 	@Override

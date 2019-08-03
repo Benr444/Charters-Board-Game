@@ -55,7 +55,7 @@ public abstract class CardSupplier
 	{
 		protected ItemSupplier()
 		{
-			super(ItemCard.SIMPLE_NAME);
+			super(ItemCard.DESIGN_TYPE_NAME);
 		}
 		
 		@Override
@@ -72,7 +72,7 @@ public abstract class CardSupplier
 	{
 		protected CharacterSupplier()
 		{
-			super(CharacterCard.SIMPLE_NAME);
+			super(CharacterCard.DESIGN_TYPE_NAME);
 		}
 		
 		@Override
@@ -89,7 +89,7 @@ public abstract class CardSupplier
 	{
 		protected ImprovementSupplier()
 		{
-			super(ImprovementCard.SIMPLE_NAME);
+			super(ImprovementCard.DESIGN_TYPE_NAME);
 		}
 		
 		@Override
@@ -164,7 +164,7 @@ public abstract class CardSupplier
 				if (f.isFile())
 				{
 					print("Found candidate design file: " + f.getName());
-					returnGroup.add(get(f));
+					get(f).addToGroup(returnGroup);
 				}
 			}
 		}

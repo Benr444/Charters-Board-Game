@@ -10,7 +10,7 @@ public class CharacterCard extends PlayableCard
 {
 	//==========PUBLIC CONSTANTS==========//
 	
-	public static final String SIMPLE_NAME = "character";
+	public static final String DESIGN_TYPE_NAME = "character";
 
 	//id-values. These are the ID's searched for for various design variables
 	public static final String AK_ID = "ak";
@@ -43,9 +43,9 @@ public class CharacterCard extends PlayableCard
 	//==========PRIVATE HELPER METHODS==========//
 	
 	@Override
-	protected String getSimpleName()
+	public String getDesignTypeName()
 	{
-		return SIMPLE_NAME;
+		return DESIGN_TYPE_NAME;
 	}
 
 	@Override

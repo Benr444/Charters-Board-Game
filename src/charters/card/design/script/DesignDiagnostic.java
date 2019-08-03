@@ -22,6 +22,7 @@ import javafx.util.Pair;
  * 
  * Example: Goal: Count all RED cards present in any set that are improvements
  * 	In this class: No break down needed
+ * 	In designgroup: 
  */
 public abstract class DesignDiagnostic
 {

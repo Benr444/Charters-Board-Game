@@ -12,9 +12,11 @@ import charters.card.design.card.ImprovementCard;
 import charters.card.design.card.ItemCard;
 import charters.card.design.design.Color;
 import charters.card.design.diag.CardAnalyzer;
-import charters.card.design.diag.ColorSplitter;
-import charters.card.design.diag.GroupSplitter;
-import charters.card.design.diag.HPSplitter;
+import charters.card.design.diag.splitter.ColorSplitter;
+import charters.card.design.diag.splitter.DesignTypeSplitter;
+import charters.card.design.diag.splitter.GroupSplitter;
+import charters.card.design.diag.splitter.HPSplitter;
+import charters.card.design.diag.splitter.SetSplitter;
 
 /**
  * A HIGHLY COUPLED class which deals with actually instantiable cards
@@ -109,7 +111,7 @@ public class CardGroup
 		this.items.add(card);
 	}
 	
-	public <T extends Card> LinkedList<CardGroup> split(GroupSplitter<T> splitter)
+	public <T extends Card> LinkedList<CardGroup> split(GroupSplitter<Card> splitter)
 	{
 		//Sets to return
 		LinkedList<CardGroup> returnValues = new LinkedList<CardGroup>();
@@ -159,61 +161,14 @@ public class CardGroup
 	 */
 	public LinkedList<CardGroup> setSplit()
 	{
-		//Sets to return
-		LinkedList<CardGroup> returnValues = new LinkedList<CardGroup>();
-		
-		//Iterate through each type sub set (characters, items, improvements)
-		for (LinkedList<? extends Card> subsection : allCards.values())
-		{
-			//Iterate over each card in that set
-    		for (Card c : subsection)
-    		{
-    			//Assume a set group exists for this card
-    			boolean respectiveSetExists = true;
-    			
-    			//Check over each possible card set
-    			for (CardGroup setGroup : returnValues)
-    			{
-    				//If this card matches any of the existing sets names
-    				if (setGroup.name == c.getDesign().set)
-    				{
-    					//Add this card to that set
-    					c.addToGroup(setGroup);
-    					break; //For now a card can only go in one set
-    				}
-    				else
-    				{
-    					//If it matches no group, mark that
-    					respectiveSetExists = false;
-    				}
-    			}
-    			
-    			//If no fitting set exists
-    			if (respectiveSetExists == false)
-    			{
-        			//It should be created
-        			returnValues.add(new CardGroup(c.getDesign().set));
-    			}
-    		}
-		}
-		
-		//Return the list of all the sets
-		return returnValues;
+		return split(new SetSplitter());
 	}
 
 	
 	/** @return - A card group for each type in this set (character, item, etc.) */
 	public LinkedList<CardGroup> designTypeSplit()
 	{
-		LinkedList<CardGroup> typeGroups = new LinkedList<CardGroup>();
-		
-		for (Map.Entry<String, LinkedList<? extends Card>> subsectionEntry : allCards.entrySet())
-		{
-			CardGroup typeGroup = new CardGroup(this.name + SUB_GROUP_SEP + subsectionEntry.getKey());
-			typeGroup.add(subsectionEntry.getValue());
-		}
-		
-		return typeGroups;
+		return split(new DesignTypeSplitter());
 	}
 	
 	/** @return - A card group for each different color in this group */

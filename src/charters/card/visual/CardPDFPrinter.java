@@ -7,7 +7,7 @@ import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
-import charters.card.design.Item;
+import charters.card.design.script.CardSupplier;
 
 public class CardPDFPrinter
 {
@@ -18,7 +18,7 @@ public class CardPDFPrinter
 	
 	public static void main(String...strings)
 	{
-		new Item().readDesigns();
+		CardSupplier.ITEM_SUPPLIER.getAll();
 		makeDocument();
 	}
 	
