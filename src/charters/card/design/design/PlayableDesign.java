@@ -12,6 +12,7 @@ public class PlayableDesign extends CardDesign
 	{
 		private static final String DEFAULT_NAME = "Nameless";
 		private static final String DEFAULT_TEXT = "No effect";
+		
 		@JsonProperty(required = true)
 		@JsonPropertyDescription("Printed name of the ability.")
 		public final String name;
@@ -19,7 +20,7 @@ public class PlayableDesign extends CardDesign
 		@JsonPropertyDescription("Printed cost/effect of the ability.")
 		public final String text;
 		
-		private Ability()
+		public Ability()
 		{
 			this.name = Ability.DEFAULT_NAME;
 			this.text = Ability.DEFAULT_TEXT;

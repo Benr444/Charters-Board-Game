@@ -9,8 +9,14 @@
     "cost": "[BBB]",
     "abilities":
     [
-        "Foundation Ferry: Your allies may play improvements on this character: they count as being on this character's tile; This cannot be destroyed or brought below 1 HP while there are still improvements on it",
-        "Crush: This character gets +XAK, where X is equal to the number of improvements on it"
+        {
+            "name": "Foundation Ferry",
+            "text": "Your allies may play improvements on this character: they count as being on this character's tile; This cannot be destroyed or brought below 1 HP while there are still improvements on it"
+        },
+        {
+            "name": "Crush",
+            "text": "This character gets +XAK, where X is equal to the number of improvements on it"
+        }
     ],
     "AK": 1,
     "MS": 1,

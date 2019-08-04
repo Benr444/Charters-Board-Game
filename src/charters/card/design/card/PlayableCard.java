@@ -3,6 +3,8 @@ package charters.card.design.card;
 import java.io.File;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
 import charters.card.design.design.PlayableDesign;
 import charters.card.design.design.PlayableDesign.Ability;

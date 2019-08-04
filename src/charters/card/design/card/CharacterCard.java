@@ -38,7 +38,7 @@ public class CharacterCard extends PlayableCard
 	public CharacterDesign getDesign() {return (CharacterDesign)super.getDesign();}
 
 	@Override
-	public void addToGroup(CardGroup group) {group.add(this);};
+	public void addToGroup(CardGroup group) {group.add(this); print("Added Character to group>" + group.name);};
 	
 	//==========PRIVATE HELPER METHODS==========//
 	

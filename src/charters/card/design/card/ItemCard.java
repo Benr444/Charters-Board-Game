@@ -42,12 +42,6 @@ public class ItemCard extends Card
 	@Override
 	public void addToGroup(CardGroup group) {group.add(this);}
 	
-	@Override
-	public boolean determineMembership(CardGroup group, GroupSplitter<Card> splitter)
-	{
-		return splitter.check(group, this);
-	}
-	
 	//==========PRIVATE HELPER METHODS==========//
 	
 	@Override

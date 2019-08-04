@@ -19,11 +19,9 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import charters.card.design.design.CardDesign;
-import charters.card.design.diag.splitter.GroupSplitter;
 import charters.card.design.group.CardGroup;
 import charters.card.visual.SVGEdits;
 
@@ -89,15 +87,16 @@ public abstract class Card
 		File vectorTemplateFile,
 		File rasterFolder,
 		File autoArtFolder,
-		File templateArtFolder
+		File templateArt
 	)
 	{
 		this.designFile = designFile;
 		this.design = this.readDesign();
-		this.artFile = this.findArt(autoArtFolder, templateArtFolder);
-		this.vectorFile = new File(vectorFolder.getPath() + this.design.name + VECTOR_EXT);
+		this.artFile = this.findArt(autoArtFolder, templateArt);
+		print("Art has been assigned as " + this.artFile.getAbsolutePath());
+		this.vectorFile = new File(vectorFolder.getPath() + "/" + this.getReducedName() + VECTOR_EXT);
 		this.vectorTemplateFile = vectorTemplateFile;
-		this.rasterFile = new File(rasterFolder.getPath() + this.design.name + RASTER_EXT);
+		this.rasterFile = new File(rasterFolder.getPath() + "/" + this.getReducedName() + RASTER_EXT);
 	}
 	
 	//==========PUBLIC INTERFACE==========//
@@ -107,17 +106,6 @@ public abstract class Card
 	
 	/** @param group - The group to add this card to. Polymorphism allows for it to figure out how to sort itself */
 	public abstract void addToGroup(CardGroup group);
-	
-	/**
-	 * When splitting groups, this method is used for dynamic downcasting
-	 * @param group - Group to check membership to
-	 * @param splitter - Rule to use for membership check
-	 * @return - True if should be member
-	 */
-	public boolean determineMembership(CardGroup group, GroupSplitter<Card> splitter)
-	{
-		return splitter.check(group, this);
-	}
 	
 	/**
 	 * @return - The name of this card, edited like so: "The Moving Castle" -> "the-moving-castle"
@@ -257,18 +245,20 @@ public abstract class Card
 		return currentDesign;
 	}
 	
-	protected File findArt(File autoArtFolder, File templateArtFolder)
+	protected File findArt(File autoArtFolder, File templateArt)
 	{
+		//print("Template Art File Candidate: " + templateArt.getAbsolutePath());
 		if (getDesign().art == null) //No art specified: look for auto art and template art
 		{
-			File autoArtFile = new File(autoArtFolder.getAbsolutePath() + getDesignTypeName() + ART_EXT);
+			File autoArtFile = new File(autoArtFolder.getAbsolutePath() + "/" + getReducedName() + ART_EXT);
+			//print("Auto Art File Candidate: " + autoArtFile.getAbsolutePath());
 			if (autoArtFile.exists()) //If the auto art exists
 			{
 				return autoArtFile;
 			}
 			else
 			{
-				return new File(templateArtFolder.getAbsolutePath() + getDesignTypeName() + ART_EXT); //Return the template art
+				return templateArt; //Return the template art
 			}
 		}
 		else
@@ -401,7 +391,7 @@ public abstract class Card
 		return returnList;
 	}
 	
-	private static void print(String s)
+	protected static void print(String s)
 	{
 		System.out.println("[Card]: " + s);
 	}

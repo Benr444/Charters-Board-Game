@@ -62,6 +62,13 @@ public class CardGroup
 		this(DEFAULT_GROUP_NAME);
 	}
 	
+
+	/** Names a new cardgroup after an existing one */
+	public CardGroup(CardGroup originator, String name)
+	{
+		this(originator.name + SUB_GROUP_SEP + name);
+	}
+	
 	//==========PUBLIC INTERFACE==========//
 	
 	public final String name;
@@ -111,29 +118,29 @@ public class CardGroup
 		this.items.add(card);
 	}
 	
-	public <T extends Card> LinkedList<CardGroup> split(GroupSplitter<Card> splitter)
+	public LinkedList<CardGroup> splitCards(GroupSplitter<Card> splitter)
 	{
 		//Sets to return
 		LinkedList<CardGroup> returnValues = new LinkedList<CardGroup>();
 		
 		//Iterate through each type sub set (characters, items, improvements)
 		for (LinkedList<? extends Card> subsection : allCards.values())
-		{
+		{	
 			//Iterate over each card in that set
     		for (Card c : subsection)
     		{
     			//Assume a set group exists for this card
-    			boolean respectiveSetExists = true;
+    			boolean respectiveSetExists = false;
     			
     			//Check over each possible card set
     			for (CardGroup setGroup : returnValues)
     			{
     				//If this card matches any of the existing sets
-    				//if (splitter.check(setGroup, c))
-    				if (c.determineMembership(setGroup, splitter))
+    				if (splitter.check(setGroup, c))
         			{
     					//Add this card to that set
     					c.addToGroup(setGroup);
+    					respectiveSetExists = true;
     					break; //For now a card can only go in one set
     				}
     				else
@@ -147,9 +154,129 @@ public class CardGroup
     			if (respectiveSetExists == false)
     			{
         			//It should be created
-        			returnValues.add(new CardGroup(splitter.qualityString(c)));
+        			returnValues.add(new CardGroup(this, splitter.qualityString(c)));
     			}
     		}
+		}
+		
+		//Return the list of all the sets
+		return returnValues;
+	}
+	
+	public LinkedList<CardGroup> splitItems(GroupSplitter<ItemCard> splitter)
+	{
+		//Sets to return
+		LinkedList<CardGroup> returnValues = new LinkedList<CardGroup>();
+
+		//Iterate over each card in that set
+		for (ItemCard c : items)
+		{
+			//Assume a set group exists for this card
+			boolean respectiveSetExists = true;
+			
+			//Check over each possible card set
+			for (CardGroup setGroup : returnValues)
+			{
+				//If this card matches any of the existing sets
+				if (splitter.check(setGroup, c))
+    			{
+					//Add this card to that set
+					c.addToGroup(setGroup);
+					break; //For now a card can only go in one set
+				}
+				else
+				{
+					//If it matches no group, mark that
+					respectiveSetExists = false;
+				}
+			}
+			
+			//If no fitting set exists
+			if (respectiveSetExists == false)
+			{
+    			//It should be created
+    			returnValues.add(new CardGroup(this, splitter.qualityString(c)));
+			}
+		}
+		
+		//Return the list of all the sets
+		return returnValues;
+	}
+	
+	public LinkedList<CardGroup> splitCharacters(GroupSplitter<CharacterCard> splitter)
+	{
+		//Sets to return
+		LinkedList<CardGroup> returnValues = new LinkedList<CardGroup>();
+
+		//Iterate over each card in that set
+		for (CharacterCard c : characters)
+		{
+			//Assume a set group exists for this card
+			boolean respectiveSetExists = true;
+			
+			//Check over each possible card set
+			for (CardGroup setGroup : returnValues)
+			{
+				//If this card matches any of the existing sets
+				if (splitter.check(setGroup, c))
+    			{
+					//Add this card to that set
+					c.addToGroup(setGroup);
+					break; //For now a card can only go in one set
+				}
+				else
+				{
+					//If it matches no group, mark that
+					respectiveSetExists = false;
+				}
+			}
+			
+			//If no fitting set exists
+			if (respectiveSetExists == false)
+			{
+    			//It should be created
+    			returnValues.add(new CardGroup(this, splitter.qualityString(c)));
+			}
+		}
+		
+		//Return the list of all the sets
+		return returnValues;
+	}
+	
+	public LinkedList<CardGroup> splitImprovements(GroupSplitter<ImprovementCard> splitter)
+	{
+		//Sets to return
+		LinkedList<CardGroup> returnValues = new LinkedList<CardGroup>();
+
+		//Iterate over each card in that set
+		for (ImprovementCard c : improvements)
+		{
+			//Assume a set group exists for this card
+			boolean respectiveSetExists = true;
+			
+			//Check over each possible card set
+			for (CardGroup setGroup : returnValues)
+			{
+				//If this card matches any of the existing sets
+				if (splitter.check(setGroup, c))
+    			{
+					//Add this card to that set
+					c.addToGroup(setGroup);
+					break; //For now a card can only go in one set
+				}
+				else
+				{
+					//If it matches no group, mark that
+					respectiveSetExists = false;
+				}
+			}
+			
+			//If no fitting set exists
+			if (respectiveSetExists == false)
+			{
+    			//It should be created
+    			returnValues.add(new CardGroup(this, splitter.qualityString(c)));
+			}
 		}
 		
 		//Return the list of all the sets
@@ -161,27 +288,26 @@ public class CardGroup
 	 */
 	public LinkedList<CardGroup> setSplit()
 	{
-		return split(new SetSplitter());
+		return splitCards(new SetSplitter());
 	}
-
 	
 	/** @return - A card group for each type in this set (character, item, etc.) */
 	public LinkedList<CardGroup> designTypeSplit()
 	{
-		return split(new DesignTypeSplitter());
+		return splitCards(new DesignTypeSplitter());
 	}
 	
 	/** @return - A card group for each different color in this group */
 	public LinkedList<CardGroup> colorSplit()
 	{
-		return split(new ColorSplitter());
+		return splitCards(new ColorSplitter());
 	}
 	
-	/** @return - A card group for each different HP in this group */
+	/** @return - A card group for each different HP in this group *
 	public LinkedList<CardGroup> hpSplit()
 	{
-		return split(new HPSplitter());
-	}
+		return splitCharacters((GroupSplitter<CharacterCard>)new HPSplitter());
+	}*/
 	
 	/** @return - The number of cards in this set */
 	public int size()

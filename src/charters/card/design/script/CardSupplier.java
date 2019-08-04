@@ -39,7 +39,9 @@ public abstract class CardSupplier
     	public static final String RASTER_REL_FOLDER = "raster";
     	public static final String ART_REL_FOLDER = "art";
 	
-	public static final String TEMPLATE_ART_FOLDER = VISUAL_BASE_FOLDER + "/" + ART_REL_FOLDER + "/" + TEMPLATE_REL_FOLDER;
+    public static final String TEMPLATE_ART_NAME = "template-art";
+	public static final String TEMPLATE_ART = 
+		VISUAL_BASE_FOLDER + "/" + ART_REL_FOLDER + "/" + TEMPLATE_REL_FOLDER + "/" + TEMPLATE_ART_NAME + Card.ART_EXT;
 	
 	//==========PUBLIC ENUM INSTANCES==========
 	
@@ -61,7 +63,7 @@ public abstract class CardSupplier
 		@Override
 		public ItemCard get(File designFile)
 		{
-			return new ItemCard(designFile, vectorFolder, vectorTemplateFile, rasterFolder, autoArtFolder, new File(TEMPLATE_ART_FOLDER));
+			return new ItemCard(designFile, vectorFolder, vectorTemplateFile, rasterFolder, autoArtFolder, new File(TEMPLATE_ART));
 		}
 
 		@Override
@@ -78,7 +80,7 @@ public abstract class CardSupplier
 		@Override
 		public CharacterCard get(File designFile)
 		{
-			return new CharacterCard(designFile, vectorFolder, vectorTemplateFile, rasterFolder, autoArtFolder, new File(TEMPLATE_ART_FOLDER));
+			return new CharacterCard(designFile, vectorFolder, vectorTemplateFile, rasterFolder, autoArtFolder, new File(TEMPLATE_ART));
 		}
 
 		@Override
@@ -95,7 +97,7 @@ public abstract class CardSupplier
 		@Override
 		public ImprovementCard get(File designFile)
 		{
-			return new ImprovementCard(designFile, vectorFolder, vectorTemplateFile, rasterFolder, autoArtFolder, new File(TEMPLATE_ART_FOLDER));
+			return new ImprovementCard(designFile, vectorFolder, vectorTemplateFile, rasterFolder, autoArtFolder, new File(TEMPLATE_ART));
 		}
 
 		@Override
@@ -137,8 +139,8 @@ public abstract class CardSupplier
 			VISUAL_BASE_FOLDER + "/" + VECTOR_REL_FOLDER + "/" + simpleTypeName,
 			VISUAL_BASE_FOLDER + "/" + RASTER_REL_FOLDER + "/" + simpleTypeName,
 			VISUAL_BASE_FOLDER + "/" + ART_REL_FOLDER + "/" + simpleTypeName,
-			VISUAL_BASE_FOLDER + "/" + VECTOR_REL_FOLDER + "/" + TEMPLATE_REL_FOLDER + "/" + simpleTypeName + TEMPLATE_VECTOR_EXT,
-			DESIGN_BASE_FOLDER + "/" + SCHEMA_REL_FOLDER + "/" + simpleTypeName + SCHEMA_EXT
+			DESIGN_BASE_FOLDER + "/" + SCHEMA_REL_FOLDER + "/" + simpleTypeName + SCHEMA_EXT,
+			VISUAL_BASE_FOLDER + "/" + VECTOR_REL_FOLDER + "/" + TEMPLATE_REL_FOLDER + "/" + simpleTypeName + TEMPLATE_VECTOR_EXT
 		);
 	}
 	
@@ -155,7 +157,7 @@ public abstract class CardSupplier
 	 */
 	public CardGroup getAll()
 	{
-		CardGroup returnGroup = new CardGroup();
+		CardGroup returnGroup = new CardGroup("TempReturnGroup");
 		File[] designFiles = designFolder.listFiles();
 		if (designFiles != null)
 		{
