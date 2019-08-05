@@ -2,15 +2,17 @@ package charters.card.design.design;
 
 public enum Rarity
 {
-	COMMON("#FFFFFF"),
-	UNCOMMON("#cccccc"),
-	RARE("#ccffff"),
-	UNSET("#1fcd3d");
+	COMMON(3, "#FFFFFF"),
+	UNCOMMON(2, "#cccccc"),
+	RARE(1, "#ccffff"),
+	UNSET(0, "#1fcd3d");
 
 	public final String[] colorCodes;
+	public final int count;
 	
-	private Rarity(String... colorCodes)
+	private Rarity(int count, String... colorCodes)
 	{
+		this.count = count;
 		this.colorCodes = colorCodes;
 	}
 	

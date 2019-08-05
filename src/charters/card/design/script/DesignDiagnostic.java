@@ -5,8 +5,10 @@ import java.util.LinkedList;
 
 import charters.card.design.card.Card;
 import charters.card.design.design.Color;
+import charters.card.design.diag.CardAnalyzer;
 import charters.card.design.diag.ColorCounter;
 import charters.card.design.group.CardGroup;
+import charters.card.design.group.DeckLists;
 
 /**
  * A class which can be used to see an overview of the current card designs,
@@ -26,14 +28,29 @@ public abstract class DesignDiagnostic
 	public static void main(String... args)
 	{
 		CardGroup allCards = new CardGroup("All");
-		allCards.add(CardSupplier.CHARACTER_SUPPLIER.getAll());
-		allCards.forEveryCard((Card c) -> print("Card:!!!" + c.getDesign().name));
-		allCards.forEveryCard((Card c) -> print("CardType: " + c.getDesign().name));
-		print("Char Count?: " + allCards.size());
+		//allCards.add(CardSupplier.CHARACTER_SUPPLIER.getAll());
 		//allCards.add(CardSupplier.ITEM_SUPPLIER.getAll());
 		//allCards.add(CardSupplier.IMPROVEMENT_SUPPLIER.getAll());
+		
 		print("Beginning Diagnosis...");
-		diagnose(getDiagnosables(allCards));
+		
+		//LinkedList<CardGroup> diags = getDiagnosables(allCards);
+		//diagnose(diags);
+		
+		print("Reprinting each card in this deck for each occurence.");
+		CardGroup baseGroup = DeckLists.get().basePlayableDeck;
+		baseGroup.forEveryCard
+		(
+			new CardAnalyzer<Card>()
+			{
+				@Override
+				public void accept(Card t)
+				{
+					print("Reprinting: " + t.getDesign().name);
+				}
+			}
+		);
+		diagnose(getDiagnosables(baseGroup));
 	}
 	
 	/** Split the passed group into commonly analyzed subsets */
@@ -51,9 +68,10 @@ public abstract class DesignDiagnostic
 			diagnosables.addAll(setGroup.designTypeSplit());
 			diagnosables.addAll(setGroup.colorSplit());
 		}
-		print("Found " + diagnosables.size() + " subgroups to analyze from all present cards.");
-		return diagnosables;
 		
+		print("Found " + diagnosables.size() + " subgroups to analyze from all present cards.");
+		
+		return diagnosables;
 	}
 
 	/** @param groups - All the groups to be diagnosed */

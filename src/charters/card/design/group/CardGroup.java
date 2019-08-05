@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.function.Consumer;
 
 import charters.card.design.card.Card;
@@ -154,7 +155,9 @@ public class CardGroup
     			if (respectiveSetExists == false)
     			{
         			//It should be created
-        			returnValues.add(new CardGroup(this, splitter.qualityString(c)));
+    				CardGroup newGroup = new CardGroup(this, splitter.qualityString(c));
+        			c.addToGroup(newGroup);
+    				returnValues.add(newGroup);
     			}
     		}
 		}
@@ -195,7 +198,9 @@ public class CardGroup
 			if (respectiveSetExists == false)
 			{
     			//It should be created
-    			returnValues.add(new CardGroup(this, splitter.qualityString(c)));
+				CardGroup newGroup = new CardGroup(this, splitter.qualityString(c));
+    			c.addToGroup(newGroup);
+				returnValues.add(newGroup);
 			}
 		}
 		
@@ -235,7 +240,9 @@ public class CardGroup
 			if (respectiveSetExists == false)
 			{
     			//It should be created
-    			returnValues.add(new CardGroup(this, splitter.qualityString(c)));
+				CardGroup newGroup = new CardGroup(this, splitter.qualityString(c));
+    			c.addToGroup(newGroup);
+				returnValues.add(newGroup);
 			}
 		}
 		
@@ -339,5 +346,56 @@ public class CardGroup
 //		
 //	}
 	
+	/** Goes through each card in this group and adds/removes from this group to match its rarity */
+	//TODO: CURRENTLY DOES NOT REDUCE FOR RARITY
+	public void adjustForRarity()
+	{
+		Map<Card, Integer> currentCounts = new HashMap<Card, Integer>();
+		//Iterate through each type sub set (characters, items, improvements)
+		for (LinkedList<? extends Card> subsection : allCards.values())
+		{	
+			//Iterate over each card in that set
+    		for (Card c : subsection)
+    		{
+    			//NOTE: do not exist the collections while in these loops. Java does not like that.
+    			
+    			//Set to true once the card exists in the entries map
+    			boolean cardExistsInCounts = false;
+    			
+    			for (Entry<Card, Integer> entry : currentCounts.entrySet())
+    			{
+    				if (entry.getKey() == c)
+    				{
+    					cardExistsInCounts = true;
+    					entry.setValue(entry.getValue() + 1);
+    					break;
+    				}
+    			}
+    			
+    			if (cardExistsInCounts == false)
+    			{
+    				//Add this card to the counts (at one)
+    				print("[Rarity Adjuster] Added " + c.getDesign().name);
+    				currentCounts.put(c, 1);
+    			}
+    		}
+		}
+		
+		//Add enough card copies in to match the rarity system
+		for (Entry<Card, Integer> entry : currentCounts.entrySet())
+		{
+			for (int i = entry.getValue(); i < entry.getKey().getDesign().rarity.count; i++)
+			{
+				print("[Rarity Adjuster] Re-Added " + entry.getKey().getDesign().name);
+				entry.getKey().addToGroup(this);
+			}
+		}
+	}
+	
 	//==========PRIVATE HELPERS==========//
+	
+	protected void print(String s)
+	{
+		System.out.println("[CardGroup]: " + s);
+	}
 }
