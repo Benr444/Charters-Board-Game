@@ -293,6 +293,7 @@ public abstract class Card
 		for (int d = 0; d < design.color.colorCodes.length; d++)
 		{
 			//Add a color edit
+			print("Added a color edit for " + design.color + ": " + design.color.colorCodes[d]);
 			edits.addAttributeEdit(new SVGEdits.AttributeEdit(COLOR_ATTRIBUTE, "" + d, "fill", design.color.getFillValue(d)));
 		}
 		

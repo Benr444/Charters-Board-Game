@@ -29,7 +29,7 @@ public class CardGroup
 	
 	public static final String DEFAULT_GROUP_NAME = "UNNAMED";
 	/** When creating creating subgroups, this gets appended to the old name */
-	public static final String SUB_GROUP_SEP = "::";
+	public static final String SUB_GROUP_SEP = "#";
 	
 	//==========PRIVATE MEMBER==========//
 	
@@ -346,11 +346,13 @@ public class CardGroup
 //		
 //	}
 	
-	/** Goes through each card in this group and adds/removes from this group to match its rarity */
+	/** Goes through each card in this group and adds/removes from this group to match its rarity
+	 * @return - New cardgroup, with fixed */
 	//TODO: CURRENTLY DOES NOT REDUCE FOR RARITY
-	public void adjustForRarity()
+	public CardGroup getRarityAdjusted()
 	{
-		Map<Card, Integer> currentCounts = new HashMap<Card, Integer>();
+		LinkedList<Card> singletonList = new LinkedList<Card>();
+
 		//Iterate through each type sub set (characters, items, improvements)
 		for (LinkedList<? extends Card> subsection : allCards.values())
 		{	
@@ -360,36 +362,36 @@ public class CardGroup
     			//NOTE: do not exist the collections while in these loops. Java does not like that.
     			
     			//Set to true once the card exists in the entries map
-    			boolean cardExistsInCounts = false;
+    			boolean cardExistsInList = false;
     			
-    			for (Entry<Card, Integer> entry : currentCounts.entrySet())
+    			for (Card singletonCopy : singletonList)
     			{
-    				if (entry.getKey() == c)
+    				if (c == singletonCopy)
     				{
-    					cardExistsInCounts = true;
-    					entry.setValue(entry.getValue() + 1);
-    					break;
+    					cardExistsInList = true;
     				}
     			}
     			
-    			if (cardExistsInCounts == false)
+    			if (cardExistsInList == false)
     			{
     				//Add this card to the counts (at one)
     				print("[Rarity Adjuster] Added " + c.getDesign().name);
-    				currentCounts.put(c, 1);
+    				singletonList.add(c);
     			}
     		}
 		}
 		
 		//Add enough card copies in to match the rarity system
-		for (Entry<Card, Integer> entry : currentCounts.entrySet())
+		CardGroup returnGroup = new CardGroup(this, "RarityFix");
+		for (Card single : singletonList)
 		{
-			for (int i = entry.getValue(); i < entry.getKey().getDesign().rarity.count; i++)
+			for (int i = 0; i < single.getDesign().rarity.count; i++)
 			{
-				print("[Rarity Adjuster] Re-Added " + entry.getKey().getDesign().name);
-				entry.getKey().addToGroup(this);
+				single.addToGroup(returnGroup);
 			}
 		}
+		
+		return returnGroup;
 	}
 	
 	//==========PRIVATE HELPERS==========//

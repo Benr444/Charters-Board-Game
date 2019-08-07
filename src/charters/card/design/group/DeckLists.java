@@ -46,6 +46,6 @@ public final class DeckLists
 				basePlayableDeck.add(set);
 			}
 		}
-		basePlayableDeck.adjustForRarity();
+		basePlayableDeck = basePlayableDeck.getRarityAdjusted();
 	};
 }
