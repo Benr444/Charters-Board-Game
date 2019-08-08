@@ -1,6 +1,6 @@
 {
   "type" : "object",
-  "id" : "urn:jsonschema:charters:card:design:Improvement:Design",
+  "id" : "urn:jsonschema:charters:card:design:design:ImprovementDesign",
   "properties" : {
     "name" : {
       "type" : "string",
@@ -39,11 +39,11 @@
       "description" : "The name of the art for this card. Do not include the file extension: it must be .png. It will be searched for in the relevant project folder(s). Defaults to searching for \"card-name-art.png\" in the proper art folder, but if this fails, it will keep the template art. | In template, mark with id=art"
     },
     "artX" : {
-      "type" : "integer",
+      "type" : "number",
       "description" : "The delta-X value of the art positioning on this card. Defaults to default to 0 (no displacement.)"
     },
     "artY" : {
-      "type" : "integer",
+      "type" : "number",
       "description" : "The delta-Y value of the art positioning on this card. Defaults to default to 0 (no displacement.)"
     },
     "HP" : {
@@ -60,7 +60,7 @@
       "description" : "The directly printed abilities of the cards. Please format them carefully. | In template, mark with id=ability-0, 1, 2, etc",
       "items" : {
         "type" : "object",
-        "id" : "urn:jsonschema:charters:card:design:Playable:Design:Ability",
+        "id" : "urn:jsonschema:charters:card:design:design:PlayableDesign:Ability",
         "properties" : {
           "name" : {
             "type" : "string",
@@ -74,9 +74,6 @@
           }
         }
       }
-    },
-    "designTypeName" : {
-      "type" : "string"
     }
   }
 }

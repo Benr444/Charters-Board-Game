@@ -1,6 +1,6 @@
 {
   "type" : "object",
-  "id" : "urn:jsonschema:charters:card:design:Item:Design",
+  "id" : "urn:jsonschema:charters:card:design:design:ItemDesign",
   "properties" : {
     "name" : {
       "type" : "string",
@@ -39,19 +39,16 @@
       "description" : "The name of the art for this card. Do not include the file extension: it must be .png. It will be searched for in the relevant project folder(s). Defaults to searching for \"card-name-art.png\" in the proper art folder, but if this fails, it will keep the template art. | In template, mark with id=art"
     },
     "artX" : {
-      "type" : "integer",
+      "type" : "number",
       "description" : "The delta-X value of the art positioning on this card. Defaults to default to 0 (no displacement.)"
     },
     "artY" : {
-      "type" : "integer",
+      "type" : "number",
       "description" : "The delta-Y value of the art positioning on this card. Defaults to default to 0 (no displacement.)"
     },
     "isInfluenceBonus" : {
       "type" : "boolean",
       "description" : "Set to true if this item can be revealed for +1 influence. Defaults to false. | In template, mark with id=influence-bonus"
-    },
-    "designTypeName" : {
-      "type" : "string"
     }
   }
 }
