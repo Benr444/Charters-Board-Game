@@ -11,11 +11,11 @@
     [
         {
             "name": "Grind",
-            "text": "[B]=>Put [5] from any decks into their discard; and if on L or M, put [8]"
+            "text": "[B]=>Put 3 cards from any deck into its discard; and if there is a lake or mountain within {1}, put 5"
         },
         {
-            "name": "Quicken",
-            "text": "[Mech]=>Refresh any number of other allied characters within {1}"
+            "name": "Repair Location",
+            "text": "[Mech][B]=>Return a location from the discard pile to your hand"
         }
     ]
 }

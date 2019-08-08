@@ -1,0 +1,20 @@
+{
+    "name": "Remote Outpost",
+    "types": [],
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "GREEN",
+    "HP": 3,
+    "cost": "[G][G][Goods]",
+    "abilities":
+    [
+        {
+            "name": "Bounty",
+            "text": "At start of each player's turn, that player +[1], then discards an item if they are an opponent"
+        },
+        {
+            "name": "Unregulated Poaching",
+            "text": "Whenever a character dies on Remote Outpost's tile type, you may +[G] or put the top card of the playables deck into your hand"
+        }
+    ]
+}

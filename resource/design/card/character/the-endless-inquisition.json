@@ -1,0 +1,28 @@
+{
+    "name": "The Endless Inquisition",
+    "types":
+    [
+        "Soldier",
+        "Cleric"
+    ],
+    "flavorText": "",
+    "set": "EXTRAS",
+    "rarity": "UNCOMMON",
+    "color": "YELLOW",
+    "HP": 3,
+    "cost": "[Y][Y][Law]",
+    "abilities":
+    [
+        {
+            "name": "Eternal Missionary",
+            "text": "When this is destroyed=>return it to its controllers hand"
+        },
+        {
+            "name": "Burn Brand",
+            "text": "When this attacks a character=>You may equip [Light] to defender: deal <+1> and as long as that defender has a [Light] equipped, it cannot be healed"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

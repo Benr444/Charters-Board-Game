@@ -131,6 +131,7 @@ public class LayoutPage
 		} 
 		catch (IOException e) 
 		{
+			print(i.getDesign().name + ": Had issues with image, located at " + i.getRasterFile().getAbsolutePath());
 			e.printStackTrace();
 			return false;
 		}

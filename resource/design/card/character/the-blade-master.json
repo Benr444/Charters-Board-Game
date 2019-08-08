@@ -1,0 +1,24 @@
+{
+    "name": "The Blade Master",
+    "types": ["Warrior", "Artist"],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "RED",
+    "HP": 3,
+    "cost": "[R][Blade]",
+    "abilities":
+    [
+        {
+            "name": "Parry",
+            "text": "Whenever this is dealt damage=>Pay [R][R] to prevent that damage and then <1> back to its source within {1}"
+        },
+        {
+            "name": "Blade Dance",
+            "text": "[Blade] equippable; {+1} on moving and <+1> on attacks for every [2]"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

@@ -1,0 +1,27 @@
+{
+    "name": "The Conqueror",
+    "types":
+    [
+        "Warrior"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "RED",
+    "HP": 3,
+    "cost": "[R][R][Weap]",
+    "abilities":
+    [
+        {
+            "name": "Resettle",
+            "text": "When this destroys an location=>Put that location into your hand and +1i"
+        },
+        {
+            "name": "Rampage",
+            "text": "Discard an location=>Allied characters within {1} get <+1> on attacks and {+1} on moving until end of turn"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

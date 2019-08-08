@@ -1,0 +1,22 @@
+{
+    "name": "Leyline Cross",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "VIOLET",
+    "HP": 3,
+    "cost": "[V][V]",
+    "abilities":
+    [
+        {
+            "name": "Perilous Construction",
+            "text": "You may play this up to {1} away from any of your characters"
+        },
+        {
+
+            "name": "Toll",
+            "text": "Characters may only move onto this tile if they have your permission and may do so unimpeded"
+        }
+    ]
+}

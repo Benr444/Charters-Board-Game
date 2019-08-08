@@ -1,0 +1,25 @@
+{
+    "name": "The Traveling Town",
+    "types": [],
+    "flavorText": "Howls all night long.",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "BLUE",
+    "HP": 1,
+    "cost": "[B][B][B]",
+    "abilities":
+    [
+        {
+            "name": "Foundation Ferry",
+            "text": "Your allies may play up to 6 total locations on this character: they count as being on this character's tile; This cannot be destroyed or brought below 1 HP while there are still locations on it"
+        },
+        {
+            "name": "Crush",
+            "text": "This character gets <+X>, where X is equal to the number of locations on it"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 1,
+    "artX": -10
+}

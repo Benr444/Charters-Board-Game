@@ -1,0 +1,31 @@
+{
+    "name": "The Seeker",
+    "types":
+    [
+        "Hunter",
+	"Citizen"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "GREEN",
+    "HP": 3,
+    "cost": "[G][Goods]",
+    "abilities":
+    [
+        {
+            "name": "Track",
+            "text": "At start of turn, +[G]. You may reveal this item as you draw it. If it is a beast, draft"
+        },
+        {
+            "name": "Root Snare",
+            "text": "[G]=>A character within {1} of this cannot move until your next turn"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0,
+    "artX": 0,
+    "artY": 0
+
+}

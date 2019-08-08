@@ -1,0 +1,20 @@
+{
+    "name": "Forward Camp",
+    "types": [],
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "RED",
+    "HP": 3,
+    "cost": "[R/Weap][Goods]",
+    "abilities":
+    [
+        {
+            "name": "Supply Lines",
+            "text": "Allied characters within {1} get +1HP, +1MS, and +1AK; you have -1 max cache size"
+        },
+        {
+            "name": "Red Collection",
+            "text": "At start of turn, +[R]"
+        }
+    ]
+}

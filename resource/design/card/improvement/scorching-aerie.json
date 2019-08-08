@@ -1,0 +1,22 @@
+{
+    "name": "Scorching Aerie",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "VIOLET",
+    "HP": 3,
+    "cost": "[V][V]",
+    "abilities":
+    [
+        {
+            "name": "Flambe",
+            "text": "[Fire/Spell][V]=><3> within {1}"
+        },
+        {
+
+            "name": "Refreshing Breeze",
+            "text": "[Air/Spell]=>Refresh any number of allied characters within {1}"
+        }
+    ]
+}

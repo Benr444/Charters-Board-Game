@@ -1,0 +1,31 @@
+{
+    "name": "The Gentleman Thief",
+    "types":
+    [
+        "Rogue",
+	"Merchant"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "ORANGE",
+    "HP": 2,
+    "cost": "[O][Goods][Lux]",
+    "abilities":
+    [
+        {
+            "name": "Red Handed",
+            "text": "When this attacks, you may have the defender's controller reveal their cache to you; take an item and put it into your cache"
+        },
+        {
+            "name": "Smokebomb",
+            "text": "[O][Shadow]=>No damage can be dealt to characters on this tile until your next turn"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0,
+    "artX": 0,
+    "artY": 0
+
+}

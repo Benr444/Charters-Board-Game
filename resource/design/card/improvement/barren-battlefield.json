@@ -1,0 +1,20 @@
+{
+    "name": "Barren Battlefield",
+    "types": [],
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "RED",
+    "HP": 2,
+    "cost": "[R][R][R]",
+    "abilities":
+    [
+        {
+            "name": "Mourn the Losses",
+            "text": "Whenever an allied character within {2} dies, you may pay [R]. If you do, draft. If that item was [Lux] or [Goods],+[R]"
+        },
+        {
+            "name": "Cauterize",
+            "text": "[R/Weap]=>Heal 1 or deal <1> to a character within {0}"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "The Crazed Conjuror",
+    "types":
+    [
+        "Wizard"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "VIOLET",
+    "HP": 3,
+    "cost": "[V][V]",
+    "abilities":
+    [
+        {
+            "name": "Infernal Reckless Summon",
+            "text": "[Arcane] or [2]; <1> to this=>Create a token violet Elemental character; it has 1HP"
+        },
+        {
+            "name": "Drain",
+            "text": "When this deals damage with its attack=>+1+ to this"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

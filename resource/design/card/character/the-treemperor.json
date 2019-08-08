@@ -1,0 +1,31 @@
+{
+    "name": "The Treemperor",
+    "types":
+    [
+        "Elf",
+	"Druid"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "GREEN",
+    "HP": 3,
+    "cost": "[G][G][G][Plant]",
+    "abilities":
+    [
+        {
+            "name": "Call of the Wilds",
+            "text": "Forests within {3} are characters with 0 movement speed, and 1 attack; they do not have HP"
+        },
+        {
+            "name": "Extend Roots",
+            "text": "Place a card onto a drafting pile from your hand=>Choose a draft pile, then put a card from that pile into your hand"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0,
+    "artX": 0,
+    "artY": 0
+
+}

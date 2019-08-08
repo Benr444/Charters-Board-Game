@@ -1,0 +1,22 @@
+{
+    "name": "Ancient Labyrinth",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "VIOLET",
+    "HP": 3,
+    "cost": "[V][Writ][Shadow]",
+    "abilities":
+    [
+        {
+            "name": "Lost Relics",
+            "text": "Start of your turn=>Reveal violet items from the item deck until you reveal a [Spell], then put all items revealed this way into your cache"
+        },
+        {
+
+            "name": "Entrancing Amazement",
+            "text": "Characters on this tile have {-1} on moving"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "The Alchemist",
+    "types":
+    [
+        "Alchemist"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "BLUE",
+    "HP": 3,
+    "cost": "[B][Sci]",
+    "abilities":
+    [
+        {
+            "name": "Ready the Brew",
+            "text": "=>Place [X] face-down under an enemy character within {1}"
+        },
+        {
+            "name": "Corrode",
+            "text": "'=>Reveal [X] face down under a character; deal <1> to that character for each [Alch] revealed"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

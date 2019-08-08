@@ -1,0 +1,28 @@
+{
+    "name": "The Lamplighter",
+    "types":
+    [
+        "Soldier",
+        "Citizen"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "YELLOW",
+    "HP": 3,
+    "cost": "[Y][Y]",
+    "abilities":
+    [
+        {
+            "name": "Night Watch",
+            "text": "[Light] or [YY]=>Put a character from your hand onto this tile; At the end of the turn, return it to your hand; It's abilities are free this turn"
+        },
+        {
+            "name": "Soldier's Mercy",
+            "text": "Double damage on attacks if defender is at full HP"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

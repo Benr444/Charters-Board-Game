@@ -1,0 +1,22 @@
+{
+    "name": "Private Palace",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "ORANGE",
+    "HP": 3,
+    "cost": "[O][O][Lux][Lux]",
+    "abilities":
+    [
+        {
+            "name": "Secret Stash",
+            "text": "+4 cache size; +6 instead if on a desert"
+        },
+        {
+
+            "name": "Orange Collection II",
+            "text": "Start of your turn=>+[O][O]"
+        }
+    ]
+}

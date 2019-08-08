@@ -1,21 +1,20 @@
 {
     "name": "Belltower",
     "types": [],
-    "flavorText": "",
     "set": "BASE",
     "rarity": "UNCOMMON",
     "color": "YELLOW",
     "HP": 3,
-    "cost": "[Y][Bell]",
+    "cost": "[Y][Bells]",
     "abilities":
     [
         {
-            "name": "Reverberate",
-            "text": "Opponents within {3} have their cache sizes reduced by 2 and their hand sizes reduced by 1"
+            "name": "Ring",
+            "text": "When Belltower enters play, return a character within {1} to its controller's hand"
         },
         {
-            "name": "Call to Arms",
-            "text": "[Light]=>Return an allied character within {3} to this tile"
+            "name": "Reverberate",
+            "text": "Opponents within {3} have their cache sizes reduced by 2 and their hand sizes reduced by 1"
         }
     ]
 }

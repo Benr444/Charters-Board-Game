@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!-- Created with Inkscape (http://www.inkscape.org/) --><svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" height="3.5in" id="svg109" version="1.1" viewBox="0 0 76.99 88.9" width="3.0311in">
+    <title id="title2">Charters Hex</title>
+    <defs id="defs56">
+        <linearGradient id="charters-violet" osb:paint="solid">
+            <stop id="stop4" offset="0" stop-color="#8900c8"/>
+        </linearGradient>
+        <linearGradient id="charters-green" osb:paint="solid">
+            <stop id="stop7" offset="0" stop-color="#00ae06"/>
+        </linearGradient>
+        <linearGradient id="charters-yellow" osb:paint="solid">
+            <stop id="stop10" offset="0" stop-color="#ece700"/>
+        </linearGradient>
+        <linearGradient id="charters-orange" osb:paint="solid">
+            <stop id="stop13" offset="0" stop-color="#fe7900"/>
+        </linearGradient>
+        <linearGradient id="charters-red" osb:paint="solid">
+            <stop id="stop16" offset="0" stop-color="#fc0000"/>
+        </linearGradient>
+        <linearGradient id="black" osb:paint="solid">
+            <stop id="stop19" offset="0"/>
+        </linearGradient>
+        <linearGradient id="charters-blue" osb:paint="solid">
+            <stop id="stop22" offset="0" stop-color="#0019fe"/>
+        </linearGradient>
+        <clipPath id="clipPath828">
+            <path d="m38.495 86.36-36.295-20.955-1.1e-6-41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" fill="#fff" id="path25"/>
+        </clipPath>
+        <clipPath id="clipPath914">
+            <path d="m38.495 86.36-36.295-20.955-1.1e-6-41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" fill="#fff" id="path28"/>
+        </clipPath>
+        <clipPath id="clipPath948">
+            <path d="m38.495 86.36-36.295-20.955-1.1e-6-41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" fill="#fff" id="path31"/>
+        </clipPath>
+        <linearGradient gradientUnits="userSpaceOnUse" id="linearGradient4668" x1="2.1997" x2="74.789" xlink:href="#charters-blue" y1="73.025" y2="73.025"/>
+        <linearGradient gradientUnits="userSpaceOnUse" id="linearGradient4674" x1="2.1997" x2="74.789" xlink:href="#charters-blue" y1="60.96" y2="60.96"/>
+        <linearGradient gradientUnits="userSpaceOnUse" id="linearGradient4680" x1="2.1997" x2="74.789" xlink:href="#charters-blue" y1="67.945" y2="67.945"/>
+        <linearGradient gradientUnits="userSpaceOnUse" id="linearGradient4686" x1="17.667" x2="58.115" xlink:href="#charters-blue" y1="80.963" y2="80.963"/>
+        <clipPath id="clipPath6226">
+            <g id="g46">
+                <rect clip-path="url(#clipPath914)" fill="url(#linearGradient4668)" height="5.08" id="rect38" opacity=".75" width="72.593" x="2.1962" y="70.485"/>
+                <rect fill="url(#linearGradient4674)" height="8.89" id="rect40" opacity=".75" width="72.59" x="2.1997" y="56.515"/>
+                <rect clip-path="url(#clipPath828)" fill="url(#linearGradient4680)" height="5.08" id="rect42" opacity=".5" width="72.59" x="2.1997" y="65.405"/>
+                <rect clip-path="url(#clipPath948)" fill="url(#linearGradient4686)" height="16.844" id="rect44" opacity=".5" width="40.449" x="17.667" y="75.565"/>
+            </g>
+        </clipPath>
+        <clipPath id="clipPath939">
+            <path d="m38.495 2.5399-36.295 20.955v33.02h72.59v-33.02z" fill="#fff" id="path49"/>
+        </clipPath>
+        <linearGradient gradientUnits="userSpaceOnUse" id="linearGradient4577" x1="33.264" x2="43.648" xlink:href="#black" y1="68.122" y2="68.122"/>
+        <linearGradient gradientUnits="userSpaceOnUse" id="linearGradient4583" x1="31.168" x2="45.821" xlink:href="#black" y1="73.025" y2="73.025"/>
+        <linearGradient gradientUnits="userSpaceOnUse" id="linearGradient4589" x1="30.863" x2="44.315" xlink:href="#black" y1="79.103" y2="79.103"/>
+        <linearGradient gradientUnits="userSpaceOnUse" id="linearGradient4598" x1="2.2" x2="74.789" xlink:href="#charters-blue" y1="73.025" y2="73.025"/>
+    </defs>
+    <metadata id="metadata58">
+        <rdf:RDF>
+            <cc:Work rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                <dc:title>Charters Hex</dc:title>
+                <dc:creator>
+                    <cc:Agent>
+                        <dc:title>B. Ranson</dc:title>
+                    </cc:Agent>
+                </dc:creator>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <g fill="#ffffff" id="g62">
+        <path d="m38.495 86.36-36.295-20.955-1.1e-6-41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" fill="#ffffff" id="path60"/>
+    </g>
+    <g id="g67" opacity=".5">
+        <g clip-path="url(#clipPath939)" id="g65">
+            <image height="62.704" id="art" image-rendering="optimizeSpeed" preserveAspectRatio="none" width="94.056" xlink:href="D:\Projects\Charters-Board-Game\resource\visual\card\art\improvement\ministry-office.png"/>
+        </g>
+    </g>
+    <g id="g93">
+        <path clip-path="url(#clipPath6226)" d="m38.495 86.36-36.295-20.955-1.1e-6-41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" fill="#ffffff" id="path69"/>
+        <rect charters-color="0" clip-path="url(#clipPath914)" fill="#ece700" height="5.08" id="rect71" opacity=".75" width="72.593" x="2.1962" y="70.485"/>
+        <rect charters-color="0" fill="#ece700" height="8.89" id="rect73" opacity=".75" width="72.59" x="2.1997" y="56.515"/>
+        <rect charters-color="0" clip-path="url(#clipPath828)" fill="#ece700" height="5.08" id="rect75" opacity=".5" width="72.59" x="2.1997" y="65.405"/>
+        <rect charters-color="0" clip-path="url(#clipPath948)" fill="#ece700" height="16.844" id="rect77" opacity=".5" width="40.449" x="17.667" y="75.565"/>
+        <text fill="#000000" font-family="Consolas" font-size="7.0556px" id="name" letter-spacing="0px" stroke-width=".26458" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" x="38.623726" xml:space="preserve" y="63.362957">Ministry Office</text>
+        <text fill="url(#linearGradient4577)" font-family="Consolas" font-size="4.9389px" id="types" letter-spacing="0px" stroke-width=".26458" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" x="38.496944" xml:space="preserve" y="69.196602"/>
+        <text fill="url(#linearGradient4583)" font-family="Consolas" font-size="4.9389px" id="cost" letter-spacing="0px" stroke-width=".26458" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" x="38.496944" xml:space="preserve" y="74.276604">[Y][Law]</text>
+        <text fill="url(#linearGradient4589)" font-family="Consolas" font-size="8.4667px" id="hp" letter-spacing="0px" stroke-width=".26458" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" x="37.783543" xml:space="preserve" y="81.804695">3HP</text>
+    </g>
+    <g id="g99" transform="translate(0,-208.1)">
+        <path d="m38.495 208.1-38.495 22.225v44.45l38.495 22.225 38.495-22.225v-44.45zm0 2.5399 36.295 20.955v41.91l-36.295 20.955-36.295-20.955v-41.91z" id="path95"/>
+        <path clip-path="url(#clipPath6226)" d="m38.495 86.36-36.295-20.955-1.1e-6-41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" fill="#17fd00" fill-opacity=".99269" id="path97" opacity=".405"/>
+    </g>
+    <path d="m3.332 24.627v30.756h70.324v-30.756z" fill="none" id="abilities-frame" opacity=".405"/>
+    <flowRoot fill="#000000" font-family="Consolas" font-size="2.8222px" id="flowRoot107" letter-spacing="0px" stroke-width=".26458" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" xml:space="preserve"><flowRegion id="flowRegion104"><use height="100%" id="use102" width="100%" xlink:href="#abilities-frame"/></flowRegion><flowPara font-family="Consolas" font-weight="bold" id="ability-0" text-align="start" text-anchor="start">Bar: [Y][X]=&gt;Activate this ability when someone pays items for a card or ability. Up to X of those items enter your hand instead of the scrapyard, and those items do not count toward the card or ability</flowPara><flowPara font-family="Consolas" font-weight="bold" id="flowPara922" text-align="start" text-anchor="start"/><flowPara font-family="Consolas" font-weight="bold" id="ability-1" text-align="start" text-anchor="start">Yellow Collection: At start of turn, +[Y]</flowPara><flowPara font-family="Consolas" font-weight="bold" id="flowPara924" text-align="start" text-anchor="start"/><flowPara font-family="Consolas" font-weight="bold" id="ability-2" text-align="start" text-anchor="start"/></flowRoot>
+</svg>

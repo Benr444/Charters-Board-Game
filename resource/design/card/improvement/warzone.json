@@ -1,0 +1,20 @@
+{
+    "name": "Warzone",
+    "types": [],
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "RED",
+    "HP": 2,
+    "cost": "[R][R][Weap]",
+    "abilities":
+    [
+        {
+            "name": "Deflect",
+            "text": "Whenever an allied character within {2} would be dealt damage, that damage is instead dealt to the ally of your choice instead"
+        },
+        {
+            "name": "Fires of War",
+            "text": "[Weap] or [Ranged] or [Fuel]=>+[R][R]"
+        }
+    ]
+}

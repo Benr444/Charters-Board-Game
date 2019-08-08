@@ -1,0 +1,22 @@
+{
+    "name": "Restless Tomb",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "VIOLET",
+    "HP": 3,
+    "cost": "[V][V]",
+    "abilities":
+    [
+        {
+            "name": "Whisperings",
+            "text": "You may look at the top of the playables deck"
+        },
+        {
+
+            "name": "Abracadabra",
+            "text": "Destroy this=>Search the deck for a Wizard character and put it into your hand"
+        }
+    ]
+}

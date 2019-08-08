@@ -1,0 +1,21 @@
+{
+    "name": "Miracle Mekanism",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "BLUE",
+    "HP": 3,
+    "cost": "[B][Mech][Mech]",
+    "abilities":
+    [
+        {
+            "name": "Double Time",
+            "text": "Whenever you use an ability within {2}=>You may spend [B] to copy it"
+        },
+        {
+            "name": "Recollection",
+            "text": "Start of your turn=>Put [1] from the discard pile into your hand"
+        }
+    ]
+}

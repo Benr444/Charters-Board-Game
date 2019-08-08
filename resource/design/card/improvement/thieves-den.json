@@ -1,0 +1,22 @@
+{
+    "name": "Thieves' Den",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "ORANGE",
+    "HP": 3,
+    "cost": "[O][O][Goods][Goods]",
+    "abilities":
+    [
+        {
+            "name": "Exotic Revelry",
+            "text": "Start of your turn=>Reveal your cache: +1i for each [non-orange]; then discard all [non-orange] and [non-Lux]"
+        },
+        {
+
+            "name": "Orange Collection II",
+            "text": "Start of your turn=>+[O][O]"
+        }
+    ]
+}

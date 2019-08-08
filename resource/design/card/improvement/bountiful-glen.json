@@ -1,0 +1,20 @@
+{
+    "name": "Bountiful Glen",
+    "types": [],
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "GREEN",
+    "HP": 4,
+    "cost": "[G][G]",
+    "abilities":
+    [
+        {
+            "name": "Nature's Gifts",
+            "text": "At start of turn, +[1], then <1> to this"
+        },
+        {
+            "name": "Phyletic Hold",
+            "text": "+1 maximum Cache size"
+        }
+    ]
+}

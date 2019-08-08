@@ -1,0 +1,20 @@
+{
+    "name": "Shimmering Structure",
+    "types": [],
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "YELLOW",
+    "HP": 2,
+    "cost": "[Y][Y][Law]",
+    "abilities":
+    [
+        {
+            "name": "Recreate Success",
+            "text": "Pay the item cost of an allied improvement within {3}. Shimmering Structure enters play as a copy of that improvement, retaining its other abilities"
+        },
+        {
+            "name": "Rezoning Laws",
+            "text": "[Y][Law][Writ]=>Return Shimmering Structure and another improvement within {2} of it to their controller's hands"
+        }
+    ]
+}

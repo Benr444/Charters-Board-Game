@@ -1,14 +1,11 @@
 {
     "name": "Castle",
-    "types":
-    [
-    ],
-    "flavorText": "Not the moving variety",
+    "types": [],
     "set": "BASE",
     "rarity": "COMMON",
     "color": "RED",
-    "HP": 3,
-    "cost": "[R]",
+    "HP": 5,
+    "cost": "[R][R][Goods][Weap]",
     "abilities":
     [
         {
@@ -17,7 +14,7 @@
         },
         {
             "name": "Foothold",
-            "text": "Players may only build on tiles within {1} with your permission"
+            "text": "Players may only build within {1} with your permission"
         }
     ]
 }

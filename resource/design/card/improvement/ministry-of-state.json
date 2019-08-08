@@ -1,0 +1,20 @@
+{
+    "name": "Ministry of State",
+    "types": [],
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "YELLOW",
+    "HP": 3,
+    "cost": "[Y][Y][Law]",
+    "abilities":
+    [
+        {
+            "name": "Curfew",
+            "text": "[Writ]=>Each player may return each creature to a location they control. For each character that was not returned this way, +[Y]; +1i"
+        },
+        {
+            "name": "Embargo",
+            "text": "[Y]=>Choose a color. Items of the chosen color cannot be traded until your next turn"
+        }
+    ]
+}

@@ -19,8 +19,8 @@ abstract public class CardDesign
 	public static final String DEFAULT_SET = "BASE";
 	public static final Rarity DEFAULT_RARITY = Rarity.UNSET;
 	public static final Color DEFAULT_COLOR = Color.UNSET;
-	public static final double DEFAULT_ART_X = -45.86;
-	public static final double DEFAULT_ART_Y = 121.21;
+	public static final double DEFAULT_ART_X = 0; //-45.86;
+	public static final double DEFAULT_ART_Y = 0; //121.21;
     
     //===UTILITY-MEMBERS===//
 

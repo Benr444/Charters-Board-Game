@@ -1,0 +1,28 @@
+{
+    "name": "The Madman",
+    "types":
+    [
+        "Rogue",
+        "Artist"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "RED",
+    "HP": 4,
+    "cost": "[R][R]",
+    "abilities":
+    [
+        {
+            "name": "Tip of the Hat",
+            "text": "When this attacks or is attacked by a character=>You may swap the positions of this and the other character"
+        },
+        {
+            "name": "Wag of the Finder",
+            "text": "Enemy characters within {1} cannot act except to attack this"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

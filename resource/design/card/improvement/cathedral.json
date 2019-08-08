@@ -1,0 +1,20 @@
+{
+    "name": "Cathedral",
+    "types": [],
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "YELLOW",
+    "HP": 4,
+    "cost": "[Y][Y][Light][Lux]",
+    "abilities":
+    [
+        {
+            "name": "Guilt-Ridden Mass",
+            "text": "When this enters play, return all creatures to their controllers hands, then put a character from your hand onto this tile"
+        },
+        {
+            "name": "Karmic Rapture",
+            "text": "At the beginning of your turn, you may deal <1> to this. If Cathedral is destroyed this way, shuffle all enemy characters within {3} into the playables deck"
+        }
+    ]
+}

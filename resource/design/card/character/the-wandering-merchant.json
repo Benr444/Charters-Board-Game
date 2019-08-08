@@ -1,0 +1,31 @@
+{
+    "name": "The Wandering Merchant",
+    "types":
+    [
+        "Merchant",
+	"Artist"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "ORANGE",
+    "HP": 3,
+    "cost": "[O][O][Goods]",
+    "abilities":
+    [
+        {
+            "name": "Diverse Stock",
+            "text": "Whenever this enters an improvement that does not share a color with an equipped item on this, equip an item an item of that color"
+        },
+        {
+            "name": "Exoticism",
+            "text": "Discard 6 equipped items of different color=>Any number of allies +[6] and +3i"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0,
+    "artX": 0,
+    "artY": 0
+
+}

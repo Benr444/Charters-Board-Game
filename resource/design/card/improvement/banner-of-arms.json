@@ -1,0 +1,20 @@
+{
+    "name": "Banner of Arms",
+    "types": [],
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "RED",
+    "HP": 3,
+    "cost": "[R][R][R][Lux]",
+    "abilities":
+    [
+        {
+            "name": "Warriors' Bond",
+            "text": "Whenever an allied character within {3} would be dealt damage, prevent 1 of that damage for each other allied character on that tile"
+        },
+        {
+            "name": "Rallying Cry",
+            "text": "[R][R]=>Choose an allied character within {3}. Move any number of allied characters within {3} of that character to its tile"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "The Surgeon",
+    "types":
+    [
+        "Scholar"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "BLUE",
+    "HP": 2,
+    "cost": "[B][Sci]",
+    "abilities":
+    [
+        {
+            "name": "Post-Mortem",
+            "text": "Whenever a character or location within {2} is destroyed=>[B] or [1] of that card's color"
+        },
+        {
+            "name": "The Horrible Truth",
+            "text": "[B][1]=>For each enemy character within {1}, its controller must must discard [1] if you spent [Writ] and discard a card from hand if you spent [Sci] on this ability"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

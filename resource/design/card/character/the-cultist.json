@@ -1,0 +1,28 @@
+{
+    "name": "The Cultist",
+    "types":
+    [
+        "Rogue",
+        "Cleric"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "YELLOW",
+    "HP": 2,
+    "cost": "[Y][Y]",
+    "abilities":
+    [
+        {
+            "name": "Surprise Strike",
+            "text": "When an allied character deals damage=>You may reveal this from your hand: this counts as dealing that damage instead"
+        },
+        {
+            "name": "Sacrificial Sadism",
+            "text": "<+1> attack damage; When this kills an enemy=>Draft twice"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

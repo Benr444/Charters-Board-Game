@@ -1,0 +1,20 @@
+{
+    "name": "Overbearing Senate",
+    "types": [],
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "YELLOW",
+    "HP": 3,
+    "cost": "[Y][Y][Law][Writ]",
+    "abilities":
+    [
+        {
+            "name": "Outlaw",
+            "text": "[Law][Y]=>Pay [1] of a chosen color. Each player reveals their hand and discards all items of the color. Items of that color cannot be drawn until your next turn"
+        },
+        {
+            "name": "Tax Break",
+            "text": "[Writ]=>Each player +[2], then you +[Y]"
+        }
+    ]
+}

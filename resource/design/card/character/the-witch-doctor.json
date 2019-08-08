@@ -1,0 +1,24 @@
+{
+    "name": "The Witch Doctor",
+    "types": ["Warlock"],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "VIOLET",
+    "HP": 3,
+    "cost": "[V][V]",
+    "abilities":
+    [
+        {
+            "name": "Bog Down",
+            "text": "[Water/Spell]=>Replace a tile within {1} with a Lake tile"
+        },
+        {
+            "name": "Earthenshell",
+            "text": "[Earth] equippable; +1 cache size and +1HP for each equipped [Earth]"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

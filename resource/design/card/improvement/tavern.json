@@ -1,0 +1,22 @@
+{
+    "name": "Tavern",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "ORANGE",
+    "HP": 3,
+    "cost": "[O][O]",
+    "abilities":
+    [
+        {
+            "name": "Poison",
+            "text": "[Goods] or [Alch]=><1> within {1} and the receiver does not refresh next turn; if you spent [Lux], <2> instead"
+        },
+        {
+
+            "name": "Espionage",
+            "text": "Characters of your choice within {1} have their controller's cache revealed"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "name": "The Priest of Punishment",
+    "types":
+    [
+        "Citizen",
+        "Cleric"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "YELLOW",
+    "HP": 3,
+    "cost": "[Y][Y]",
+    "abilities":
+    [
+        {
+            "name": "Mark of the Gods",
+            "text": "[Y]=>Equip [Y/Light] to a character within {0}."
+        },
+        {
+            "name": "Pariah/Messiah",
+            "text": "Enemy characters equipped with [Y/Light] have -1AK and -2 max HP; allied characters equipped with [Y/Light] have <+1> on attacks and +2HP"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

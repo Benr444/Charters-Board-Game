@@ -1,0 +1,22 @@
+{
+    "name": "Ozeroth",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "VIOLET",
+    "HP": 3,
+    "cost": "[V][V][Shadow]",
+    "abilities":
+    [
+        {
+            "name": "Demonic Pacts",
+            "text": "You may equip [Shadow] to allied characters within {0}; Characters with [Shadow] equipped have 5HP, 3MS and <+2> on attacks"
+        },
+        {
+
+            "name": "Ragnarok",
+            "text": "[Fire/Spell][Water/Spell][Spell]=>Destroy all characters within {3}; Destroy all enemy improvements further than {1}"
+        }
+    ]
+}
