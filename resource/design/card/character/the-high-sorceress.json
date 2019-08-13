@@ -1,0 +1,28 @@
+{
+    "name": "The High Sorceress",
+    "types":
+    [
+        "Wizard",
+        "Spirit"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "VIOLET",
+    "HP": 2,
+    "cost": "[V][V][Shadow]",
+    "abilities":
+    [
+        {
+            "name": "Essence Shift",
+            "text": "Reveal 5 [Spell] of different names; [Spell][Spell]=>-2i to an enemy with a character within {0}; allied player gains 2i"
+        },
+        {
+            "name": "Phylactery",
+            "text": "This character is only destroyed when the location it began on is destroyed"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

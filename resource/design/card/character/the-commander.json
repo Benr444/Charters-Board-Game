@@ -1,0 +1,27 @@
+{
+    "name": "The Commander",
+    "types":
+    [
+        "Soldier"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "YELLOW",
+    "HP": 3,
+    "cost": "[Y][Law]",
+    "abilities":
+    [
+        {
+            "name": "Levy Taxes",
+            "text": "[YY]=>Choose a location you don't control within {1}: Look through its controller's cache and put an item from it into your cache"
+        },
+        {
+            "name": "Commanding Presence",
+            "text": "Allied Soldiers and Warriors within {1} have <+1> on attacks and {+1} when moving."
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

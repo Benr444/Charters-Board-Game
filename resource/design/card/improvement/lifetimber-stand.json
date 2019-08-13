@@ -1,0 +1,20 @@
+{
+    "name": "Lifetimber Stand",
+    "types": [],
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "GREEN",
+    "HP": 3,
+    "cost": "[G][Plant][Earth]",
+    "abilities":
+    [
+        {
+            "name": "Prized Find",
+            "text": "At start of each player's turn, that player drafts an additional time, then discards a card if they are an opponent"
+        },
+        {
+            "name": "Sift",
+            "text": "When you draft, you may put any card in your chosen pile into your hand instead of the topmost one"
+        }
+    ]
+}

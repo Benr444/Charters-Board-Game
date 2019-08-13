@@ -1,0 +1,21 @@
+{
+    "name": "Library",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "BLUE",
+    "HP": 3,
+    "cost": "[B][B]",
+    "abilities":
+    [
+        {
+            "name": "Inform",
+            "text": "You may equip [Sci] or [Writ] to allied characters within {0}"
+        },
+        {
+            "name": "Item Insight",
+            "text": "At the start of each player's turn, they +[B] for each character they control equipped with [Sci] or [Writ]"
+        }
+    ]
+}

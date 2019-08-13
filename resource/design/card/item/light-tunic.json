@@ -1,0 +1,14 @@
+{
+    "name": "Light Tunic",
+    "types":
+    [
+        "Garb",
+        "Goods",
+        "Light"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "ORANGE",
+    "isInfluenceBonus": false
+}

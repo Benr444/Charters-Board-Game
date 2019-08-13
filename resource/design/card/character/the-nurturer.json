@@ -1,0 +1,31 @@
+{
+    "name": "The Nurturer",
+    "types":
+    [
+        "Elf",
+	"Druid"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "GREEN",
+    "HP": 3,
+    "cost": "[G][Goods]",
+    "abilities":
+    [
+        {
+            "name": "Healer's Grace",
+            "text": "At the end of each character's turn, that player heals all improvements they control within {3} of this. For each improvement healed this way, you +[G]"
+        },
+        {
+            "name": "Neutrality",
+            "text": "This cannot attack or be attacked"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0,
+    "artX": 0,
+    "artY": 0
+
+}

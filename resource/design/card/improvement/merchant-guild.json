@@ -1,0 +1,22 @@
+{
+    "name": "Merchant Guild",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "ORANGE",
+    "HP": 3,
+    "cost": "[O][O]",
+    "abilities":
+    [
+        {
+            "name": "Buyout",
+            "text": "[R][O][Y][G][B][V]=>Gain control of a location within {1}"
+        },
+        {
+
+            "name": "Trade Secrets",
+            "text": "[O][O]=>Choose an item type; each player reveals their caches, then discards all items of the chosen type"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Letter of Thanks",
+    "types":
+    [
+        "Writ", "Law"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "YELLOW",
+    "isInfluenceBonus": false
+}

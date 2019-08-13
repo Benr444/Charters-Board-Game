@@ -1,0 +1,21 @@
+{
+    "name": "Alchemical Artillery",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "BLUE",
+    "HP": 3,
+    "cost": "[B][B][Alch]",
+    "abilities":
+    [
+        {
+            "name": "Kablooie",
+            "text": "[B/Fuel][B]=><1> to this; <2> within {3} or <3> within {3} if you spend an additional [Alch]"
+        },
+        {
+            "name": "Refresh Magazine",
+            "text": "When a location is destroyed within {3}=>This +1+ and +[B][B]"
+        }
+    ]
+}

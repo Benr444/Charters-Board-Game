@@ -1,0 +1,21 @@
+{
+    "name": "Golem Forge",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "BLUE",
+    "HP": 3,
+    "cost": "[B][B]",
+    "abilities":
+    [
+        {
+            "name": "Animate",
+            "text": "[1][Mech][Writ]=>+1i; also +1i if you spent [Golem Mind]"
+        },
+        {
+            "name": "Back to the Drawing Board",
+            "text": "Start of your turn=>Look at the top card of the item deck: you may discard it; +[B]"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Lunar Sanctum",
+    "types": [],
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "GREEN",
+    "HP": 3,
+    "cost": "[G][G][Earth][Plant]",
+    "abilities":
+    [
+        {
+            "name": "Natural Alignment",
+            "text": "At start of turn, +1i, then <1> to this"
+        },
+        {
+            "name": "Sowing Season",
+            "text": "[G][Earth]=>Feint three times; draft"
+        }
+    ]
+}

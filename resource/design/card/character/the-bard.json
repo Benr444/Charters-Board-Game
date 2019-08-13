@@ -1,0 +1,31 @@
+{
+    "name": "The Bard",
+    "types":
+    [
+        "Artist",
+	"Citizen"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "ORANGE",
+    "HP": 3,
+    "cost": "[O][O]",
+    "abilities":
+    [
+        {
+            "name": "Inspire",
+            "text": "[O]=>Refresh a character you control within {1}"
+        },
+        {
+            "name": "Fables and Songs",
+            "text": "[O]=>Reveal a card from your hand. Put that card onto the bottom of the playables deck, then draft"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0,
+    "artX": 0,
+    "artY": 0
+
+}

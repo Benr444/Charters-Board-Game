@@ -1,0 +1,20 @@
+{
+    "name": "Hunting Lodge",
+    "types": [],
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "GREEN",
+    "HP": 3,
+    "cost": "[G][Goods]",
+    "abilities":
+    [
+        {
+            "name": "Open Season",
+            "text": "[Weap/Ranged]=>All characters on Hunting Lodge's tile type take <1>; +[G]"
+        },
+        {
+            "name": "Green Collection",
+            "text": "At start of turn, +[G]"
+        }
+    ]
+}

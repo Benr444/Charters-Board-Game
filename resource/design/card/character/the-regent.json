@@ -1,0 +1,29 @@
+{
+    "name": "The Regent",
+    "types":
+    [
+        "Royal"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "YELLOW",
+    "HP": 4,
+    "cost": "[Y][Y][Law][Writ]",
+    "abilities":
+    [
+        {
+            "name": "Supreme Dictate",
+            "text": "[Y]=>Equip [Y/Light] to a character within {0}."
+        },
+        {
+            "name": "Dictate of Law",
+            "text": "Allied characters within {3} can use their abilities an additional time each turn; The second use costs [Y] less to cast"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0,
+    "artX": 0,
+    "artY": 0
+}

@@ -1,0 +1,27 @@
+{
+    "name": "The Tinker",
+    "types":
+    [
+        "Tinker"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "BLUE",
+    "HP": 3,
+    "cost": "[B][Mech]",
+    "abilities":
+    [
+        {
+            "name": "Multitool",
+            "text": "[Mech] or [Tool] equippable; {+1} on moving and on attacks for every [2] equipped"
+        },
+        {
+            "name": "Flight",
+            "text": "Movement cannot be impeded"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Rampant Grove",
+    "types": [],
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "GREEN",
+    "HP": 3,
+    "cost": "[G][G]",
+    "abilities":
+    [
+        {
+            "name": "Overgrowth",
+            "text": "When this enters the battlefield, draft; this tile also counts as a forest; you may build on this tile as if this was not here"
+        },
+        {
+            "name": "Unreclaim",
+            "text": "When Rampant Growth dies, +[G], then search the Green items pile for [Lumber] and put it into your hand"
+        }
+    ]
+}

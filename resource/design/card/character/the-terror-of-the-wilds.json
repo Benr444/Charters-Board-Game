@@ -1,0 +1,30 @@
+{
+    "name": "The Terror of the Wilds",
+    "types":
+    [
+        "Beast"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "GREEN",
+    "HP": 3,
+    "cost": "[G][Beast]",
+    "abilities":
+    [
+        {
+            "name": "Feast",
+            "text": "When this dies, another player of your choice feints, then you draft"
+        },
+        {
+            "name": "Feral",
+            "text": "When this defends, the attacker and this are destroyed"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0,
+    "artX": 0,
+    "artY": 0
+
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Sacred Orchard",
+    "types": [],
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "GREEN",
+    "HP": 4,
+    "cost": "[G][Lux][Plant]",
+    "abilities":
+    [
+        {
+            "name": "Untouchable Domain",
+            "text": "Characters on this tile cannot deal damage or be dealt damage"
+        },
+        {
+            "name": "Earthbound Wisdom",
+            "text": "At the end of each player's turn, each character they control on this tile fully heals, then that player +[G] for each character on this tile"
+        }
+    ]
+}

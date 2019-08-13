@@ -1,0 +1,27 @@
+{
+    "name": "The Archmage",
+    "types":
+    [
+        "Wizard"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "VIOLET",
+    "HP": 3,
+    "cost": "[V][V][Arcane]",
+    "abilities":
+    [
+        {
+            "name": "Fantastical Flattery",
+            "text": "[V/Spell][V]=>Each other character you control becomes a copy of this OR this effect ends"
+        },
+        {
+            "name": "Polyblast",
+            "text": "[V][Fire/Spell] or [V][V][V]=>Each allied Wizard <1> within {1}"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

@@ -1,0 +1,24 @@
+{
+    "name": "The Mercenary",
+    "types": ["Rogue"],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "RED",
+    "HP": 3,
+    "cost": "[R][R]",
+    "abilities":
+    [
+        {
+            "name": "This Time It's Personal",
+            "text": "All damage that would be dealt to this or by this via characters not on the same tile is reduced to 0"
+        },
+        {
+            "name": "Bleed Out",
+            "text": "When this attacks a character which is expended=><+1>"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

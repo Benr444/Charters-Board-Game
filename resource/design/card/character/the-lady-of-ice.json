@@ -1,0 +1,24 @@
+{
+    "name": "The Lady of Ice",
+    "types": ["Elemental"],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "VIOLET",
+    "HP": 3,
+    "cost": "[V][V]",
+    "abilities":
+    [
+        {
+            "name": "Cryogenic Curse",
+            "text": "[V][V]=>Equip [Water/Spell] to an enemy character within {2}"
+        },
+        {
+            "name": "Frost Feet",
+            "text": "The tile this character is on counts as a lake in addition to its other types; enemy characters equipped with [Water/Spell] within {1} of lakes cannot move"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

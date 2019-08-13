@@ -1,0 +1,21 @@
+{
+    "name": "Laboratory",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "BLUE",
+    "HP": 2,
+    "cost": "[B][Sci]",
+    "abilities":
+    [
+        {
+            "name": "Research",
+            "text": "[Sci][B]=>You may draft another card and perform another feint"
+        },
+        {
+            "name": "Stitch Up",
+            "text": "[1][Alch] or [1][Sci]=>You may put a character in the discard pile into your hand"
+        }
+    ]
+}

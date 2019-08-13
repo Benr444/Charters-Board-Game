@@ -1,0 +1,31 @@
+{
+    "name": "The Pirate King",
+    "types":
+    [
+        "Rogue",
+	"Royal"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "ORANGE",
+    "HP": 4,
+    "cost": "[O][WEAP][Goods][Lux]",
+    "abilities":
+    [
+        {
+            "name": "Pilfer and Plunder",
+            "text": "Whenever an opponent pays items as part of an ability or cost of a card, you may put up to one of those items into your cache; if the item is [Weap] or [Lux], +1i"
+        },
+        {
+            "name": "X Marks the Spot",
+            "text": "[O]=> Choose a tile at exactly {3}. When a player has a character on that tile, they may pay [Goods][O]. If they do, they draft, then +[2]"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0,
+    "artX": 0,
+    "artY": 0
+
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Mirrorizm",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "VIOLET",
+    "HP": 3,
+    "cost": "[V][V]",
+    "abilities":
+    [
+        {
+            "name": "Mirrored Masonry",
+            "text": "When this comes into play, it gains the abilities a location of your choice within {3} until it leaves play"
+        },
+        {
+
+            "name": "Violet Collection",
+            "text": "Start of your turn=>+[V]"
+        }
+    ]
+}

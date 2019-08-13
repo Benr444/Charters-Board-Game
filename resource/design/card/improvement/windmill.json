@@ -1,0 +1,21 @@
+{
+    "name": "Windmill",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "BLUE",
+    "HP": 3,
+    "cost": "[B][Mech]",
+    "abilities":
+    [
+        {
+            "name": "Grind",
+            "text": "[B]=>Put 3 cards from any deck into its discard; and if there is a lake or mountain within {1}, put 5"
+        },
+        {
+            "name": "Repair Location",
+            "text": "[Mech][B]=>Return a location from the discard pile to your hand"
+        }
+    ]
+}

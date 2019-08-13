@@ -1,0 +1,31 @@
+{
+    "name": "The Pilgrim",
+    "types":
+    [
+        "Elf",
+	"Druid"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "GREEN",
+    "HP": 3,
+    "cost": "[G][G][Earth]",
+    "abilities":
+    [
+        {
+            "name": "Wander",
+            "text": "[Gx2][Earth]=>+[G] for each tile type among improvements you control; +1i"
+        },
+        {
+            "name": "Panterran Expanse",
+            "text": "You may build improvements on any tile within {2}"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0,
+    "artX": 0,
+    "artY": 0
+
+}

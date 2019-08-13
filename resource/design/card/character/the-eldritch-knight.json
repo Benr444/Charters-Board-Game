@@ -1,0 +1,24 @@
+{
+    "name": "The Eldritch Knight",
+    "types": ["Warrior", "Vampire"],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "RED",
+    "HP": 3,
+    "cost": "[R][R]",
+    "abilities":
+    [
+        {
+            "name": "Drain",
+            "text": "When this deals damage with its attack=>+1+ to this"
+        },
+        {
+            "name": "Vengeful Wight",
+            "text": "When this is destroyed=>You may turn it face down instead of discarding it; When you destroy a character you may replay this and deal <X> to it, where X is its HP - 1"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

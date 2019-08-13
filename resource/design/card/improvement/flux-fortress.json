@@ -1,0 +1,22 @@
+{
+    "name": "Flux Fortress",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "VIOLET",
+    "HP": 3,
+    "cost": "[V][V]",
+    "abilities":
+    [
+        {
+            "name": "Polyform",
+            "text": "[V]=>Destroy an allied location within {1}; Reveal cards off the top of the deck until you reveal an location that shares a color with it; put it into play where the destroyed one was; discard the revealed cards"
+        },
+        {
+
+            "name": "Eerie Influence",
+            "text": "Whenever you spend [Spell]=>you may pay [Spell]: if you do, +1i"
+        }
+    ]
+}

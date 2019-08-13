@@ -1,0 +1,20 @@
+{
+    "name": "Stronghold",
+    "types": [],
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "RED",
+    "HP": 5,
+    "cost": "[R][R][R][WEAP]",
+    "abilities":
+    [
+        {
+            "name": "Misfire Fear",
+            "text": "All enemy abilities within {2} have {-1}"
+        },
+        {
+            "name": "Total War",
+            "text": "Each other enemy has -2i for each improvement within {1}"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Stronghelm Armory",
+    "types": [],
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "RED",
+    "HP": 3,
+    "cost": "[R][R][Weap][Garb]",
+    "abilities":
+    [
+        {
+            "name": "Quick Temper",
+            "text": "[Goods]=>Draw the top item of an item deck which matches the color you spent"
+        },
+        {
+            "name": "Arm for Conflict",
+            "text": "You may equip [Garb] to allied characters within {1}; Allied characters get +1HP for every [1]"
+        }
+    ]
+}

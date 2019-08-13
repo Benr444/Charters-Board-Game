@@ -1,0 +1,21 @@
+{
+    "name": "Alchetorium",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "BLUE",
+    "HP": 3,
+    "cost": "[B][Alch]",
+    "abilities":
+    [
+        {
+            "name": "Publish",
+            "text": "[1]=>Put [1] from a discard pile into your cache; if you spent [Writ], +[B] also"
+        },
+        {
+            "name": "Ignite",
+            "text": "[Alch] or [Fuel]=><1> within {2}; <2> instead if you spent a Rare item"
+        }
+    ]
+}

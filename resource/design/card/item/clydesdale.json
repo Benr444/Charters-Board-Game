@@ -1,0 +1,14 @@
+{
+    "name": "Clydesdale",
+    "types":
+    [
+        "Beast",
+        "Weap",
+        "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "RED",
+    "isInfluenceBonus": false
+}

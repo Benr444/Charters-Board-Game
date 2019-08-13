@@ -1,0 +1,22 @@
+{
+    "name": "Caravansary",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "ORANGE",
+    "HP": 3,
+    "cost": "[O][O]",
+    "abilities":
+    [
+        {
+            "name": "Insider Dealings",
+            "text": "Whenever players trade items, draft"
+        },
+        {
+
+            "name": "Cargo Commotion",
+            "text": "Start of your turn=>+[O]; draft"
+        }
+    ]
+}

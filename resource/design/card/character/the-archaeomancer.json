@@ -1,0 +1,29 @@
+{
+    "name": "The Archaeomancer",
+    "types":
+    [
+        "Scholar"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "BLUE",
+    "HP": 3,
+    "cost": "[B][B][B]",
+    "abilities":
+    [
+        {
+            "name": "Historica Ultima",
+            "text": "This has all the abilities of all cards in discard piles"
+        },
+        {
+            "name": "Reliquary Restoration",
+            "text": "Whenever a player would draw an item=>Instead, discard that item, then you choose an item of that color and place it in their hand"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0,
+    "artX": 0,
+    "artY": 0
+}

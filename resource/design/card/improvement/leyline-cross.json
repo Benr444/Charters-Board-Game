@@ -1,0 +1,22 @@
+{
+    "name": "Leyline Cross",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "VIOLET",
+    "HP": 3,
+    "cost": "[V][V]",
+    "abilities":
+    [
+        {
+            "name": "Innervate",
+            "text": "[V]=>Reveal the top 4 cards of the item deck; put one in your cache and the rest on the bottom randomly; Reveal 6 instead if on a ruins"
+        },
+        {
+
+            "name": "Violet Collection",
+            "text": "Start of your turn=>+[V]"
+        }
+    ]
+}

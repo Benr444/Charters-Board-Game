@@ -1,0 +1,28 @@
+{
+    "name": "The Warrior Queen",
+    "types":
+    [
+        "Warrior",
+        "Royal"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "RED",
+    "HP": 3,
+    "cost": "[R][R][Blade]",
+    "abilities":
+    [
+        {
+            "name": "Flanking",
+            "text": "Expend this=>move this any number of tiles in a line"
+        },
+        {
+            "name": "Supreme Fury",
+            "text": "<+X> on attacks, where X is how damaged this is"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

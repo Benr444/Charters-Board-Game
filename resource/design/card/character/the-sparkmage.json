@@ -1,0 +1,24 @@
+{
+    "name": "The Sparkmage",
+    "types": ["Wizard"],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "VIOLET",
+    "HP": 3,
+    "cost": "[V][V]",
+    "abilities":
+    [
+        {
+            "name": "Electriterate",
+            "text": "[Fire/Spell][V]=><1> within {1}; Then you may repeat this effect with the previous target as the source; You may not hit the same target twice"
+        },
+        {
+            "name": "Electroverload",
+            "text": "When this dies=>You may pay [Fire/Spell][V]. If you do, activate Electriterate twice"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

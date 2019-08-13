@@ -1,0 +1,20 @@
+{
+    "name": "Castle",
+    "types": [],
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "RED",
+    "HP": 5,
+    "cost": "[R][R][Goods][Weap]",
+    "abilities":
+    [
+        {
+            "name": "Impede",
+            "text": "Characters may only move onto this tile with your permission"
+        },
+        {
+            "name": "Foothold",
+            "text": "Players may only build within {1} with your permission"
+        }
+    ]
+}

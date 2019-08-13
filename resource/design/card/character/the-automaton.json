@@ -1,0 +1,27 @@
+{
+    "name": "The Automaton",
+    "types":
+    [
+        "Artificial"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "BLUE",
+    "HP": 3,
+    "cost": "[Mech][Writ]",
+    "abilities":
+    [
+        {
+            "name": "Self-Destruct",
+            "text": "Destroy this=>Destroy an improvement or character within {0}"
+        },
+        {
+            "name": "Upgrade!",
+            "text": "[Mech] Equippable; <+1> attack damage for each 2 [Mech] equipped"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

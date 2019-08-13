@@ -1,0 +1,20 @@
+{
+    "name": "Shifting Scape",
+    "types": [],
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "GREEN",
+    "HP": 3,
+    "cost": "[G][Earth][Plant]",
+    "abilities":
+    [
+        {
+            "name": "Wild Adaptation",
+            "text": "At start of turn, this tile becomes the tile type of your choice"
+        },
+        {
+            "name": "Eye for Beauty",
+            "text": "You have +1 max hand size and +1 max cache size for each influence you have"
+        }
+    ]
+}

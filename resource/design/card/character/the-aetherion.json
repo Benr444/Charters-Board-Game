@@ -1,0 +1,24 @@
+{
+    "name": "The Aetherion",
+    "types": ["Elemental"],
+    "flavorText": "",
+    "set": "EXTRA",
+    "rarity": "COMMON",
+    "color": "VIOLET",
+    "HP": 3,
+    "cost": "[V][V]",
+    "abilities":
+    [
+        {
+            "name": "Telelocate",
+            "text": "[V][Air/Spell]=>Move this to any tile within {3} or any ruins tile"
+        },
+        {
+            "name": "Bolt",
+            "text": "{+1} on attacks"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

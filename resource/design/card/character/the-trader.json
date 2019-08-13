@@ -1,0 +1,31 @@
+{
+    "name": "The Trader",
+    "types":
+    [
+        "Merchant",
+	"Citizen"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "ORANGE",
+    "HP": 3,
+    "cost": "[O][O/Goods]",
+    "abilities":
+    [
+        {
+            "name": "Betrade",
+            "text": "[O][O][Writ]=>Swap the positions of two locations within {3}"
+        },
+        {
+            "name": "Diversify",
+            "text": "When this attacks=>You may spend [O]; then Reveal [X] from your hand; <1> for every three unique types on items revealed this way"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0,
+    "artX": 0,
+    "artY": 0
+
+}

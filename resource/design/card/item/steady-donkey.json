@@ -1,0 +1,12 @@
+{
+    "name": "Steady Donkey",
+    "types":
+    [
+        "Beast", "Goods"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "ORANGE",
+    "isInfluenceBonus": false
+}

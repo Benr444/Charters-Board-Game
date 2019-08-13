@@ -1,0 +1,29 @@
+{
+    "name": "The Archbishop",
+    "types":
+    [
+        "Cleric"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "YELLOW",
+    "HP": 3,
+    "cost": "[Y][Lux][Light]",
+    "abilities":
+    [
+        {
+            "name": "Excommunicate",
+            "text": "[Y][Light]=>Destroy an character within {0} unless its controller pays [2] to you; if they do, return it to their hand instead"
+        },
+        {
+            "name": "Read Scripture",
+            "text": "Discard a playable card=>Draft"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0,
+    "artX": 0,
+    "artY": 0
+}

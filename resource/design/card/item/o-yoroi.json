@@ -1,0 +1,12 @@
+{
+    "name": "O-Yoroi",
+    "types":
+    [
+        "Garb", "Lux"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "RED",
+    "isInfluenceBonus": false
+}

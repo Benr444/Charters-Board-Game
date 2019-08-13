@@ -1,0 +1,31 @@
+{
+    "name": "The Ambusher",
+    "types":
+    [
+        "Hunter",
+	"Citizen"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "COMMON",
+    "color": "GREEN",
+    "HP": 3,
+    "cost": "[G][G]",
+    "abilities":
+    [
+        {
+            "name": "Sudden Strike",
+            "text": "[Beast/Weap]=><1> to a character within {1}, then feint"
+        },
+        {
+            "name": "Venomous",
+            "text": "When this attacks, the defender and this are destroyed"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0,
+    "artX": 0,
+    "artY": 0
+
+}

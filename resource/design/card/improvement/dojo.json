@@ -1,0 +1,20 @@
+{
+    "name": "Dojo",
+    "types": [],
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "RED",
+    "HP": 3,
+    "cost": "[R][R][Goods]",
+    "abilities":
+    [
+        {
+            "name": "Defensive Stance",
+            "text": "Allied characters within {2} cannot have their HP lowed below one as long as they can still act or move"
+        },
+        {
+            "name": "Mastery Aura",
+            "text": "Whenever an allied character within {1} is attacked, it deals <1> to its attacker"
+        }
+    ]
+}

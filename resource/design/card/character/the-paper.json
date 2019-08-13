@@ -1,0 +1,31 @@
+{
+    "name": "The Piper",
+    "types":
+    [
+        "Rogue",
+	"Artist"
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "ORANGE",
+    "HP": 3,
+    "cost": "[O][Goods]",
+    "abilities":
+    [
+        {
+            "name": "Pay the Piper",
+            "text": "Whenever a character attacks within {3}, that character's controller pay you [1][X] to add <X> to that attack"
+        },
+        {
+            "name": "The Children, The Children!",
+            "text": "[O][Spell]=>Take control of an enemy character within {1} until end of turn; refresh that character"
+        }
+    ],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0,
+    "artX": 0,
+    "artY": 0
+
+}

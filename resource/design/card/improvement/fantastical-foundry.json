@@ -1,0 +1,21 @@
+{
+    "name": "Fantastical Foundry",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "BLUE",
+    "HP": 3,
+    "cost": "[B][B][B][Mech]",
+    "abilities":
+    [
+        {
+            "name": "Restoration",
+            "text": "You may choose play locations from the discard pile onto tiles within {2} instead of from hand"
+        },
+        {
+            "name": "Recollection II",
+            "text": "Start of your turn=>Put [2] from the discard pile into your hand"
+        }
+    ]
+}

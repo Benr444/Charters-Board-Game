@@ -1,0 +1,22 @@
+{
+    "name": "Bank",
+    "types": [],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNCOMMON",
+    "color": "ORANGE",
+    "HP": 3,
+    "cost": "[Writ][O][O]",
+    "abilities":
+    [
+        {
+            "name": "Finance",
+            "text": "[O][O][X]=>Draw [X] from each of up to X differnt colors"
+        },
+        {
+
+            "name": "Withdraw",
+            "text": "Start of your turn=>You +[1]; Each other player with a character on this tile +[1];"
+        }
+    ]
+}
