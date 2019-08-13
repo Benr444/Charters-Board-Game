@@ -1,0 +1,24 @@
+{
+    "name": "Great Wizard's Tower",
+    "types":
+    [
+    ],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "RARE",
+    "color": "VIOLET",
+    "HP": 3,
+    "cost": "[V][V][V][Spell]",
+    "abilities":
+    [
+        {
+            "name": "Reduce to Mana",
+            "text": "[V][Shadow][Fire]=>Destroy a character within {1}. Draw a number of items of that character's color equal to its total item cost."
+        },
+        {
+
+            "name": "Bigger on the Inside",
+            "text": "@=>+[1]; draft; You have no max hand or cache size"
+        }
+    ]
+}

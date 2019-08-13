@@ -2,7 +2,7 @@
     "name": "Family Portrait",
     "types":
     [
-        "Art"
+        "Art", "Light"
     ],
     "flavorText": "",
     "set": "BASE",

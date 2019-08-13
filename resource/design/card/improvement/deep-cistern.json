@@ -6,7 +6,7 @@
     "rarity": "COMMON",
     "color": "VIOLET",
     "HP": 3,
-    "cost": "[V]",
+    "cost": "[V][V]",
     "abilities":
     [
         {
@@ -15,7 +15,7 @@
         },
         {
             "name": "Quake",
-            "text": "[Earth/Spell]=>Deal 1 damage to EVERYTHING within {1}"
+            "text": "[Earth/Spell]=>Deal 1 damage to EVERYTHING within {1}; Draft"
         }
     ]
 }

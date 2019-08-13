@@ -2,7 +2,7 @@
     "name": "Steady Donkey",
     "types":
     [
-        "Beast"
+        "Beast", "Goods"
     ],
     "flavorText": "",
     "set": "BASE",

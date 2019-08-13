@@ -15,7 +15,7 @@
     [
         {
             "name": "Diverse Stock",
-            "text": "Whenever this enters an improvement that does not share a color with an equipped item on this, equip an item an item of that color"
+            "text": "Whenever this enters an improvement that does not share a color with an equipped item on this=>equip an item an item of that color"
         },
         {
             "name": "Exoticism",

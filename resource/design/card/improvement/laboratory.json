@@ -5,8 +5,8 @@
     "set": "BASE",
     "rarity": "COMMON",
     "color": "BLUE",
-    "HP": 3,
-    "cost": "[B]",
+    "HP": 2,
+    "cost": "[B][Sci]",
     "abilities":
     [
         {
@@ -15,7 +15,7 @@
         },
         {
             "name": "Stitch Up",
-            "text": "[Alch] or [Sci]=>You may play a character in the ruin pile onto this tile"
+            "text": "[1][Alch] or [1][Sci]=>You may put a character in the discard pile into your hand"
         }
     ]
 }

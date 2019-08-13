@@ -2,7 +2,7 @@
     "name": "Feisty Camels",
     "types":
     [
-        "Beast"
+        "Beast", "Goods", "Ranged"
     ],
     "flavorText": "",
     "set": "BASE",

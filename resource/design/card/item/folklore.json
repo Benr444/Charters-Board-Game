@@ -2,7 +2,7 @@
     "name": "Folklore",
     "types":
     [
-        "Writ"
+        "Writ", "Art"
     ],
     "flavorText": "",
     "set": "BASE",

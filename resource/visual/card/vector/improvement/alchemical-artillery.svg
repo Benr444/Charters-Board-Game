@@ -68,8 +68,8 @@
     <g fill="#ffffff" id="g62">
         <path d="m38.495 86.36-36.295-20.955-1.1e-6-41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" fill="#ffffff" id="path60"/>
     </g>
-    <g id="g67" opacity=".5">
-        <g clip-path="url(#clipPath939)" id="g65">
+    <g id="g67" opacity=".66">
+        <g clip-path="url(#clipPath939)" id="g65" style="">
             <image height="62.704" id="art" image-rendering="optimizeSpeed" preserveAspectRatio="none" width="94.056" xlink:href="D:\Projects\Charters-Board-Game\resource\visual\card\art\improvement\alchemical-artillery.png"/>
         </g>
     </g>

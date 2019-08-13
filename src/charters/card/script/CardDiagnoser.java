@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.LinkedList;
 
 import charters.card.card.Card;
+import charters.card.card.CardSupplier;
 import charters.card.design.Color;
 import charters.card.group.CardAnalyzer;
 import charters.card.group.CardGroup;
@@ -30,12 +31,12 @@ public abstract class CardDiagnoser
 		CardGroup allCards = new CardGroup("All");
 		//allCards.add(CardSupplier.CHARACTER_SUPPLIER.getAll());
 		//allCards.add(CardSupplier.ITEM_SUPPLIER.getAll());
-		//allCards.add(CardSupplier.IMPROVEMENT_SUPPLIER.getAll());
+		allCards.add(CardSupplier.IMPROVEMENT_SUPPLIER.getAll());
 		
 		print("Beginning Diagnosis...");
 		
-		//LinkedList<CardGroup> diags = getDiagnosables(allCards);
-		//diagnose(diags);
+		LinkedList<CardGroup> diags = getDiagnosables(allCards);
+		diagnose(diags);
 		
 		print("Reprinting each card in this deck for each occurence.");
 		CardGroup baseGroup = DeckLists.get().basePlayableDeck;
@@ -46,7 +47,7 @@ public abstract class CardDiagnoser
 				@Override
 				public void accept(Card t)
 				{
-					print("Reprinting: " + t.getDesign().name);
+					print("(" + t.getDesign().color + ") Reprinting: " + t.getDesign().name + " @ " + t.getDesign().rarity);
 				}
 			}
 		);

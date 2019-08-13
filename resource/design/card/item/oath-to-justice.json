@@ -2,7 +2,7 @@
     "name": "Oath to Justice",
     "types":
     [
-        "Writ"
+        "Writ", "Law"
     ],
     "flavorText": "",
     "set": "BASE",

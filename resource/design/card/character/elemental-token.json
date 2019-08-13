@@ -1,0 +1,14 @@
+{
+    "name": "Elemental Token",
+    "types": ["Elemental"],
+    "flavorText": "",
+    "set": "BASE",
+    "rarity": "UNSET",
+    "color": "VIOLET",
+    "HP": 1,
+    "cost": "",
+    "abilities": [],
+    "AK": 1,
+    "MS": 1,
+    "RG": 0
+}

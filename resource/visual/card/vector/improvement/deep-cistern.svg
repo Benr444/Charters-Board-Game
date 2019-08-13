@@ -68,8 +68,8 @@
     <g fill="#ffffff" id="g62">
         <path d="m38.495 86.36-36.295-20.955-1.1e-6-41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" fill="#ffffff" id="path60"/>
     </g>
-    <g id="g67" opacity=".5">
-        <g clip-path="url(#clipPath939)" id="g65">
+    <g id="g67" opacity=".66">
+        <g clip-path="url(#clipPath939)" id="g65" style="">
             <image height="62.704" id="art" image-rendering="optimizeSpeed" preserveAspectRatio="none" width="94.056" xlink:href="D:\Projects\Charters-Board-Game\resource\visual\card\art\improvement\deep-cistern.png"/>
         </g>
     </g>
@@ -81,7 +81,7 @@
         <rect charters-color="0" clip-path="url(#clipPath948)" fill="#8900c8" height="16.844" id="rect77" opacity=".5" width="40.449" x="17.667" y="75.565"/>
         <text fill="#000000" font-family="Consolas" font-size="7.0556px" id="name" letter-spacing="0px" stroke-width=".26458" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" x="38.623726" xml:space="preserve" y="63.362957">Deep Cistern</text>
         <text fill="url(#linearGradient4577)" font-family="Consolas" font-size="4.9389px" id="types" letter-spacing="0px" stroke-width=".26458" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" x="38.496944" xml:space="preserve" y="69.196602"/>
-        <text fill="url(#linearGradient4583)" font-family="Consolas" font-size="4.9389px" id="cost" letter-spacing="0px" stroke-width=".26458" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" x="38.496944" xml:space="preserve" y="74.276604">[V]</text>
+        <text fill="url(#linearGradient4583)" font-family="Consolas" font-size="4.9389px" id="cost" letter-spacing="0px" stroke-width=".26458" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" x="38.496944" xml:space="preserve" y="74.276604">[V][V]</text>
         <text fill="url(#linearGradient4589)" font-family="Consolas" font-size="8.4667px" id="hp" letter-spacing="0px" stroke-width=".26458" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" x="37.783543" xml:space="preserve" y="81.804695">3HP</text>
     </g>
     <g id="g99" transform="translate(0,-208.1)">
@@ -89,5 +89,5 @@
         <path clip-path="url(#clipPath6226)" d="m38.495 86.36-36.295-20.955-1.1e-6-41.91 36.295-20.955 36.295 20.955 1e-6 41.91z" fill="#17fd00" fill-opacity=".99269" id="path97" opacity=".405"/>
     </g>
     <path d="m3.332 24.627v30.756h70.324v-30.756z" fill="none" id="abilities-frame" opacity=".405"/>
-    <flowRoot fill="#000000" font-family="Consolas" font-size="2.8222px" id="flowRoot107" letter-spacing="0px" stroke-width=".26458" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" xml:space="preserve"><flowRegion id="flowRegion104"><use height="100%" id="use102" width="100%" xlink:href="#abilities-frame"/></flowRegion><flowPara font-family="Consolas" font-weight="bold" id="ability-0" text-align="start" text-anchor="start">Cooldown: [Water/Spell]=&gt;A character or improvement within {2} cannot move, act or use abilities on its next turn</flowPara><flowPara font-family="Consolas" font-weight="bold" id="flowPara922" text-align="start" text-anchor="start"/><flowPara font-family="Consolas" font-weight="bold" id="ability-1" text-align="start" text-anchor="start">Quake: [Earth/Spell]=&gt;Deal 1 damage to EVERYTHING within {1}</flowPara><flowPara font-family="Consolas" font-weight="bold" id="flowPara924" text-align="start" text-anchor="start"/><flowPara font-family="Consolas" font-weight="bold" id="ability-2" text-align="start" text-anchor="start"/></flowRoot>
+    <flowRoot fill="#000000" font-family="Consolas" font-size="2.8222px" id="flowRoot107" letter-spacing="0px" stroke-width=".26458" style="line-height:1.25" text-align="center" text-anchor="middle" word-spacing="0px" xml:space="preserve"><flowRegion id="flowRegion104"><use height="100%" id="use102" width="100%" xlink:href="#abilities-frame"/></flowRegion><flowPara font-family="Consolas" font-weight="bold" id="ability-0" text-align="start" text-anchor="start">Cooldown: [Water/Spell]=&gt;A character or improvement within {2} cannot move, act or use abilities on its next turn</flowPara><flowPara font-family="Consolas" font-weight="bold" id="flowPara922" text-align="start" text-anchor="start"/><flowPara font-family="Consolas" font-weight="bold" id="ability-1" text-align="start" text-anchor="start">Quake: [Earth/Spell]=&gt;Deal 1 damage to EVERYTHING within {1}; Draft</flowPara><flowPara font-family="Consolas" font-weight="bold" id="flowPara924" text-align="start" text-anchor="start"/><flowPara font-family="Consolas" font-weight="bold" id="ability-2" text-align="start" text-anchor="start"/></flowRoot>
 </svg>

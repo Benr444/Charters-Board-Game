@@ -3,7 +3,8 @@
     "types":
     [
         "Beast",
-        "Weap"
+        "Weap",
+        "Goods"
     ],
     "flavorText": "",
     "set": "BASE",

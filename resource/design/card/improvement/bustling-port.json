@@ -11,12 +11,12 @@
     [
         {
             "name": "Easy Money",
-            "text": "=>+[O]; also +[O] if there is a lake within {1}"
+            "text": "Start of your turn=>+[O]; also +[O] if there is a lake within {1}"
         },
         {
 
-            "name": "Orange Collection",
-            "text": "Start of your turn=>+[O]"
+            "name": "Cargo Commotion",
+            "text": "Start of your turn=>+[O]; draft"
         }
     ]
 }

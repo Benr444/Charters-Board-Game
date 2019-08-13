@@ -10,13 +10,13 @@
     "abilities":
     [
         {
-            "name": "Perilous Construction",
-            "text": "You may play this up to {1} away from any of your characters"
+            "name": "Innervate",
+            "text": "[V]=>Reveal the top 4 cards of the item deck; put one in your cache and the rest on the bottom randomly; Reveal 6 instead if on a ruins"
         },
         {
 
-            "name": "Toll",
-            "text": "Characters may only move onto this tile if they have your permission and may do so unimpeded"
+            "name": "Violet Collection",
+            "text": "Start of your turn=>+[V]"
         }
     ]
 }

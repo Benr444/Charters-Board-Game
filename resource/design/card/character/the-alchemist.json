@@ -18,7 +18,7 @@
         },
         {
             "name": "Corrode",
-            "text": "'=>Reveal [X] face down under a character; deal <1> to that character for each [Alch] revealed"
+            "text": "=>Reveal [X] face down under a character; deal <1> to that character for each [Alch] revealed"
         }
     ],
     "AK": 1,

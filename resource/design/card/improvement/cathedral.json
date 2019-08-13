@@ -10,7 +10,7 @@
     [
         {
             "name": "Guilt-Ridden Mass",
-            "text": "When this enters play, return all creatures to their controllers hands, then put a character from your hand onto this tile"
+            "text": "When this enters play, return all creatures within {3} to their controllers hands, then put a character from your hand onto this tile"
         },
         {
             "name": "Karmic Rapture",

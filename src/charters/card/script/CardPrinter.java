@@ -21,6 +21,7 @@ public class CardPrinter
 			LinkedList<CardGroup> typeSubsets = set.designTypeSplit();
 			for (CardGroup subset : typeSubsets)
 			{
+				subset = subset.getRarityAdjusted();
 				//Construct a printout (becomes pdf file)
 				//CardPrintout printout = new CardPrintout(set.name);
 				CardLayout printout = new CardLayout(subset.name);

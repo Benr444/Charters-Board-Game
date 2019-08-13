@@ -15,7 +15,7 @@
         },
         {
             "name": "Crush",
-            "text": "This character gets <+X>, where X is equal to the number of locations on it"
+            "text": "This character gets <+1>, for every two locations on it"
         }
     ],
     "AK": 1,

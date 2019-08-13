@@ -6,12 +6,12 @@
     "rarity": "COMMON",
     "color": "BLUE",
     "HP": 3,
-    "cost": "[B/Alch]",
+    "cost": "[B][Alch]",
     "abilities":
     [
         {
-            "name": "Repair",
-            "text": "[B]=>+[1]; and if you spent [Writ], +[1] "
+            "name": "Publish",
+            "text": "[1]=>Put [1] from a discard pile into your cache; if you spent [Writ], +[B] also"
         },
         {
             "name": "Ignite",

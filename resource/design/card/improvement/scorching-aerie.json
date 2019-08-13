@@ -16,7 +16,7 @@
         {
 
             "name": "Refreshing Breeze",
-            "text": "[Air/Spell]=>Refresh any number of allied characters within {1}"
+            "text": "[Air/Spell]=>Refresh any number of allied characters within {1}; +[V][V]"
         }
     ]
 }

@@ -2,7 +2,7 @@
     "name": "O-Yoroi",
     "types":
     [
-        "Garb"
+        "Garb", "Lux"
     ],
     "flavorText": "",
     "set": "BASE",

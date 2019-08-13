@@ -11,11 +11,11 @@
     [
         {
             "name": "Animate",
-            "text": "[Mech][Writ]=>+1i; also +1i if you spent [Golem Mind]"
+            "text": "[1][Mech][Writ]=>+1i; also +1i if you spent [Golem Mind]"
         },
         {
-            "name": "Blue Collection",
-            "text": "Start of your turn=>+[B]"
+            "name": "Back to the Drawing Board",
+            "text": "Start of your turn=>Look at the top card of the item deck: you may discard it; +[B]"
         }
     ]
 }

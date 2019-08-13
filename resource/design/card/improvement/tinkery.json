@@ -6,12 +6,12 @@
     "rarity": "COMMON",
     "color": "BLUE",
     "HP": 3,
-    "cost": "[B]",
+    "cost": "[B][B]",
     "abilities":
     [
         {
             "name": "Repair",
-            "text": "[B]=>+[1] from the scrapheap; +[B] if that was [Mech]"
+            "text": "[B]=>+[1] from the discard pile; +[B] if that was [Mech]"
         },
         {
             "name": "Deconstruct",

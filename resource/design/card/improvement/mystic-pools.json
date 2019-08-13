@@ -3,19 +3,19 @@
     "types": [],
     "flavorText": "",
     "set": "BASE",
-    "rarity": "COMMON",
+    "rarity": "UNCOMMON",
     "color": "VIOLET",
     "HP": 3,
-    "cost": "[V]",
+    "cost": "[V][V]",
     "abilities":
     [
         {
             "name": "Scry",
-            "text": "[Scrying Rune][V] or [Scrying Rune] if within {1} of a Lake=>Draw an item of your choice"
+            "text": "[Scrying Rune][V] or [Scrying Rune] if within {1} of a Lake=>Search the deck for [1] and put it in your cache"
         },
         {
             "name": "Bifrostus",
-            "text": "[Arcane/Spell]=>+[3]"
+            "text": "[1][Spell]=>Draft; +[5] if you spent [Arcane]"
         }
     ]
 }

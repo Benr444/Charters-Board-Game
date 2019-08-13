@@ -3,7 +3,8 @@
     "types":
     [
         "Garb",
-        "Goods"
+        "Goods",
+        "Light"
     ],
     "flavorText": "",
     "set": "BASE",
